@@ -3,16 +3,16 @@
 	"id": "nextgen_furniture",
 	"version": "${version}",
 	"name": "NhatJS's Next-Gen Furniture Mod",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "The new generation of Furniture Mod comes with minimalistic and realistic features. Furniture Mod thế hệ tiếp theo đi kèm với các tính năng tối giản và thực tế.",
 	"authors": [
 		"NhatJS (aka James Southfall)"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"homepage": "https://www.youtube.com/channel/UCWZnMnD4WqJgJ-StYyd_SQw",
+		"sources": "https://github.com/NhatJS/NhatJS-Next-Gen-Furniture-Mod-Fabric"
 	},
 	"license": "MIT",
-	"icon": "assets/nhatjs-next-gen-furniture-mod/icon.png",
+	"icon": "assets/nextgen_furniture/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
