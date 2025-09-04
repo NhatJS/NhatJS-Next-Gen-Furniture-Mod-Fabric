@@ -1,0 +1,7 @@
+{
+	"parent": "nextgen_furniture:block/laptop/laptop_opened",
+	"loader": "framework:open_model",
+	"textures": {
+		"screen": "nextgen_furniture:block/black_screen"
+	}
+}

@@ -10,15 +10,30 @@ base {
 	archivesName = project.archives_base_name
 }
 
+def getGprUser() {
+	return project.findProperty('gpr.user')
+}
+
+def getGprKey() {
+	return project.findProperty('gpr.key')
+}
+
+
 repositories {
 	// Add repositories to retrieve artifacts from in here.
 	// You should only use this when depending on other mods because
 	// Loom adds the essential maven repositories to download Minecraft and libraries from automatically.
 	// See https://docs.gradle.org/current/userguide/declaring_repositories.html
 	// for more information about repositories.
-	maven {
-		name = "MrCrayfish (GitHub)"
-		url = "https://maven.pkg.github.com/MrCrayfish/Maven"
+	if(getGprUser() && getGprKey()) {
+		maven {
+			name = "MrCrayfish (GitHub)"
+			url = "https://maven.pkg.github.com/MrCrayfish/Maven"
+			credentials {
+				username = getGprUser()
+				password = getGprKey()
+			}
+		}
 	}
 }
 
@@ -37,9 +52,7 @@ dependencies {
 	// Fabric API. This is technically optional, but you probably want it anyway.
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
 
-	modImplementation "com.mrcrayfish:framework-common:<minecraft_version>-<framework_version>"
-
-	modImplementation "com.mrcrayfish:framework-fabric:<minecraft_version>-<framework_version>"
+	modImplementation "com.mrcrayfish:framework-fabric:${project.minecraft_version}-${framework_version}"
 }
 
 processResources {

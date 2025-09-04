@@ -1,0 +1,74 @@
+{
+  "variants": {
+    "facing=north,screen_on=false,boot_stage=0,open_stage=0": { "model": "nextgen_furniture:block/laptop/laptop_closed_off" },
+    "facing=south,screen_on=false,boot_stage=0,open_stage=0": { "model": "nextgen_furniture:block/laptop/laptop_closed_off", "y": 180 },
+    "facing=west,screen_on=false,boot_stage=0,open_stage=0":  { "model": "nextgen_furniture:block/laptop/laptop_closed_off", "y": 270 },
+    "facing=east,screen_on=false,boot_stage=0,open_stage=0":  { "model": "nextgen_furniture:block/laptop/laptop_closed_off", "y": 90 },
+
+    "facing=north,screen_on=false,boot_stage=0,open_stage=1": { "model": "nextgen_furniture:block/laptop/laptop_opened_off_tick_1" },
+    "facing=south,screen_on=false,boot_stage=0,open_stage=1": { "model": "nextgen_furniture:block/laptop/laptop_opened_off_tick_1", "y": 180 },
+    "facing=west,screen_on=false,boot_stage=0,open_stage=1":  { "model": "nextgen_furniture:block/laptop/laptop_opened_off_tick_1", "y": 270 },
+    "facing=east,screen_on=false,boot_stage=0,open_stage=1":  { "model": "nextgen_furniture:block/laptop/laptop_opened_off_tick_1", "y": 90 },
+
+    "facing=north,screen_on=false,boot_stage=0,open_stage=2": { "model": "nextgen_furniture:block/laptop/laptop_opened_off_tick_2" },
+    "facing=south,screen_on=false,boot_stage=0,open_stage=2": { "model": "nextgen_furniture:block/laptop/laptop_opened_off_tick_2", "y": 180 },
+    "facing=west,screen_on=false,boot_stage=0,open_stage=2":  { "model": "nextgen_furniture:block/laptop/laptop_opened_off_tick_2", "y": 270 },
+    "facing=east,screen_on=false,boot_stage=0,open_stage=2":  { "model": "nextgen_furniture:block/laptop/laptop_opened_off_tick_2", "y": 90 },
+
+    "facing=north,screen_on=false,boot_stage=0,open_stage=3": { "model": "nextgen_furniture:block/laptop/laptop_opened_off_tick_3" },
+    "facing=south,screen_on=false,boot_stage=0,open_stage=3": { "model": "nextgen_furniture:block/laptop/laptop_opened_off_tick_3", "y": 180 },
+    "facing=west,screen_on=false,boot_stage=0,open_stage=3":  { "model": "nextgen_furniture:block/laptop/laptop_opened_off_tick_3", "y": 270 },
+    "facing=east,screen_on=false,boot_stage=0,open_stage=3":  { "model": "nextgen_furniture:block/laptop/laptop_opened_off_tick_3", "y": 90 },
+
+    "facing=north,screen_on=false,boot_stage=0,open_stage=4": { "model": "nextgen_furniture:block/laptop/laptop_opened_off_tick_4" },
+    "facing=south,screen_on=false,boot_stage=0,open_stage=4": { "model": "nextgen_furniture:block/laptop/laptop_opened_off_tick_4", "y": 180 },
+    "facing=west,screen_on=false,boot_stage=0,open_stage=4":  { "model": "nextgen_furniture:block/laptop/laptop_opened_off_tick_4", "y": 270 },
+    "facing=east,screen_on=false,boot_stage=0,open_stage=4":  { "model": "nextgen_furniture:block/laptop/laptop_opened_off_tick_4", "y": 90 },
+
+    "facing=north,screen_on=false,boot_stage=0,open_stage=5": { "model": "nextgen_furniture:block/laptop/laptop_opened_off_tick_5" },
+    "facing=south,screen_on=false,boot_stage=0,open_stage=5": { "model": "nextgen_furniture:block/laptop/laptop_opened_off_tick_5", "y": 180 },
+    "facing=west,screen_on=false,boot_stage=0,open_stage=5":  { "model": "nextgen_furniture:block/laptop/laptop_opened_off_tick_5", "y": 270 },
+    "facing=east,screen_on=false,boot_stage=0,open_stage=5":  { "model": "nextgen_furniture:block/laptop/laptop_opened_off_tick_5", "y": 90 },
+
+    "facing=north,screen_on=false,boot_stage=0,open_stage=6": { "model": "nextgen_furniture:block/laptop/laptop_opened_off_tick_6" },
+    "facing=south,screen_on=false,boot_stage=0,open_stage=6": { "model": "nextgen_furniture:block/laptop/laptop_opened_off_tick_6", "y": 180 },
+    "facing=west,screen_on=false,boot_stage=0,open_stage=6":  { "model": "nextgen_furniture:block/laptop/laptop_opened_off_tick_6", "y": 270 },
+    "facing=east,screen_on=false,boot_stage=0,open_stage=6":  { "model": "nextgen_furniture:block/laptop/laptop_opened_off_tick_6", "y": 90 },
+
+    "facing=north,screen_on=false,boot_stage=0,open_stage=7": { "model": "nextgen_furniture:block/laptop/laptop_opened_off" },
+    "facing=south,screen_on=false,boot_stage=0,open_stage=7": { "model": "nextgen_furniture:block/laptop/laptop_opened_off", "y": 180 },
+    "facing=west,screen_on=false,boot_stage=0,open_stage=7":  { "model": "nextgen_furniture:block/laptop/laptop_opened_off", "y": 270 },
+    "facing=east,screen_on=false,boot_stage=0,open_stage=7":  { "model": "nextgen_furniture:block/laptop/laptop_opened_off", "y": 90 },
+
+    "facing=north,screen_on=false,boot_stage=0,open_stage=8": { "model": "nextgen_furniture:block/laptop/laptop_opened_on_boot" },
+    "facing=south,screen_on=false,boot_stage=0,open_stage=8": { "model": "nextgen_furniture:block/laptop/laptop_opened_on_boot", "y": 180 },
+    "facing=west,screen_on=false,boot_stage=0,open_stage=8":  { "model": "nextgen_furniture:block/laptop/laptop_opened_on_boot", "y": 270 },
+    "facing=east,screen_on=false,boot_stage=0,open_stage=8":  { "model": "nextgen_furniture:block/laptop/laptop_opened_on_boot", "y": 90 },
+    "facing=north,screen_on=false,boot_stage=1,open_stage=8": { "model": "nextgen_furniture:block/laptop/laptop_opened_on_boot" },
+    "facing=south,screen_on=false,boot_stage=1,open_stage=8": { "model": "nextgen_furniture:block/laptop/laptop_opened_on_boot", "y": 180 },
+    "facing=west,screen_on=false,boot_stage=1,open_stage=8":  { "model": "nextgen_furniture:block/laptop/laptop_opened_on_boot", "y": 270 },
+    "facing=east,screen_on=false,boot_stage=1,open_stage=8":  { "model": "nextgen_furniture:block/laptop/laptop_opened_on_boot", "y": 90 },
+    "facing=north,screen_on=false,boot_stage=2,open_stage=8": { "model": "nextgen_furniture:block/laptop/laptop_opened_on_boot_2" },
+    "facing=south,screen_on=false,boot_stage=2,open_stage=8": { "model": "nextgen_furniture:block/laptop/laptop_opened_on_boot_2", "y": 180 },
+    "facing=west,screen_on=false,boot_stage=2,open_stage=8":  { "model": "nextgen_furniture:block/laptop/laptop_opened_on_boot_2", "y": 270 },
+    "facing=east,screen_on=false,boot_stage=2,open_stage=8":  { "model": "nextgen_furniture:block/laptop/laptop_opened_on_boot_2", "y": 90 },
+    "facing=north,screen_on=false,boot_stage=3,open_stage=8": { "model": "nextgen_furniture:block/laptop/laptop_opened_on_boot_2" },
+    "facing=south,screen_on=false,boot_stage=3,open_stage=8": { "model": "nextgen_furniture:block/laptop/laptop_opened_on_boot_2", "y": 180 },
+    "facing=west,screen_on=false,boot_stage=3,open_stage=8":  { "model": "nextgen_furniture:block/laptop/laptop_opened_on_boot_2", "y": 270 },
+    "facing=east,screen_on=false,boot_stage=3,open_stage=8":  { "model": "nextgen_furniture:block/laptop/laptop_opened_on_boot_2", "y": 90 },
+    "facing=north,screen_on=false,boot_stage=4,open_stage=8": { "model": "nextgen_furniture:block/laptop/laptop_opened_on_boot" },
+    "facing=south,screen_on=false,boot_stage=4,open_stage=8": { "model": "nextgen_furniture:block/laptop/laptop_opened_on_boot", "y": 180 },
+    "facing=west,screen_on=false,boot_stage=4,open_stage=8":  { "model": "nextgen_furniture:block/laptop/laptop_opened_on_boot", "y": 270 },
+    "facing=east,screen_on=false,boot_stage=4,open_stage=8":  { "model": "nextgen_furniture:block/laptop/laptop_opened_on_boot", "y": 90 },
+    "facing=north,screen_on=false,boot_stage=5,open_stage=8": { "model": "nextgen_furniture:block/laptop/laptop_opened_on_boot" },
+    "facing=south,screen_on=false,boot_stage=5,open_stage=8": { "model": "nextgen_furniture:block/laptop/laptop_opened_on_boot", "y": 180 },
+    "facing=west,screen_on=false,boot_stage=5,open_stage=8":  { "model": "nextgen_furniture:block/laptop/laptop_opened_on_boot", "y": 270 },
+    "facing=east,screen_on=false,boot_stage=5,open_stage=8":  { "model": "nextgen_furniture:block/laptop/laptop_opened_on_boot", "y": 90 },
+
+    "facing=north,screen_on=true,boot_stage=0,open_stage=8": { "model": "nextgen_furniture:block/laptop/laptop_opened_on" },
+    "facing=south,screen_on=true,boot_stage=0,open_stage=8": { "model": "nextgen_furniture:block/laptop/laptop_opened_on", "y": 180 },
+    "facing=west,screen_on=true,boot_stage=0,open_stage=8":  { "model": "nextgen_furniture:block/laptop/laptop_opened_on", "y": 270 },
+    "facing=east,screen_on=true,boot_stage=0,open_stage=8":  { "model": "nextgen_furniture:block/laptop/laptop_opened_on", "y": 90 }
+
+  }
+}

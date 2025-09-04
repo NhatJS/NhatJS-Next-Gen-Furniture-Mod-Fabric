@@ -1,5 +1,9 @@
 {
-  "block.nextgen_furniture.light_gray_cemento": "Light Gray Cemento",
+  "block.nextgen_furniture.laptop": "Laptop",
+  "block.nextgen_furniture.table_2x1_black": "Black Table 2x1",
+  "block.nextgen_furniture.table_2x1_white": "White Table 2x1",
+  "block.nextgen_furniture.table_3x1_black": "Black Table 3x1",
+  "block.nextgen_furniture.table_3x1_white": "White Table 3x1",
 
   "itemgroup.nextgen_furniture.nextgen_furniture_tab": "NhatJS's Next-Gen Furniture Mod"
 }

@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "nextgen_furniture:block/table_3x1_black",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "nextgen_furniture:block/table_3x1_black"
+    },
+    "facing=south": {
+      "model": "nextgen_furniture:block/table_3x1_black",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "nextgen_furniture:block/table_3x1_black",
+      "y": 270
+    }
+  }
+}
