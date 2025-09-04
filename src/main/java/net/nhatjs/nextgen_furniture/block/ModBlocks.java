@@ -1,5 +1,7 @@
 package net.nhatjs.nextgen_furniture.block;
 
+import com.mrcrayfish.framework.FrameworkSetup;
+import com.mrcrayfish.framework.api.FrameworkAPI;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
 import net.minecraft.item.BlockItem;
@@ -11,7 +13,6 @@ import net.minecraft.util.Identifier;
 import static net.nhatjs.nextgen_furniture.NhatJSNextGenFurnitureMod.MOD_ID;
 
 public class ModBlocks {
-
     public static final Block LAPTOP = register("laptop",
             new LaptopBlock(Block.Settings.create().strength(1.0f).nonOpaque()));
     public static final Block TABLE_2X1_BLACK = register("table_2x1_black",
@@ -38,4 +39,5 @@ public class ModBlocks {
 
     public static void init() {}
     private ModBlocks() {}
+
 }

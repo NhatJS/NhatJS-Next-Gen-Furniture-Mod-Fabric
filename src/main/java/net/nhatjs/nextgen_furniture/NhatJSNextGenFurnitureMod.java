@@ -1,7 +1,9 @@
 package net.nhatjs.nextgen_furniture;
 
+import com.mrcrayfish.framework.FrameworkSetup;
 import net.fabricmc.api.ModInitializer;
 
+import net.minecraft.Bootstrap;
 import net.nhatjs.nextgen_furniture.block.ModBlocks;
 import net.nhatjs.nextgen_furniture.item.ModItemGroups;
 import net.nhatjs.nextgen_furniture.item.ModItems;
@@ -19,5 +21,8 @@ public class NhatJSNextGenFurnitureMod implements ModInitializer {
 		ModBlocks.init();
 		ModItems.registerModItems();
 		ModItemGroups.registerItemGroups();
+
+		FrameworkSetup.run();
+		Bootstrap.initialize();
 	}
 }
