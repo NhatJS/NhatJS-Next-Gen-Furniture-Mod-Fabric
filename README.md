@@ -10,7 +10,7 @@
  
 ## 📦 Installation:
 1. Download the correct **Fabric loader** for your Minecraft version.
-2. Download **many supported loaders (see above: Fabric Supported Loaders)** matching your game version.
+2. **Must** download **many supported loaders (see above: Fabric Supported Loaders)** matching your game version.
 3. Place all **of them** `.jar` files into your `mods/` folder.  
 4. Launch Minecraft and enjoy....well first version of NGMC Project! ✨.
 
