@@ -9,13 +9,13 @@
   - Game **1.21.1** → Framework **1.21.1**
  
 ## 📦 Installation:
-1. Download the correct **Fabric loader** for your Minecraft version.
+1. Download the correct **[Fabric loader](https://fabricmc.net/)** for your Minecraft version.
 2. **Must** download **many supported loaders (see above: Fabric Supported Loaders)** matching your game version.
 3. Place all **of them** `.jar` files into your `mods/` folder.  
 4. Launch Minecraft and enjoy....well first version of NGMC Project! ✨.
 
 ## 📖 License
-- **Next-Gen Furniture** © NhatJS.  
+- **NGMC Project Beta** © NhatJS.  
 - Depends on **MrCrayfish’s Framework**, licensed under **GNU Lesser General Public License (LGPL)**.  
 - Free to use in modpacks. Please don’t re-upload outside CurseForge/Modrinth/GitHub.
 
