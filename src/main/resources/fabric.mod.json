@@ -3,7 +3,7 @@
 	"id": "nextgen_furniture",
 	"version": "${version}",
 	"name": "NhatJS's Next-Gen Furniture Mod",
-	"description": "The new generation of Furniture Mod comes with minimalistic and realistic features. Furniture Mod thế hệ tiếp theo đi kèm với các tính năng tối giản và thực tế.",
+	"description": "The new generation of Furniture Mod comes with minimalistic and realistic features",
 	"authors": [
 		"NhatJS (aka James Southfall)"
 	],
@@ -29,7 +29,7 @@
 		"nhatjs-next-gen-furniture-mod.mixins.json"
 	],
 	"depends": {
-		"fabricloader": ">=0.17.2",
+		"fabricloader": ">=0.16.14",
 		"minecraft": "~1.21",
 		"java": ">=21",
 		"fabric-api": "*",

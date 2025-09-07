@@ -12,9 +12,10 @@ public class NhatJSNextGenFurnitureMod implements ModInitializer {
 	public static final String MOD_ID = "nextgen_furniture";
 	public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
 
+
 	@Override
 	public void onInitialize() {
-		ModBlocks.init();
+		ModBlocks.registerModBlocks();
 		ModItems.registerModItems();
 		ModItemGroups.registerItemGroups();
 	}
