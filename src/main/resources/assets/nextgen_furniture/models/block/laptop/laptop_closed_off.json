@@ -1,6 +1,5 @@
 {
 	"credit": "Made with Blockbench",
-	"loader": "framework:open_model",
 	"textures": {
 		"particle": "minecraft:block/white_concrete",
 		"electronic": "nextgen_furniture:block/electronic",
@@ -8,7 +7,7 @@
 		"electronic3": "nextgen_furniture:block/electronic3",
 		"black_screen": "nextgen_furniture:block/black_screen"
 	},
-	"components": [
+	"elements": [
 		{
 			"from": [2.52464, 0.40815, 10.59953],
 			"to": [13.47536, 0.56919, 11.52554],

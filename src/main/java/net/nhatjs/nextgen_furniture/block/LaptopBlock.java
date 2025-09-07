@@ -8,7 +8,7 @@ import net.minecraft.item.ItemPlacementContext;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.state.StateManager;
 import net.minecraft.state.property.BooleanProperty;
-import net.minecraft.state.property.DirectionProperty;
+import net.minecraft.state.property.EnumProperty;
 import net.minecraft.state.property.IntProperty;
 import net.minecraft.state.property.Properties;
 import net.minecraft.util.ActionResult;
@@ -21,7 +21,7 @@ import net.minecraft.world.BlockView;
 import net.minecraft.world.World;
 
 public class LaptopBlock extends Block {
-    public static final DirectionProperty FACING = Properties.HORIZONTAL_FACING; // ← thêm hướng
+    public static final EnumProperty<Direction> FACING = Properties.HORIZONTAL_FACING; // ← thêm hướng
     public static final IntProperty OPEN_STAGE = IntProperty.of("open_stage", 0, 8);
     public static final BooleanProperty OPEN_TARGET = BooleanProperty.of("open_target");
     public static final BooleanProperty SCREEN_ON = BooleanProperty.of("screen_on");
