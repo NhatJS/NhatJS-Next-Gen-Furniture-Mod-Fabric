@@ -10,14 +10,6 @@ base {
 	archivesName = project.archives_base_name
 }
 
-def getGprUser() {
-	return project.findProperty('gpr.user')
-}
-
-def getGprKey() {
-	return project.findProperty('gpr.key')
-}
-
 
 repositories {
 	// Add repositories to retrieve artifacts from in here.
@@ -25,16 +17,7 @@ repositories {
 	// Loom adds the essential maven repositories to download Minecraft and libraries from automatically.
 	// See https://docs.gradle.org/current/userguide/declaring_repositories.html
 	// for more information about repositories.
-	if(getGprUser() && getGprKey()) {
-		maven {
-			name = "MrCrayfish (GitHub)"
-			url = "https://maven.pkg.github.com/MrCrayfish/Maven"
-			credentials {
-				username = getGprUser()
-				password = getGprKey()
-			}
-		}
-	}
+	mavenCentral()
 	maven {
 		url = "https://cursemaven.com"
 	}
@@ -55,7 +38,17 @@ dependencies {
 	// Fabric API. This is technically optional, but you probably want it anyway.
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
 
-	modImplementation "com.mrcrayfish:framework-fabric:${project.minecraft_version}-${framework_version}"
+	modImplementation "curse.maven:framework-549225:5680060"
+
+	implementation "org.reflections:reflections:0.10.2"
+	include "org.reflections:reflections:0.10.2"
+	implementation "org.javassist:javassist:3.29.2-GA"
+	include "org.javassist:javassist:3.29.2-GA"
+
+	implementation "com.electronwill.night-config:core:3.6.7"
+	include "com.electronwill.night-config:core:3.6.7"
+	implementation "com.electronwill.night-config:toml:3.6.7"
+	include "com.electronwill.night-config:toml:3.6.7"
 }
 
 processResources {
