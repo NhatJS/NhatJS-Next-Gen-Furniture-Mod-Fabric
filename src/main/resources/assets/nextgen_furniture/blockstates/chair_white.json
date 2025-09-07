@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "nextgen_furniture:block/chair_white",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "nextgen_furniture:block/chair_white"
+    },
+    "facing=south": {
+      "model": "nextgen_furniture:block/chair_white",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "nextgen_furniture:block/chair_white",
+      "y": 270
+    }
+  }
+}

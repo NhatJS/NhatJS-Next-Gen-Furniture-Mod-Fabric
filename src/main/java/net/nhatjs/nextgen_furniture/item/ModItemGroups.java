@@ -16,6 +16,8 @@ public class ModItemGroups {
             FabricItemGroup.builder().icon(() -> new ItemStack(ModBlocks.TABLE_2X1_WHITE))
                     .displayName(Text.translatable("itemgroup.nextgen_furniture.nextgen_furniture_tab"))
                     .entries((displayContext, entries) -> {
+                        entries.add(ModBlocks.CHAIR_WHITE);
+                        entries.add(ModBlocks.CHAIR_WOOD_OAK);
                         entries.add(ModBlocks.LAPTOP);
                         entries.add(ModBlocks.TABLE_2X1_BLACK);
                         entries.add(ModBlocks.TABLE_2X1_WHITE);

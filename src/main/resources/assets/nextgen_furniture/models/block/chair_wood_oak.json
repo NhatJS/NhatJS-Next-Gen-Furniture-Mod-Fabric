@@ -2,6 +2,7 @@
 	"credit": "Made with Blockbench",
 	"loader": "framework:open_model",
 	"textures": {
+		"particle": "nextgen_furniture:block/oak_wood",
 		"furniture": "nextgen_furniture:block/furniture",
 		"oak_wood": "nextgen_furniture:block/oak_wood"
 	},
@@ -19,7 +20,7 @@
 			"to": [12.70938, 10.65967, 2.39531],
 			"rotation": {"angle": 0, "axis": "y", "origin": [8, 10.80756, 8.4625]},
 			"faces": {
-				"south": {"uv": [14.90625, 2.375, 15.18125, 11.79375], "rotation": 90, "texture": "#oak_wood"}
+				"north": {"uv": [14.90625, 2.375, 15.18125, 11.79375], "rotation": 90, "texture": "#oak_wood"}
 			}
 		},
 		{
@@ -27,7 +28,7 @@
 			"to": [7.27363, 10.65967, 0.84232],
 			"rotation": {"angle": -45, "axis": "y", "origin": [8, 10.80756, 8.4625]},
 			"faces": {
-				"south": {"uv": [14.90625, 2.15625, 15.18125, 2.39], "rotation": 90, "texture": "#oak_wood"}
+				"north": {"uv": [14.90625, 2.15625, 15.18125, 2.39], "rotation": 90, "texture": "#oak_wood"}
 			}
 		},
 		{
@@ -70,7 +71,7 @@
 			"to": [8.96012, 10.65967, 0.84232],
 			"rotation": {"angle": 45, "axis": "y", "origin": [8, 10.80756, 8.4625]},
 			"faces": {
-				"south": {"uv": [14.90625, 11.78125, 15.18125, 12.015], "rotation": 90, "texture": "#oak_wood"}
+				"north": {"uv": [14.90625, 11.78125, 15.18125, 12.015], "rotation": 90, "texture": "#oak_wood"}
 			}
 		},
 		{
