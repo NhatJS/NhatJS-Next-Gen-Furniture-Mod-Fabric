@@ -4,9 +4,9 @@
 - **Minecraft**: 1.21.6
 - **Shaders & Emissive Textures works**: Iris Shader, Sodium & Continuity
 - **NOTE**:
-+ If game running **1.21.6** -> using Fabric API **1.21.6**
-+ If game running **1.21.7** -> using Fabric API **1.21.7**
-+ If game running **1.21.8** -> using Fabric API **1.21.8**
+ - If game running **1.21.6** -> using Fabric API **1.21.6**
+ - If game running **1.21.7** -> using Fabric API **1.21.7**
+ - If game running **1.21.8** -> using Fabric API **1.21.8**
  
 ## 📦 Installation:
 1. Download the correct... (choose Fabric or QuiltMC modloader if you love playing on Fabric or QuiltMC)
