@@ -9,8 +9,8 @@
   - Game **1.21.1** → Framework **1.21.1**
  
 ## 📦 Installation:
-1. Download the correct... (choose a or b if you love playing on Fabric or QuiltMC)
-2. 
+1. Download the correct... (choose a or b if you love playing on Fabric or QuiltMC) 
+
  a. **[Fabric loader, including Fabric API required](https://fabricmc.net/)** for your Minecraft version.
 
  b. **[Quilt loader](https://quiltmc.org/en/install/), including [Fabric API required, but not Fabric loader required](https://fabricmc.net/)** for your Minecraft version.
