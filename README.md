@@ -10,7 +10,9 @@
  
 ## 📦 Installation:
 1. Download the correct... (choose a or b if you love playing on Fabric or QuiltMC)
+2. 
  a. **[Fabric loader, including Fabric API required](https://fabricmc.net/)** for your Minecraft version.
+
  b. **[Quilt loader](https://quiltmc.org/en/install/), including [Fabric API required, but not Fabric loader required](https://fabricmc.net/)** for your Minecraft version.
 2. **Must** download **many supported loaders (see above: Fabric/Quilt Supported Loaders)** matching your game version.
 3. Place all **of them** `.jar` files into your `mods/` folder.  
