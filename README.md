@@ -1,7 +1,7 @@
 # **📌 NhatJS's NGMC Project Beta (Fabric/Quilt 1.21.+):**
 
 ## 🚀 Fabric/Quilt Supported Loaders
-- **Minecraft**: 1.21.6
+- **Minecraft**: 1.21.6, 1.21.7, 1.21.8
 - **Shaders & Emissive Textures works**: Iris Shader, Sodium & Continuity
 - **NOTE**:
 
