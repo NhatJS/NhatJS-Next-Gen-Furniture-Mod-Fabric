@@ -18,11 +18,11 @@ public class ModItemGroups {
                     .entries((displayContext, entries) -> {
                         entries.add(ModBlocks.CHAIR_WHITE);
                         entries.add(ModBlocks.CHAIR_WOOD_OAK);
-                        entries.add(ModBlocks.LAPTOP);
                         entries.add(ModBlocks.TABLE_2X1_BLACK);
                         entries.add(ModBlocks.TABLE_2X1_WHITE);
                         entries.add(ModBlocks.TABLE_3X1_BLACK);
                         entries.add(ModBlocks.TABLE_3X1_WHITE);
+                        entries.add(ModBlocks.LAPTOP);
                     }).build());
 
     public static void registerItemGroups() {

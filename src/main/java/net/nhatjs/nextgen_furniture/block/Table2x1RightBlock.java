@@ -1,5 +1,6 @@
 package net.nhatjs.nextgen_furniture.block;
 
+import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.ShapeContext;
@@ -28,29 +29,45 @@ public class Table2x1RightBlock extends Block {
         super(settings);
     }
 
-    private static final VoxelShape HORIZONTAL = VoxelShapes.union(
-            Block.createCuboidShape(-8, 15.25, 0, 24, 16, 16),
-            Block.createCuboidShape(-7.5, 0, 0.5, -6.5, 15.25, 1.5),
-            Block.createCuboidShape(-7.5, 0, 14.5, -6.5, 15.25, 15.5),
-            Block.createCuboidShape(22.5, 0, 0.5, 23.5, 15.25, 1.5),
-            Block.createCuboidShape(22.5, 0, 14.5, 23.5, 15.25, 15.5)
+    private static final VoxelShape NORTH = VoxelShapes.union(
+            Block.createCuboidShape(-16, 15.25, 0, 16, 16, 16),
+            Block.createCuboidShape(-15.5, 0, 0.5, -14.5, 15.25, 1.5),
+            Block.createCuboidShape(-15.5, 0, 14.5, -14.5, 15.25, 15.5),
+            Block.createCuboidShape(14.5, 0, 0.5, 15.5, 15.25, 1.5),
+            Block.createCuboidShape(14.5, 0, 14.5, 15.5, 15.25, 15.5)
     );
 
-    private static final VoxelShape VERTICAL = VoxelShapes.union(
-            Block.createCuboidShape(0, 15.25, -8, 16, 16, 24),
-            Block.createCuboidShape(14.5, 0, -7.5, 15.5, 15.25, -6.5),
-            Block.createCuboidShape(0.5, 0, -7.5, 1.5, 15.25, -6.5),
-            Block.createCuboidShape(14.5, 0, 22.5, 15.5, 15.25, 23.5),
-            Block.createCuboidShape(0.5, 0, 22.5, 1.5, 15.25, 23.5)
+    private static final VoxelShape SOUTH = VoxelShapes.union(
+            Block.createCuboidShape(0, 15.25, 0, 32, 16, 16),
+            Block.createCuboidShape(0.5, 0, 0.5, 1.5, 15.25, 1.5),
+            Block.createCuboidShape(0.5, 0, 14.5, 1.5, 15.25, 15.5),
+            Block.createCuboidShape(30.5, 0, 0.5, 31.5, 15.25, 1.5),
+            Block.createCuboidShape(30.5, 0, 14.5, 31.5, 15.25, 15.5)
+    );
+
+    private static final VoxelShape EAST = VoxelShapes.union(
+            Block.createCuboidShape(0, 15.25, -16, 16, 16, 16),
+            Block.createCuboidShape(14.5, 0, -15.5, 15.5, 15.25, -14.5),
+            Block.createCuboidShape(0.5, 0, -15.5, 1.5, 15.25, -14.5),
+            Block.createCuboidShape(14.5, 0, 14.5, 15.5, 15.25, 15.5),
+            Block.createCuboidShape(0.5, 0, 14.5, 1.5, 15.25, 15.5)
+    );
+
+    private static final VoxelShape WEST = VoxelShapes.union(
+            Block.createCuboidShape(0, 15.25, 0, 16, 16, 32),
+            Block.createCuboidShape(14.5, 0, 0.5, 15.5, 15.25, 1.5),
+            Block.createCuboidShape(0.5, 0, 0.5, 1.5, 15.25, 1.5),
+            Block.createCuboidShape(14.5, 0, 30.5, 15.5, 15.25, 31.5),
+            Block.createCuboidShape(0.5, 0, 30.5, 1.5, 15.25, 31.5)
     );
 
     @Override
     public VoxelShape getOutlineShape(BlockState state, BlockView world, BlockPos pos, ShapeContext context) {
         return switch (state.get(FACING)) {
-            default -> HORIZONTAL;
-            case SOUTH -> HORIZONTAL;
-            case EAST -> VERTICAL;
-            case WEST -> VERTICAL;
+            default -> NORTH;
+            case SOUTH -> SOUTH;
+            case EAST -> EAST;
+            case WEST -> WEST;
         };
     }
 
@@ -92,7 +109,7 @@ public class Table2x1RightBlock extends Block {
                     world.setBlockState(_bp, _bs, 3);
                 }
             }
-            else if ((world.getBlockState(BlockPos.ofFloored(x, y, z))).getBlock() == ModBlocks.TABLE_2X1_WHITE_ALT_2) {
+            if ((world.getBlockState(BlockPos.ofFloored(x, y, z))).getBlock() == ModBlocks.TABLE_2X1_WHITE_ALT_2) {
                 {
                     BlockPos _bp = BlockPos.ofFloored(x, y, z);
                     BlockState _bs = ModBlocks.TABLE_2X1_WHITE.getDefaultState();

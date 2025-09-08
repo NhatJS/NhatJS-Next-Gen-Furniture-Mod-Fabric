@@ -1,9 +1,7 @@
 package net.nhatjs.nextgen_furniture.block;
 
-import net.minecraft.block.AbstractBlock;
-import net.minecraft.block.Block;
-import net.minecraft.block.BlockState;
-import net.minecraft.block.ShapeContext;
+
+import net.minecraft.block.*;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemPlacementContext;
 import net.minecraft.state.StateManager;
@@ -25,7 +23,7 @@ import java.util.Map;
 public class Table2x1CenterBlock extends Block {
     public static final EnumProperty<Direction> FACING = Properties.HORIZONTAL_FACING;
 
-    public Table2x1CenterBlock(AbstractBlock.Settings settings) {
+    public Table2x1CenterBlock(Settings settings) {
         super(settings);
     }
 

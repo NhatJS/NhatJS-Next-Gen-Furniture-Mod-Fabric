@@ -5,6 +5,7 @@ import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.damage.DamageSource;
 import net.minecraft.entity.data.DataTracker;
+import net.minecraft.nbt.NbtCompound;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.storage.ReadView;
 import net.minecraft.storage.WriteView;
@@ -48,7 +49,6 @@ public class ChairBlockEntity extends Entity {
     public void tick() {
         super.tick();
 
-        // Nếu block không còn → dismount & tự huỷ (bảo hiểm)
         if (!this.getWorld().isClient) {
             BlockState below = this.getWorld().getBlockState(this.getBlockPos());
             if (!(below.getBlock() instanceof ChairBlock)) {
@@ -61,9 +61,8 @@ public class ChairBlockEntity extends Entity {
     @Override
     public void remove(RemovalReason reason) {
         if (!this.getWorld().isClient) {
-            // huỷ cưỡi ở server → đồng bộ về client
             if (this.hasPassengers()) this.getPassengerList().forEach(p -> p.stopRiding());
-            this.removeAllPassengers(); // thừa kế Mojang mappings vẫn ok
+            this.removeAllPassengers();
         }
         super.remove(reason);
     }
