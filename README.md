@@ -19,7 +19,7 @@
 
 ## 📖 License
 - **NGMC Project Beta** © NhatJS.  
-- Free to use in modpacks. Please don’t re-upload outside CurseForge/Modrinth/GitHub.
+- Free to use in modpacks. Please don’t re-upload outside CurseForge/Modrinth/GitHub. 
 
 ## 📜 Rules:
 - ✅ **Modpacks/addons allowed:** (potentially, not official yet)
