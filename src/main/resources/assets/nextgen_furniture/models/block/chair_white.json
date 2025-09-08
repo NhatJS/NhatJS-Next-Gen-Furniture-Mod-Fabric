@@ -2,7 +2,7 @@
 	"credit": "Made with Blockbench",
 	"loader": "framework:open_model",
 	"textures": {
-		"particle": "nextgen_furniture:block/furniture",
+		"particle": "minecraft:block/white_concrete",
 		"furniture": "nextgen_furniture:block/furniture"
 	},
 	"components": [

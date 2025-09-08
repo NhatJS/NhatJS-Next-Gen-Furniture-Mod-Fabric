@@ -2,7 +2,7 @@
 	"format_version": "1.9.0",
 	"credit": "Made with Blockbench",
 	"textures": {
-		"particle": "nextgen_furniture:block/furniture",
+		"particle": "minecraft:block/black_concrete",
 		"furniture": "nextgen_furniture:block/furniture"
 	},
 	"elements": [
