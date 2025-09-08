@@ -1,13 +1,19 @@
-# **📌 NhatJS's NGMC Project Beta (Fabric 1.21.+):**
+# **📌 NhatJS's NGMC Project Beta (Fabric/Quilt 1.21.+):**
 
-## 🚀 Fabric Supported Loaders
+## 🚀 Fabric/Quilt Supported Loaders
 - **Minecraft**: 1.21.6
 - **Shaders & Emissive Textures works**: Iris Shader, Sodium & Continuity
+- **NOTE**:
++ If game running **1.21.6** -> using Fabric API **1.21.6**
++ If game running **1.21.7** -> using Fabric API **1.21.7**
++ If game running **1.21.8** -> using Fabric API **1.21.8**
  
 ## 📦 Installation:
-1. Download the correct **[Fabric loader, including Fabric API required](https://fabricmc.net/)** for your Minecraft version.
-2. **Must** download **many supported loaders (see above: Fabric Supported Loaders)** matching your game version.
-3. Place all **of them** `.jar` files into your `mods/` folder.  
+1. Download the correct... (choose Fabric or QuiltMC modloader if you love playing on Fabric or QuiltMC)
+- **[Fabric loader, including Fabric API required](https://fabricmc.net/)** for your Minecraft version.
+- **[Quilt loader](https://quiltmc.org/en/install/), including [Fabric API required, but not Fabric loader required](https://fabricmc.net/)** for your Minecraft version.
+2. **Must** download **many supported loaders (see above: Fabric/Quilt Supported Loaders)** matching your game version.
+3. Place all **of them** `.jar` files into your `mods/` folder.
 4. Launch Minecraft and enjoy....well first version of NGMC Project! ✨.
 
 ## 📖 License
