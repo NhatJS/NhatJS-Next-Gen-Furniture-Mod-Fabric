@@ -1,5 +1,7 @@
 # **📌 NhatJS's NGMC Project Beta (Fabric/Quilt 1.21.+):**
 
+- Check out another source codes for [Forge](https://github.com/NhatJS/NhatJS-Next-Gen-Furniture-Mod-Forge) or [NeoForge](https://github.com/NhatJS/NhatJS-Next-Gen-Furniture-Mod-NeoForge)
+
 ## 🚀 Fabric/Quilt Supported Loaders
 - **Minecraft**: 1.21, 1.21.1
 - **Shaders & Emissive Textures works**: Iris Shader, Sodium & Continuity
