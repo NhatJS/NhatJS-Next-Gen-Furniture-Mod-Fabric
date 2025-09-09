@@ -2,7 +2,7 @@
 
 - Check out another source codes for [Forge](https://github.com/NhatJS/NhatJS-Next-Gen-Furniture-Mod-Forge) or [NeoForge](https://github.com/NhatJS/NhatJS-Next-Gen-Furniture-Mod-NeoForge)
 
-## 🚀 Fabric/Quilt Supported Loaders
+## 🚀 Fabric/Quilt Supported Loaders 
 - **Minecraft**: 1.21.6, 1.21.7, 1.21.8
 - **Shaders & Emissive Textures works**: Iris Shader, Sodium & Continuity
 - **NOTE**:
