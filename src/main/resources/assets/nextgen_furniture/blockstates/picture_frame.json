@@ -1,0 +1,27 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "nextgen_furniture:block/picture_frame",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "nextgen_furniture:block/picture_frame"
+    },
+    "facing=south": {
+      "model": "nextgen_furniture:block/picture_frame",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "nextgen_furniture:block/picture_frame",
+      "y": 270
+    },
+    "facing=up": {
+      "model": "nextgen_furniture:block/picture_frame",
+      "x": 270
+    },
+    "facing=down": {
+      "model": "nextgen_furniture:block/picture_frame",
+      "x": 90
+    }
+  }
+}

@@ -1,6 +1,5 @@
 package net.nhatjs.nextgen_furniture.block;
 
-import com.mrcrayfish.framework.FrameworkSetup;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
 import net.minecraft.item.BlockItem;
@@ -17,8 +16,6 @@ public class ModBlocks {
             new ChairBlock(AbstractBlock.Settings.create().strength(1.0f).nonOpaque()));
     public static final Block CHAIR_WOOD_OAK = register("chair_wood_oak",
             new ChairBlock(AbstractBlock.Settings.create().strength(1.0f).nonOpaque()));
-    public static final Block LAPTOP = register("laptop",
-            new LaptopBlock(Block.Settings.create().strength(1.0f).nonOpaque()));
     public static final Block TABLE_2X1_BLACK = register("table_2x1_black",
             new Table2x1CenterBlock(AbstractBlock.Settings.create().strength(1.0f).nonOpaque()));
     public static final Block TABLE_2X1_BLACK_ALT = register("table_2x1_black_alt",
@@ -35,6 +32,14 @@ public class ModBlocks {
             new Table3x1Block(AbstractBlock.Settings.create().strength(1.0f).nonOpaque()));
     public static final Block TABLE_3X1_WHITE = register("table_3x1_white",
             new Table3x1Block(AbstractBlock.Settings.create().strength(1.0f).nonOpaque()));
+    public static final Block TABLE_DINING_WHITE = register("table_dining_white",
+            new DiningTableBlock(AbstractBlock.Settings.create().strength(1.0f).nonOpaque()));
+    public static final Block TABLE_DINING_WOOD_OAK = register("table_dining_wood_oak",
+            new DiningTableBlock(AbstractBlock.Settings.create().strength(1.0f).nonOpaque()));
+    public static final Block PICTURE_FRAME = register("picture_frame",
+            new PictureFrameBlock(AbstractBlock.Settings.create().strength(0.2f).nonOpaque()));
+    public static final Block LAPTOP = register("laptop",
+            new LaptopBlock(Block.Settings.create().strength(1.0f).nonOpaque()));
 
 
 
