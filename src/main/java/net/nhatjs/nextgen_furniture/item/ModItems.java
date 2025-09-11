@@ -7,6 +7,8 @@ import net.minecraft.util.Identifier;
 import net.nhatjs.nextgen_furniture.NhatJSNextGenFurnitureMod;
 
 public class ModItems {
+    public static final Item NEXTGEN_FURNITURE_LOGO = registerItem("nextgen_furniture_logo", new Item(new Item.Settings()));
+
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(NhatJSNextGenFurnitureMod.MOD_ID, name), item);
     }
