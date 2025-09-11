@@ -18,9 +18,6 @@ public class ModBlocks {
     public static final Block CHAIR_WOOD_OAK = registerBlock("chair_wood_oak",
             new ChairBlock(AbstractBlock.Settings.create().registryKey(RegistryKey.of(RegistryKeys.BLOCK,
                     Identifier.of(NhatJSNextGenFurnitureMod.MOD_ID, "chair_wood_oak"))).strength(1.0f).nonOpaque()));
-    public static final Block LAPTOP = registerBlock("laptop",
-            new LaptopBlock(Block.Settings.create().registryKey(RegistryKey.of(RegistryKeys.BLOCK,
-                    Identifier.of(NhatJSNextGenFurnitureMod.MOD_ID, "laptop"))).strength(1.0f).nonOpaque()));
     public static final Block TABLE_2X1_BLACK = registerBlock("table_2x1_black",
             new Table2x1CenterBlock(AbstractBlock.Settings.create().registryKey(RegistryKey.of(RegistryKeys.BLOCK,
                     Identifier.of(NhatJSNextGenFurnitureMod.MOD_ID, "table_2x1_black"))).strength(1.0f).nonOpaque()));
@@ -45,6 +42,18 @@ public class ModBlocks {
     public static final Block TABLE_3X1_WHITE = registerBlock("table_3x1_white",
             new Table3x1Block(AbstractBlock.Settings.create().registryKey(RegistryKey.of(RegistryKeys.BLOCK,
                     Identifier.of(NhatJSNextGenFurnitureMod.MOD_ID, "table_3x1_white"))).strength(1.0f).nonOpaque()));
+    public static final Block TABLE_DINING_WHITE = registerBlock("table_dining_white",
+            new DiningTableBlock(AbstractBlock.Settings.create().registryKey(RegistryKey.of(RegistryKeys.BLOCK,
+                    Identifier.of(NhatJSNextGenFurnitureMod.MOD_ID, "table_dining_white"))).strength(1.0f).nonOpaque()));
+    public static final Block TABLE_DINING_WOOD_OAK = registerBlock("table_dining_wood_oak",
+            new DiningTableBlock(AbstractBlock.Settings.create().registryKey(RegistryKey.of(RegistryKeys.BLOCK,
+                    Identifier.of(NhatJSNextGenFurnitureMod.MOD_ID, "table_dining_wood_oak"))).strength(1.0f).nonOpaque()));
+    public static final Block PICTURE_FRAME = registerBlock("picture_frame",
+            new PictureFrameBlock(AbstractBlock.Settings.create().registryKey(RegistryKey.of(RegistryKeys.BLOCK,
+                    Identifier.of(NhatJSNextGenFurnitureMod.MOD_ID, "picture_frame"))).strength(0.2f).nonOpaque()));
+    public static final Block LAPTOP = registerBlock("laptop",
+            new LaptopBlock(Block.Settings.create().registryKey(RegistryKey.of(RegistryKeys.BLOCK,
+                    Identifier.of(NhatJSNextGenFurnitureMod.MOD_ID, "laptop"))).strength(1.0f).nonOpaque()));
 
 
     private static Block registerBlock(String name, Block block) {

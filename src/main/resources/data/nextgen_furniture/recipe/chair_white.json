@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "1  ",
+    "111",
+    "1 1"
+  ],
+  "key": {
+    "1": "minecraft:white_concrete"
+  },
+  "result": {
+    "id": "nextgen_furniture:chair_white",
+    "count": 2
+  }
+}

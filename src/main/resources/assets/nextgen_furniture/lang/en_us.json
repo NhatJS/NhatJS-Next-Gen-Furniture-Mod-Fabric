@@ -1,7 +1,6 @@
 {
   "block.nextgen_furniture.chair_white": "White Chair",
   "block.nextgen_furniture.chair_wood_oak": "Oak Chair",
-  "block.nextgen_furniture.laptop": "Laptop",
   "block.nextgen_furniture.table_2x1_black": "Black Table 2x1",
   "block.nextgen_furniture.table_2x1_black_alt": "Black Table 2x1 (Left Moved)",
   "block.nextgen_furniture.table_2x1_black_alt_2": "Black Table 2x1 (Right Moved)",
@@ -10,6 +9,10 @@
   "block.nextgen_furniture.table_2x1_white_alt_2": "White Table 2x1 (Right Moved)",
   "block.nextgen_furniture.table_3x1_black": "Black Table 3x1",
   "block.nextgen_furniture.table_3x1_white": "White Table 3x1",
+  "block.nextgen_furniture.table_dining_white": "White Dining Table",
+  "block.nextgen_furniture.table_dining_wood_oak": "Oak Dining Table",
+  "block.nextgen_furniture.picture_frame": "Picture Frame",
+  "block.nextgen_furniture.laptop": "Laptop",
 
   "itemgroup.nextgen_furniture.nextgen_furniture_tab": "NhatJS's Next-Gen Furniture Mod"
 }
