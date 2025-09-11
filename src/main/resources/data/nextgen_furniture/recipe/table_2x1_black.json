@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "222",
+    "2 2",
+    "1 1"
+  ],
+  "key": {
+    "1": "minecraft:white_concrete",
+    "2": "minecraft:black_concrete"
+  },
+  "result": {
+    "id": "nextgen_furniture:table_2x1_black",
+    "count": 2
+  }
+}
