@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "1  ",
+    "111",
+    "1 1"
+  ],
+  "key": {
+    "1": {
+      "item": "minecraft:oak_planks"
+    }
+  },
+  "result": {
+    "id": "nextgen_furniture:chair_wood_oak",
+    "count": 2
+  }
+}

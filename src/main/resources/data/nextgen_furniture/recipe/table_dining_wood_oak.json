@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "111",
+    "111",
+    "2 2"
+  ],
+  "key": {
+    "1": {
+      "item": "minecraft:oak_planks"
+    },
+    "2": {
+      "item": "minecraft:black_concrete"
+    }
+  },
+  "result": {
+    "id": "nextgen_furniture:table_dining_wood_oak",
+    "count": 2
+  }
+}

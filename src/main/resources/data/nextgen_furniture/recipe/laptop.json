@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "131",
+    "567",
+    "242"
+  ],
+  "key": {
+    "1": {
+      "item": "minecraft:black_concrete"
+    },
+    "2": {
+      "item": "minecraft:white_concrete"
+    },
+    "3": {
+      "item": "minecraft:black_stained_glass_pane"
+    },
+    "4": {
+      "item": "minecraft:redstone"
+    },
+    "5": {
+      "item": "minecraft:note_block"
+    },
+    "6": {
+      "item": "minecraft:end_crystal"
+    },
+    "7": {
+      "item": "minecraft:stone_button"
+    }
+  },
+  "result": {
+    "id": "nextgen_furniture:laptop",
+    "count": 1
+  }
+}
