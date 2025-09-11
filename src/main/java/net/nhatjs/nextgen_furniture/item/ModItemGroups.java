@@ -12,17 +12,20 @@ import net.nhatjs.nextgen_furniture.block.ModBlocks;
 
 public class ModItemGroups {
     public static final ItemGroup NEXTGEN_FURNITURE_ITEMS_GROUP = Registry.register(Registries.ITEM_GROUP,
-            Identifier.of(NhatJSNextGenFurnitureMod.MOD_ID, "table_2x1_white"),
-            FabricItemGroup.builder().icon(() -> new ItemStack(ModBlocks.TABLE_2X1_WHITE))
+            Identifier.of(NhatJSNextGenFurnitureMod.MOD_ID, "nextgen_furniture_tab"),
+            FabricItemGroup.builder().icon(() -> new ItemStack(ModItems.NEXTGEN_FURNITURE_LOGO))
                     .displayName(Text.translatable("itemgroup.nextgen_furniture.nextgen_furniture_tab"))
                     .entries((displayContext, entries) -> {
                         entries.add(ModBlocks.CHAIR_WHITE);
                         entries.add(ModBlocks.CHAIR_WOOD_OAK);
-                        entries.add(ModBlocks.LAPTOP);
                         entries.add(ModBlocks.TABLE_2X1_BLACK);
                         entries.add(ModBlocks.TABLE_2X1_WHITE);
                         entries.add(ModBlocks.TABLE_3X1_BLACK);
                         entries.add(ModBlocks.TABLE_3X1_WHITE);
+                        entries.add(ModBlocks.TABLE_DINING_WHITE);
+                        entries.add(ModBlocks.TABLE_DINING_WOOD_OAK);
+                        entries.add(ModBlocks.PICTURE_FRAME);
+                        entries.add(ModBlocks.LAPTOP);
                     }).build());
 
     public static void registerItemGroups() {

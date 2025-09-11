@@ -3,10 +3,16 @@ package net.nhatjs.nextgen_furniture.item;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
+import net.minecraft.registry.RegistryKey;
+import net.minecraft.registry.RegistryKeys;
 import net.minecraft.util.Identifier;
 import net.nhatjs.nextgen_furniture.NhatJSNextGenFurnitureMod;
 
 public class ModItems {
+    public static final Item NEXTGEN_FURNITURE_LOGO = registerItem("nextgen_furniture_logo", new Item(new Item.Settings()
+            .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(NhatJSNextGenFurnitureMod.MOD_ID, "nextgen_furniture_logo")))));
+
+
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(NhatJSNextGenFurnitureMod.MOD_ID, name), item);
     }
