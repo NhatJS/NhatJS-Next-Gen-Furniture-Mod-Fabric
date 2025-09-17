@@ -9,10 +9,17 @@
   "block.nextgen_furniture.table_2x1_white_alt_2": "White Table 2x1 (Right Moved)",
   "block.nextgen_furniture.table_3x1_black": "Black Table 3x1",
   "block.nextgen_furniture.table_3x1_white": "White Table 3x1",
+  "block.nextgen_furniture.coffee_table_white": "White Coffee Table",
   "block.nextgen_furniture.table_dining_white": "White Dining Table",
   "block.nextgen_furniture.table_dining_wood_oak": "Oak Dining Table",
+  "block.nextgen_furniture.tv_stand_wood_oak": "Oak TV Stand",
   "block.nextgen_furniture.picture_frame": "Picture Frame",
+  "block.nextgen_furniture.trash_can_black": "Black Trash Can",
+  "block.nextgen_furniture.trash_can_white": "White Trash Can",
+  "block.nextgen_furniture.sofa": "Sofa",
+  "block.nextgen_furniture.floor_lamp": "Floor Lamp",
   "block.nextgen_furniture.laptop": "Laptop",
+  "block.nextgen_furniture.tv_oled": "OLED TV",
 
   "itemgroup.nextgen_furniture.nextgen_furniture_tab": "NhatJS's Next-Gen Furniture Mod"
 }

@@ -22,10 +22,17 @@ public class ModItemGroups {
                         entries.add(ModBlocks.TABLE_2X1_WHITE);
                         entries.add(ModBlocks.TABLE_3X1_BLACK);
                         entries.add(ModBlocks.TABLE_3X1_WHITE);
+                        entries.add(ModBlocks.COFFEE_TABLE_WHITE);
                         entries.add(ModBlocks.TABLE_DINING_WHITE);
                         entries.add(ModBlocks.TABLE_DINING_WOOD_OAK);
+                        entries.add(ModBlocks.TV_STAND_WOOD_OAK);
                         entries.add(ModBlocks.PICTURE_FRAME);
+                        entries.add(ModBlocks.TRASH_CAN_BLACK);
+                        entries.add(ModBlocks.TRASH_CAN_WHITE);
+                        entries.add(ModBlocks.SOFA);
+                        entries.add(ModBlocks.FLOOR_LAMP);
                         entries.add(ModBlocks.LAPTOP);
+                        entries.add(ModBlocks.TV_OLED);
                     }).build());
 
     public static void registerItemGroups() {

@@ -14,6 +14,11 @@ public class ModEntities {
             EntityType.Builder.create(ChairBlockEntity::new, SpawnGroup.MISC)
                     .dimensions(0.5f, 0.7f).build());
 
+    public static final EntityType<ChairBlockEntity> SOFA = Registry.register(Registries.ENTITY_TYPE,
+            Identifier.of(NhatJSNextGenFurnitureMod.MOD_ID, "sofa_entity"),
+            EntityType.Builder.create(ChairBlockEntity::new, SpawnGroup.MISC)
+                    .dimensions(0.5f, 0.55f).build());
+
     public static void registerModEntities() {
         NhatJSNextGenFurnitureMod.LOGGER.info("Registering Mod Entities for " + NhatJSNextGenFurnitureMod.MOD_ID);
     }

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " 2 ",
+    " 1 ",
+    "111"
+  ],
+  "key": {
+    "1": {
+      "item": "minecraft:oak_planks"
+    },
+    "2": {
+      "item": "minecraft:redstone_lamp"
+    }
+  },
+  "result": {
+    "id": "nextgen_furniture:floor_lamp",
+    "count": 1
+  }
+}
