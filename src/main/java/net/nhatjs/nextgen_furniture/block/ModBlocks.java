@@ -44,18 +44,39 @@ public class ModBlocks {
     public static final Block TABLE_3X1_WHITE = registerBlock("table_3x1_white",
             new Table3x1Block(AbstractBlock.Settings.create().registryKey(RegistryKey.of(RegistryKeys.BLOCK,
                     Identifier.of(NhatJSNextGenFurnitureMod.MOD_ID, "table_3x1_white"))).strength(1.0f).nonOpaque()));
+    public static final Block COFFEE_TABLE_WHITE = registerBlock("coffee_table_white",
+            new CoffeeTableBlock(AbstractBlock.Settings.create().registryKey(RegistryKey.of(RegistryKeys.BLOCK,
+                    Identifier.of(NhatJSNextGenFurnitureMod.MOD_ID, "coffee_table_white"))).strength(1.0f).nonOpaque()));
     public static final Block TABLE_DINING_WHITE = registerBlock("table_dining_white",
             new DiningTableBlock(AbstractBlock.Settings.create().registryKey(RegistryKey.of(RegistryKeys.BLOCK,
                     Identifier.of(NhatJSNextGenFurnitureMod.MOD_ID, "table_dining_white"))).strength(1.0f).nonOpaque()));
     public static final Block TABLE_DINING_WOOD_OAK = registerBlock("table_dining_wood_oak",
             new DiningTableBlock(AbstractBlock.Settings.create().registryKey(RegistryKey.of(RegistryKeys.BLOCK,
                     Identifier.of(NhatJSNextGenFurnitureMod.MOD_ID, "table_dining_wood_oak"))).strength(1.0f).nonOpaque()));
+    public static final Block TV_STAND_WOOD_OAK = registerBlock("tv_stand_wood_oak",
+            new TVStandBlock(AbstractBlock.Settings.create().registryKey(RegistryKey.of(RegistryKeys.BLOCK,
+                    Identifier.of(NhatJSNextGenFurnitureMod.MOD_ID, "tv_stand_wood_oak"))).strength(1.0f).nonOpaque()));
     public static final Block PICTURE_FRAME = registerBlock("picture_frame",
             new PictureFrameBlock(AbstractBlock.Settings.create().registryKey(RegistryKey.of(RegistryKeys.BLOCK,
                     Identifier.of(NhatJSNextGenFurnitureMod.MOD_ID, "picture_frame"))).strength(0.2f).nonOpaque()));
+    public static final Block TRASH_CAN_BLACK = registerBlock("trash_can_black",
+            new TrashCanBlock(AbstractBlock.Settings.create().registryKey(RegistryKey.of(RegistryKeys.BLOCK,
+                    Identifier.of(NhatJSNextGenFurnitureMod.MOD_ID, "trash_can_black"))).strength(0.2f).nonOpaque()));
+    public static final Block TRASH_CAN_WHITE = registerBlock("trash_can_white",
+            new TrashCanBlock(AbstractBlock.Settings.create().registryKey(RegistryKey.of(RegistryKeys.BLOCK,
+                    Identifier.of(NhatJSNextGenFurnitureMod.MOD_ID, "trash_can_white"))).strength(0.2f).nonOpaque()));
+    public static final Block SOFA = registerBlock("sofa",
+            new SofaBlock(Block.Settings.create().registryKey(RegistryKey.of(RegistryKeys.BLOCK,
+                    Identifier.of(NhatJSNextGenFurnitureMod.MOD_ID, "sofa"))).strength(1.0f).nonOpaque()));
+    public static final Block FLOOR_LAMP = registerBlock("floor_lamp",
+            new FloorLampBlock(Block.Settings.create().registryKey(RegistryKey.of(RegistryKeys.BLOCK,
+                    Identifier.of(NhatJSNextGenFurnitureMod.MOD_ID, "floor_lamp"))).strength(1.0f).nonOpaque()));
     public static final Block LAPTOP = registerBlock("laptop",
             new LaptopBlock(Block.Settings.create().registryKey(RegistryKey.of(RegistryKeys.BLOCK,
                     Identifier.of(NhatJSNextGenFurnitureMod.MOD_ID, "laptop"))).strength(1.0f).nonOpaque()));
+    public static final Block TV_OLED = registerBlock("tv_oled",
+            new TVBlock(Block.Settings.create().registryKey(RegistryKey.of(RegistryKeys.BLOCK,
+                    Identifier.of(NhatJSNextGenFurnitureMod.MOD_ID, "tv_oled"))).strength(1.0f).nonOpaque()));
 
 
     private static Block registerBlock(String name, Block block) {

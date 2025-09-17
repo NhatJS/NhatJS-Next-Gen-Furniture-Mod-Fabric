@@ -19,11 +19,19 @@ public class NhatJSNextGenFurnitureModClient implements ClientModInitializer{
         BlockRenderLayerMap.putBlock(ModBlocks.TABLE_3X1_BLACK, BlockRenderLayer.CUTOUT_MIPPED);
         BlockRenderLayerMap.putBlock(ModBlocks.TABLE_3X1_WHITE, BlockRenderLayer.CUTOUT_MIPPED);
         BlockRenderLayerMap.putBlock(ModBlocks.TABLE_DINING_WHITE, BlockRenderLayer.CUTOUT_MIPPED);
+        BlockRenderLayerMap.putBlock(ModBlocks.COFFEE_TABLE_WHITE, BlockRenderLayer.CUTOUT_MIPPED);
         BlockRenderLayerMap.putBlock(ModBlocks.TABLE_DINING_WOOD_OAK, BlockRenderLayer.CUTOUT_MIPPED);
+        BlockRenderLayerMap.putBlock(ModBlocks.TV_STAND_WOOD_OAK, BlockRenderLayer.CUTOUT_MIPPED);
         BlockRenderLayerMap.putBlock(ModBlocks.PICTURE_FRAME, BlockRenderLayer.CUTOUT_MIPPED);
+        BlockRenderLayerMap.putBlock(ModBlocks.TRASH_CAN_BLACK, BlockRenderLayer.CUTOUT_MIPPED);
+        BlockRenderLayerMap.putBlock(ModBlocks.TRASH_CAN_WHITE, BlockRenderLayer.CUTOUT_MIPPED);
+        BlockRenderLayerMap.putBlock(ModBlocks.SOFA, BlockRenderLayer.CUTOUT_MIPPED);
+        BlockRenderLayerMap.putBlock(ModBlocks.FLOOR_LAMP, BlockRenderLayer.CUTOUT_MIPPED);
         BlockRenderLayerMap.putBlock(ModBlocks.LAPTOP, BlockRenderLayer.CUTOUT_MIPPED);
+        BlockRenderLayerMap.putBlock(ModBlocks.TV_OLED, BlockRenderLayer.CUTOUT_MIPPED);
 
         EntityRendererRegistry.register(ModEntities.CHAIR, ChairRenderer::new);
+        EntityRendererRegistry.register(ModEntities.SOFA, ChairRenderer::new);
     }
 
 }
