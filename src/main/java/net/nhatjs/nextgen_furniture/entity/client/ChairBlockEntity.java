@@ -1,14 +1,13 @@
 package net.nhatjs.nextgen_furniture.entity.client;
 
-import net.minecraft.block.BlockState;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.damage.DamageSource;
 import net.minecraft.entity.data.DataTracker;
 import net.minecraft.nbt.NbtCompound;
 import net.minecraft.server.world.ServerWorld;
+import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
-import net.nhatjs.nextgen_furniture.block.ChairBlock;
 
 public class ChairBlockEntity extends Entity {
     public ChairBlockEntity(EntityType<?> type, World world) {
@@ -46,12 +45,13 @@ public class ChairBlockEntity extends Entity {
     @Override
     public void tick() {
         super.tick();
-
-        if (!this.getWorld().isClient) {
-            BlockState below = this.getWorld().getBlockState(this.getBlockPos());
-            if (!(below.getBlock() instanceof ChairBlock)) {
-                if (this.hasPassengers()) this.getPassengerList().forEach(p -> p.stopRiding());
+        if(!this.getWorld().isClient)
+        {
+            BlockPos pos = this.getBlockPos();
+            if(this.getPassengerList().isEmpty() || this.getWorld().isAir(pos))
+            {
                 this.discard();
+                this.getWorld().updateComparators(pos, this.getWorld().getBlockState(pos).getBlock());
             }
         }
     }

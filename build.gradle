@@ -10,14 +10,6 @@ base {
 	archivesName = project.archives_base_name
 }
 
-def getGprUser() {
-	return project.findProperty('gpr.user')
-}
-
-def getGprKey() {
-	return project.findProperty('gpr.key')
-}
-
 
 repositories {
 	// Add repositories to retrieve artifacts from in here.

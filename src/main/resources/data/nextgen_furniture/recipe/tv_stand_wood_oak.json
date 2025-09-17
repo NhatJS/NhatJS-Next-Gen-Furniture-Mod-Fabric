@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "111",
+    "121"
+  ],
+  "key": {
+    "1": "minecraft:oak_planks",
+    "2": "minecraft:chest"
+  },
+  "result": {
+    "id": "nextgen_furniture:tv_stand_wood_oak",
+    "count": 2
+  }
+}

@@ -1,0 +1,6 @@
+{
+	"parent": "nextgen_furniture:block/tv_oled_mount",
+	"textures": {
+		"1": "nextgen_furniture:block/black_screen"
+	}
+}
