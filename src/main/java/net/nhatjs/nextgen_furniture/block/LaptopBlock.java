@@ -22,7 +22,7 @@ import net.minecraft.world.World;
 
 public class LaptopBlock extends Block {
     public static final DirectionProperty FACING = Properties.HORIZONTAL_FACING;
-    public static final IntProperty OPEN_STAGE = IntProperty.of("open_stage", 0, 8);
+    public static final IntProperty OPEN_STAGE = IntProperty.of("open_stage", 0, 6);
     public static final BooleanProperty OPEN_TARGET = BooleanProperty.of("open_target");
     public static final BooleanProperty SCREEN_ON = BooleanProperty.of("screen_on");
     public static final IntProperty BOOT_STAGE = IntProperty.of("boot_stage", 0, 5);
@@ -69,7 +69,7 @@ public class LaptopBlock extends Block {
                 world.scheduleBlockTick(pos, this, 2);
                 return ActionResult.CONSUME;
             }
-            if (stage == 7 || stage == 8) {
+            if (stage == 5 || stage == 6) {
                 if (screenOn) return ActionResult.CONSUME;
                 world.setBlockState(pos, state.with(OPEN_TARGET, false));
                 world.scheduleBlockTick(pos, this, 2);
@@ -78,14 +78,14 @@ public class LaptopBlock extends Block {
             return ActionResult.CONSUME;
         }
 
-        if (stage == 7) {
-            world.setBlockState(pos, state.with(OPEN_STAGE, 8).with(BOOT_STAGE, 0).with(SCREEN_ON, false));
+        if (stage == 5) {
+            world.setBlockState(pos, state.with(OPEN_STAGE, 8-2).with(BOOT_STAGE, 0).with(SCREEN_ON, false));
             world.scheduleBlockTick(pos, this, 10);
             return ActionResult.CONSUME;
         }
-        if (stage == 8) {
+        if (stage == 6) {
             if (screenOn) {
-                world.setBlockState(pos, state.with(SCREEN_ON, false).with(BOOT_STAGE, 0).with(OPEN_STAGE, 7));
+                world.setBlockState(pos, state.with(SCREEN_ON, false).with(BOOT_STAGE, 0).with(OPEN_STAGE, 7-2));
             } else {
                 world.setBlockState(pos, state.with(BOOT_STAGE, 0));
                 world.scheduleBlockTick(pos, this, 10);
@@ -101,14 +101,14 @@ public class LaptopBlock extends Block {
         int stage = state.get(OPEN_STAGE);
         boolean wantOpen = state.get(OPEN_TARGET);
 
-        if ((wantOpen && stage < 7) || (!wantOpen && stage > 0)) {
+        if ((wantOpen && stage < 5) || (!wantOpen && stage > 0)) {
             int next = wantOpen ? stage + 1 : stage - 1;
             world.setBlockState(pos, state.with(OPEN_STAGE, next));
-            world.scheduleBlockTick(pos, this, 1);
+            world.scheduleBlockTick(pos, this, 2);
             return;
         }
 
-        if (stage == 8 && !state.get(SCREEN_ON)) {
+        if (stage == 6 && !state.get(SCREEN_ON)) {
             int boot = state.get(BOOT_STAGE);
             if (boot < 5) {
                 int nextBoot = boot + 1;

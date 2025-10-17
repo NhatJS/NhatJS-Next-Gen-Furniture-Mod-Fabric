@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "nextgen_furniture:block/nextgen_crafting_table"
+    }
+  }
+}

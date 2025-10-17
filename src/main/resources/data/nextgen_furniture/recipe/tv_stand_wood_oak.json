@@ -3,7 +3,8 @@
   "category": "misc",
   "pattern": [
     "111",
-    "121"
+    "121",
+    "3 3"
   ],
   "key": {
     "1": {
@@ -11,6 +12,9 @@
     },
     "2": {
       "item": "minecraft:chest"
+    },
+    "3": {
+      "item": "minecraft:black_concrete"
     }
   },
   "result": {

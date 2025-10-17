@@ -17,9 +17,16 @@ repositories {
 	// Loom adds the essential maven repositories to download Minecraft and libraries from automatically.
 	// See https://docs.gradle.org/current/userguide/declaring_repositories.html
 	// for more information about repositories.
-	mavenCentral()
-	maven {
-		url = "https://cursemaven.com"
+	exclusiveContent {
+		forRepository {
+			maven {
+				name = "Modrinth"
+				url = "https://api.modrinth.com/maven"
+			}
+		}
+		filter {
+			includeGroup "maven.modrinth"
+		}
 	}
 }
 
@@ -38,7 +45,7 @@ dependencies {
 	// Fabric API. This is technically optional, but you probably want it anyway.
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
 
-	modImplementation "curse.maven:framework-549225:5680060"
+	modImplementation "maven.modrinth:fusion-connected-textures:1.2.11-fabric-mc1.21"
 
 	implementation "org.reflections:reflections:0.10.2"
 	implementation "org.javassist:javassist:3.29.2-GA"

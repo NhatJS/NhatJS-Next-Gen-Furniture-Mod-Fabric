@@ -18,6 +18,7 @@ public class ModItemGroups {
                     .entries((displayContext, entries) -> {
                         entries.add(ModBlocks.CHAIR_WHITE);
                         entries.add(ModBlocks.CHAIR_WOOD_OAK);
+                        entries.add(ModBlocks.CHAIR_WOOD_BIRCH);
                         entries.add(ModBlocks.TABLE_2X1_BLACK);
                         entries.add(ModBlocks.TABLE_2X1_WHITE);
                         entries.add(ModBlocks.TABLE_3X1_BLACK);
@@ -26,6 +27,7 @@ public class ModItemGroups {
                         entries.add(ModBlocks.TABLE_DINING_WHITE);
                         entries.add(ModBlocks.TABLE_DINING_WOOD_OAK);
                         entries.add(ModBlocks.TV_STAND_WOOD_OAK);
+                        entries.add(ModBlocks.TV_STAND_WOOD_BIRCH);
                         entries.add(ModBlocks.PICTURE_FRAME);
                         entries.add(ModBlocks.TRASH_CAN_BLACK);
                         entries.add(ModBlocks.TRASH_CAN_WHITE);
@@ -33,6 +35,7 @@ public class ModItemGroups {
                         entries.add(ModBlocks.FLOOR_LAMP);
                         entries.add(ModBlocks.LAPTOP);
                         entries.add(ModBlocks.TV_OLED);
+                        entries.add(ModBlocks.NEXTGEN_CRAFTING_TABLE);
                     }).build());
 
     public static void registerItemGroups() {

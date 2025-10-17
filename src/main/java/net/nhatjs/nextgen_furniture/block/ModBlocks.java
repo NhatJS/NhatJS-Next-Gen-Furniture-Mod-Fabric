@@ -55,7 +55,12 @@ public class ModBlocks {
     public static final Block TV_OLED = register("tv_oled",
             new TVBlock(Block.Settings.create().strength(1.0f).nonOpaque()));
 
-
+    public static final Block CHAIR_WOOD_BIRCH = register("chair_wood_birch",
+            new ChairBlock(AbstractBlock.Settings.create().strength(1.0f).nonOpaque()));
+    public static final Block TV_STAND_WOOD_BIRCH = register("tv_stand_wood_birch",
+            new TVStandBlock(AbstractBlock.Settings.create().strength(1.0f).nonOpaque()));
+    public static final Block NEXTGEN_CRAFTING_TABLE = register("nextgen_crafting_table",
+            new NextGenCraftingTableBlock(AbstractBlock.Settings.create().strength(1.0f).nonOpaque()));
 
     private static <T extends Block> T register(String name, T block) {
         Identifier id = Identifier.of(MOD_ID, name);

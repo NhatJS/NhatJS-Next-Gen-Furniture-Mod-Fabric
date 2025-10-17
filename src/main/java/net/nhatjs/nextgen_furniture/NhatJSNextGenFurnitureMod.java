@@ -6,6 +6,8 @@ import net.nhatjs.nextgen_furniture.block.ModBlocks;
 import net.nhatjs.nextgen_furniture.entity.ModEntities;
 import net.nhatjs.nextgen_furniture.item.ModItemGroups;
 import net.nhatjs.nextgen_furniture.item.ModItems;
+import net.nhatjs.nextgen_furniture.recipes.ModRecipes;
+import net.nhatjs.nextgen_furniture.screen.ModScreenHandlers;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -20,5 +22,7 @@ public class NhatJSNextGenFurnitureMod implements ModInitializer {
 		ModEntities.registerModEntities();
 		ModItems.registerModItems();
 		ModItemGroups.registerItemGroups();
+		ModScreenHandlers.registerModScreenHandlers();
+		ModRecipes.registerModRecipes();
 	}
 }
