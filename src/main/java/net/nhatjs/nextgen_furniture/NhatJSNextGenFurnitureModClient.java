@@ -6,10 +6,10 @@ import net.fabricmc.fabric.api.client.rendering.v1.EntityRendererRegistry;
 import net.minecraft.client.gui.screen.ingame.HandledScreens;
 import net.minecraft.client.render.RenderLayer;
 import net.nhatjs.nextgen_furniture.block.ModBlocks;
+import net.nhatjs.nextgen_furniture.client.screen.NextGenCraftingScreen;
 import net.nhatjs.nextgen_furniture.entity.ModEntities;
 import net.nhatjs.nextgen_furniture.entity.client.renderer.ChairRenderer;
-import net.nhatjs.nextgen_furniture.screen.ModScreenHandlers;
-import net.nhatjs.nextgen_furniture.screen.NextGenCraftingTableScreen;
+import net.nhatjs.nextgen_furniture.menu.ModMenus;
 
 
 public class NhatJSNextGenFurnitureModClient implements ClientModInitializer{
@@ -43,6 +43,8 @@ public class NhatJSNextGenFurnitureModClient implements ClientModInitializer{
         EntityRendererRegistry.register(ModEntities.CHAIR, ChairRenderer::new);
         EntityRendererRegistry.register(ModEntities.SOFA, ChairRenderer::new);
 
-        HandledScreens.register(ModScreenHandlers.NEXTGEN_CRAFTING_TABLE, NextGenCraftingTableScreen::new);
+        HandledScreens.register(ModMenus.NEXTGEN_CRAFTING_MENU, NextGenCraftingScreen::new);
+
     }
+
 }
