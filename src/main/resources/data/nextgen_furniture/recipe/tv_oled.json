@@ -7,15 +7,9 @@
     "131"
   ],
   "key": {
-    "1": {
-      "item": "minecraft:black_concrete"
-    },
-    "2": {
-      "item": "minecraft:end_crystal"
-    },
-    "3": {
-      "item": "minecraft:redstone"
-    }
+    "1": "minecraft:black_concrete",
+    "2": "minecraft:end_crystal",
+    "3": "minecraft:redstone"
   },
   "result": {
     "id": "nextgen_furniture:tv_oled",

@@ -7,15 +7,9 @@
     "3 3"
   ],
   "key": {
-    "1": {
-      "item": "minecraft:oak_planks"
-    },
-    "2": {
-      "item": "minecraft:redstone_lamp"
-    },
-    "3": {
-      "item": "minecraft:stick"
-    }
+    "1": "minecraft:oak_planks",
+    "2": "minecraft:redstone_lamp",
+    "3": "minecraft:stick"
   },
   "result": {
     "id": "nextgen_furniture:floor_lamp",

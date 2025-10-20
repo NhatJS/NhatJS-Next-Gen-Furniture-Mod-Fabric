@@ -5,12 +5,8 @@
     "121"
   ],
   "key": {
-    "1": {
-      "item": "minecraft:oak_planks"
-    },
-    "2": {
-      "item": "minecraft:white_bed"
-    }
+    "1": "minecraft:oak_planks",
+    "2": "minecraft:white_bed"
   },
   "result": {
     "id": "nextgen_furniture:bed_white_wood_oak",

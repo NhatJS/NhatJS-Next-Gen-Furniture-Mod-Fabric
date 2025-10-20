@@ -45,13 +45,7 @@ dependencies {
 	// Fabric API. This is technically optional, but you probably want it anyway.
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
 
-	modImplementation "maven.modrinth:fusion-connected-textures:1.2.11-fabric-mc1.21"
-
-	implementation "org.reflections:reflections:0.10.2"
-	implementation "org.javassist:javassist:3.29.2-GA"
-
-	implementation "com.electronwill.night-config:core:3.6.7"
-	implementation "com.electronwill.night-config:toml:3.6.7"
+	modImplementation "maven.modrinth:fusion-connected-textures:1.2.11-fabric-mc1.21.3"
 }
 
 processResources {

@@ -6,15 +6,9 @@
     "3 3"
   ],
   "key": {
-    "1": {
-      "item": "minecraft:oak_planks"
-    },
-    "2": {
-      "item": "minecraft:chest"
-    },
-    "3": {
-      "item": "minecraft:black_concrete"
-    }
+    "1": "minecraft:oak_planks",
+    "2": "minecraft:chest",
+    "3": "minecraft:black_concrete"
   },
   "result": {
     "id": "nextgen_furniture:tv_stand_wood_oak",

@@ -8,7 +8,6 @@ import net.nhatjs.nextgen_furniture.block.ModBlocks;
 import net.nhatjs.nextgen_furniture.entity.ModEntities;
 import net.nhatjs.nextgen_furniture.entity.client.renderer.ChairRenderer;
 
-
 public class NhatJSNextGenFurnitureModClient implements ClientModInitializer{
     @Override
     public void onInitializeClient() {
@@ -48,7 +47,5 @@ public class NhatJSNextGenFurnitureModClient implements ClientModInitializer{
 
         EntityRendererRegistry.register(ModEntities.CHAIR, ChairRenderer::new);
         EntityRendererRegistry.register(ModEntities.SOFA, ChairRenderer::new);
-
     }
-
 }

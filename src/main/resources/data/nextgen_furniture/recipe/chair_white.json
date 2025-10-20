@@ -7,12 +7,8 @@
     "2 2"
   ],
   "key": {
-    "1": {
-      "item": "minecraft:white_concrete"
-    },
-    "2": {
-      "item": "minecraft:stick"
-    }
+    "1": "minecraft:white_concrete",
+    "2": "minecraft:stick"
   },
   "result": {
     "id": "nextgen_furniture:chair_white",

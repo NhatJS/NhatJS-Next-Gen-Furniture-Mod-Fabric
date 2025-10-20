@@ -5,12 +5,8 @@
     "121"
   ],
   "key": {
-    "1": {
-      "item": "minecraft:oak_planks"
-    },
-    "2": {
-      "item": "minecraft:painting"
-    }
+    "1": "minecraft:oak_planks",
+    "2": "minecraft:painting"
   },
   "result": {
     "id": "nextgen_furniture:picture_frame",

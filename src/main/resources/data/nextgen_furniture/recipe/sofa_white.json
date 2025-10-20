@@ -6,9 +6,7 @@
     "111"
   ],
   "key": {
-    "1": {
-      "item": "minecraft:white_wool"
-    }
+    "1": "minecraft:white_wool"
   },
   "result": {
     "id": "nextgen_furniture:sofa_white",

@@ -6,12 +6,8 @@
     "2 2"
   ],
   "key": {
-    "1": {
-      "item": "minecraft:oak_planks"
-    },
-    "2": {
-      "item": "minecraft:black_concrete"
-    }
+    "1": "minecraft:oak_planks",
+    "2": "minecraft:black_concrete"
   },
   "result": {
     "id": "nextgen_furniture:table_dining_wood_oak",
