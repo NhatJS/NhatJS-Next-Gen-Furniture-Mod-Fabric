@@ -14,6 +14,8 @@ import net.nhatjs.nextgen_furniture.NhatJSNextGenFurnitureMod;
 
 import java.util.function.Function;
 
+import static net.nhatjs.nextgen_furniture.NhatJSNextGenFurnitureMod.MOD_ID;
+
 public class ModBlocks {
     public static Block CHAIR_WHITE = registerBlock("chair_white",
             properties -> new ChairBlock(properties.strength(1.0f).nonOpaque()));
@@ -69,7 +71,7 @@ public class ModBlocks {
     public static Block TABLE_1X1_WHITE = registerBlock("table_1x1_white",
             properties -> new Table1x1Block(properties.strength(1.0f).nonOpaque()));
     public static Block FLOOR_LAMP_B = registerBlock("floor_lamp_b",
-            properties -> new FloorLampBlock(Block.Settings.create().strength(1.0f).nonOpaque()));
+            properties -> new FloorLampBlock(properties.strength(1.0f).nonOpaque()));
     public static Block SOFA_WHITE = registerBlock("sofa_white",
             properties -> new SofaBlock(DyeColor.WHITE, properties.strength(1.0f).nonOpaque()));
     public static Block BED_GRAY_WOOD_OAK = registerBlock("bed_gray_wood_oak",
@@ -82,19 +84,19 @@ public class ModBlocks {
             properties -> new BedWoodBlock(properties.strength(1.0f).nonOpaque()));
 
     private static Block registerBlock(String name, Function<AbstractBlock.Settings, Block> function) {
-        Block toRegister = function.apply(AbstractBlock.Settings.create().registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(NhatJSNextGenFurnitureMod.MOD_ID, name))));
+        Block toRegister = function.apply(AbstractBlock.Settings.create().registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(MOD_ID, name))));
         registerBlockItem(name, toRegister);
-        return Registry.register(Registries.BLOCK, Identifier.of(NhatJSNextGenFurnitureMod.MOD_ID, name), toRegister);
+        return Registry.register(Registries.BLOCK, Identifier.of(MOD_ID, name), toRegister);
     }
 
     private static void registerBlockItem(String name, Block block) {
-        Registry.register(Registries.ITEM, Identifier.of(NhatJSNextGenFurnitureMod.MOD_ID, name),
+        Registry.register(Registries.ITEM, Identifier.of(MOD_ID, name),
                 new BlockItem(block, new Item.Settings().useBlockPrefixedTranslationKey()
-                        .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(NhatJSNextGenFurnitureMod.MOD_ID, name)))));
+                        .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(MOD_ID, name)))));
     }
 
     public static void registerModBlocks() {
-        NhatJSNextGenFurnitureMod.LOGGER.info("Registering Mod Blocks for " + NhatJSNextGenFurnitureMod.MOD_ID);
+        NhatJSNextGenFurnitureMod.LOGGER.info("Registering Mod Blocks for " + MOD_ID);
     }
 
     private ModBlocks() {}
