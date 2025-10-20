@@ -2,8 +2,8 @@
 	"format_version": "1.9.0",
 	"credit": "Made with Blockbench",
 	"textures": {
-		"particle": "minecraft:block/white_concrete",
-		"furniture": "nextgen_furniture:block/furniture"
+		"furniture": "nextgen_furniture:block/furniture",
+		"particle": "block/white_concrete"
 	},
 	"elements": [
 		{

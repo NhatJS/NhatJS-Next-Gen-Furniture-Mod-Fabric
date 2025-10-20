@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "nextgen_furniture:block/bed_gray_wood_birch",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "nextgen_furniture:block/bed_gray_wood_birch"
+    },
+    "facing=south": {
+      "model": "nextgen_furniture:block/bed_gray_wood_birch",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "nextgen_furniture:block/bed_gray_wood_birch",
+      "y": 270
+    }
+  }
+}

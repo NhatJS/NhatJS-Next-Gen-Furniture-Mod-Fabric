@@ -1,6 +1,5 @@
 package net.nhatjs.nextgen_furniture.entity;
 
-import com.fasterxml.jackson.annotation.JsonTypeInfo;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.SpawnGroup;
 import net.minecraft.registry.Registries;

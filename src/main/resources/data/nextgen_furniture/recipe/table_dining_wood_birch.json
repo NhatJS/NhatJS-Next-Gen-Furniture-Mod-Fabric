@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "111",
+    "2 2"
+  ],
+  "key": {
+    "1": "minecraft:birch_planks",
+    "2": "minecraft:black_concrete"
+  },
+  "result": {
+    "id": "nextgen_furniture:table_dining_wood_birch",
+    "count": 2
+  }
+}

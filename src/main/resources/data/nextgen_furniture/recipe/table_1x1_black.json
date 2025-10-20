@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "11",
+    "22"
+  ],
+  "key": {
+    "1": "minecraft:black_concrete",
+    "2": "minecraft:stick"
+  },
+  "result": {
+    "id": "nextgen_furniture:table_1x1_black",
+    "count": 2
+  }
+}
