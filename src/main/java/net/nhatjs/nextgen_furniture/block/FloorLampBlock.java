@@ -52,7 +52,7 @@ public class FloorLampBlock extends Block {
 
     @Override
     public ActionResult onUse(BlockState state, World world, BlockPos pos, PlayerEntity player, BlockHitResult hit) {
-        if (!world.isClient) {
+        if (!world.isClient()) {
             boolean current = state.get(LIT);
             world.setBlockState(pos, state.with(LIT, !current), 3);
         }

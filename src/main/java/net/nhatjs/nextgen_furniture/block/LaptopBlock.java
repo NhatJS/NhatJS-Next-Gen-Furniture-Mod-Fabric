@@ -59,7 +59,7 @@ public class LaptopBlock extends Block {
     @Override
     public ActionResult onUse(BlockState state, World world, BlockPos pos,
                               PlayerEntity player, BlockHitResult hit) {
-        if (world.isClient) return ActionResult.SUCCESS;
+        if (world.isClient()) return ActionResult.SUCCESS;
 
         int stage = state.get(OPEN_STAGE);
         boolean screenOn = state.get(SCREEN_ON);

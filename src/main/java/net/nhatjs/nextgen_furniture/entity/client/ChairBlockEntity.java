@@ -1,17 +1,14 @@
 package net.nhatjs.nextgen_furniture.entity.client;
 
-import net.minecraft.block.BlockState;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.damage.DamageSource;
 import net.minecraft.entity.data.DataTracker;
-import net.minecraft.nbt.NbtCompound;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.storage.ReadView;
 import net.minecraft.storage.WriteView;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
-import net.nhatjs.nextgen_furniture.block.ChairBlock;
 
 public class ChairBlockEntity extends Entity {
     public ChairBlockEntity(EntityType<?> type, World world) {
@@ -41,28 +38,28 @@ public class ChairBlockEntity extends Entity {
     @Override
     protected void removePassenger(Entity passenger) {
         super.removePassenger(passenger);
-        if(!this.getWorld().isClient()) {
-            this.kill(((ServerWorld) this.getWorld()));
+        if(!this.getEntityWorld().isClient()) {
+            this.kill(((ServerWorld) this.getEntityWorld()));
         }
     }
 
     @Override
     public void tick() {
         super.tick();
-        if(!this.getWorld().isClient)
+        if(!this.getEntityWorld().isClient())
         {
             BlockPos pos = this.getBlockPos();
-            if(this.getPassengerList().isEmpty() || this.getWorld().isAir(pos))
+            if(this.getPassengerList().isEmpty() || this.getEntityWorld().isAir(pos))
             {
                 this.discard();
-                this.getWorld().updateComparators(pos, this.getWorld().getBlockState(pos).getBlock());
+                this.getEntityWorld().updateComparators(pos, this.getEntityWorld().getBlockState(pos).getBlock());
             }
         }
     }
 
     @Override
     public void remove(RemovalReason reason) {
-        if (!this.getWorld().isClient) {
+        if (!this.getEntityWorld().isClient()) {
             if (this.hasPassengers()) this.getPassengerList().forEach(p -> p.stopRiding());
             this.removeAllPassengers();
         }
