@@ -1,0 +1,8 @@
+{
+	"parent": "nextgen_furniture:block/bed_white_wood",
+	"textures": {
+		"0": "nextgen_furniture:block/seamless_linen_white",
+		"1": "nextgen_furniture:block/birch_wood",
+		"particle": "nextgen_furniture:block/birch_wood"
+	}
+}

@@ -6,6 +6,7 @@ import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
+import net.minecraft.util.DyeColor;
 import net.minecraft.util.Identifier;
 import net.nhatjs.nextgen_furniture.NhatJSNextGenFurnitureMod;
 
@@ -46,8 +47,8 @@ public class ModBlocks {
             new TrashCanBlock(AbstractBlock.Settings.create().strength(0.2f).nonOpaque()));
     public static final Block TRASH_CAN_WHITE = register("trash_can_white",
             new TrashCanBlock(AbstractBlock.Settings.create().strength(0.2f).nonOpaque()));
-    public static final Block SOFA = register("sofa",
-            new SofaBlock(Block.Settings.create().strength(1.0f).nonOpaque()));
+    public static final Block SOFA_GRAY = register("sofa_gray",
+            new SofaBlock(DyeColor.GRAY, AbstractBlock.Settings.create().strength(1.0f).nonOpaque()));
     public static final Block FLOOR_LAMP = register("floor_lamp",
             new FloorLampBlock(Block.Settings.create().strength(1.0f).nonOpaque()));
     public static final Block LAPTOP = register("laptop",
@@ -59,8 +60,24 @@ public class ModBlocks {
             new ChairBlock(AbstractBlock.Settings.create().strength(1.0f).nonOpaque()));
     public static final Block TV_STAND_WOOD_BIRCH = register("tv_stand_wood_birch",
             new TVStandBlock(AbstractBlock.Settings.create().strength(1.0f).nonOpaque()));
-    public static final Block NEXTGEN_CRAFTING_TABLE = register("nextgen_crafting_table",
-            new NextGenCraftingTableBlock(AbstractBlock.Settings.create().strength(1.0f).nonOpaque()));
+    public static final Block TABLE_DINING_WOOD_BIRCH = register("table_dining_wood_birch",
+            new DiningTableBlock(AbstractBlock.Settings.create().strength(1.0f).nonOpaque()));
+    public static final Block TABLE_1X1_BLACK = register("table_1x1_black",
+            new Table1x1Block(AbstractBlock.Settings.create().strength(1.0f).nonOpaque()));
+    public static final Block TABLE_1X1_WHITE = register("table_1x1_white",
+            new Table1x1Block(AbstractBlock.Settings.create().strength(1.0f).nonOpaque()));
+    public static final Block FLOOR_LAMP_B = register("floor_lamp_b",
+            new FloorLampBlock(Block.Settings.create().strength(1.0f).nonOpaque()));
+    public static final Block SOFA_WHITE = register("sofa_white",
+            new SofaBlock(DyeColor.WHITE, AbstractBlock.Settings.create().strength(1.0f).nonOpaque()));
+    public static final Block BED_GRAY_WOOD_OAK = register("bed_gray_wood_oak",
+            new BedWoodBlock(AbstractBlock.Settings.create().strength(1.0f).nonOpaque()));
+    public static final Block BED_GRAY_WOOD_BIRCH = register("bed_gray_wood_birch",
+            new BedWoodBlock(AbstractBlock.Settings.create().strength(1.0f).nonOpaque()));
+    public static final Block BED_WHITE_WOOD_OAK = register("bed_white_wood_oak",
+            new BedWoodBlock(AbstractBlock.Settings.create().strength(1.0f).nonOpaque()));
+    public static final Block BED_WHITE_WOOD_BIRCH = register("bed_white_wood_birch",
+            new BedWoodBlock(AbstractBlock.Settings.create().strength(1.0f).nonOpaque()));
 
     private static <T extends Block> T register(String name, T block) {
         Identifier id = Identifier.of(MOD_ID, name);

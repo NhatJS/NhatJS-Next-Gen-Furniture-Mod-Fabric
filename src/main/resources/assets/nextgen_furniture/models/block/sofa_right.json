@@ -2,9 +2,7 @@
 	"format_version": "1.9.0",
 	"credit": "Made with Blockbench",
 	"textures": {
-		"0": "nextgen_furniture:block/seamless_linen_gray",
-		"1": "nextgen_furniture:block/furniture",
-		"particle": "nextgen_furniture:block/seamless_linen_gray"
+		"1": "nextgen_furniture:block/furniture"
 	},
 	"elements": [
 		{

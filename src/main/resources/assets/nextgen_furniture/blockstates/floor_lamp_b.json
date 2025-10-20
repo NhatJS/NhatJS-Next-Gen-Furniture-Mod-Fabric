@@ -1,0 +1,35 @@
+{
+  "variants": {
+    "facing=east,lamp=false": {
+      "model": "nextgen_furniture:block/floor_lamp_b",
+      "y": 90
+    },
+    "facing=north,lamp=false": {
+      "model": "nextgen_furniture:block/floor_lamp_b"
+    },
+    "facing=south,lamp=false": {
+      "model": "nextgen_furniture:block/floor_lamp_b",
+      "y": 180
+    },
+    "facing=west,lamp=false": {
+      "model": "nextgen_furniture:block/floor_lamp_b",
+      "y": 270
+    },
+
+    "facing=east,lamp=true": {
+      "model": "nextgen_furniture:block/floor_lamp_b_on",
+      "y": 90
+    },
+    "facing=north,lamp=true": {
+      "model": "nextgen_furniture:block/floor_lamp_b_on"
+    },
+    "facing=south,lamp=true": {
+      "model": "nextgen_furniture:block/floor_lamp_b_on",
+      "y": 180
+    },
+    "facing=west,lamp=true": {
+      "model": "nextgen_furniture:block/floor_lamp_b_on",
+      "y": 270
+    }
+  }
+}

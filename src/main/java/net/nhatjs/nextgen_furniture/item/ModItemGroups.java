@@ -19,6 +19,8 @@ public class ModItemGroups {
                         entries.add(ModBlocks.CHAIR_WHITE);
                         entries.add(ModBlocks.CHAIR_WOOD_OAK);
                         entries.add(ModBlocks.CHAIR_WOOD_BIRCH);
+                        entries.add(ModBlocks.TABLE_1X1_BLACK);
+                        entries.add(ModBlocks.TABLE_1X1_WHITE);
                         entries.add(ModBlocks.TABLE_2X1_BLACK);
                         entries.add(ModBlocks.TABLE_2X1_WHITE);
                         entries.add(ModBlocks.TABLE_3X1_BLACK);
@@ -26,16 +28,22 @@ public class ModItemGroups {
                         entries.add(ModBlocks.COFFEE_TABLE_WHITE);
                         entries.add(ModBlocks.TABLE_DINING_WHITE);
                         entries.add(ModBlocks.TABLE_DINING_WOOD_OAK);
+                        entries.add(ModBlocks.TABLE_DINING_WOOD_BIRCH);
                         entries.add(ModBlocks.TV_STAND_WOOD_OAK);
                         entries.add(ModBlocks.TV_STAND_WOOD_BIRCH);
+                        entries.add(ModBlocks.BED_GRAY_WOOD_OAK);
+                        entries.add(ModBlocks.BED_GRAY_WOOD_BIRCH);
+                        entries.add(ModBlocks.BED_WHITE_WOOD_OAK);
+                        entries.add(ModBlocks.BED_WHITE_WOOD_BIRCH);
                         entries.add(ModBlocks.PICTURE_FRAME);
                         entries.add(ModBlocks.TRASH_CAN_BLACK);
                         entries.add(ModBlocks.TRASH_CAN_WHITE);
-                        entries.add(ModBlocks.SOFA);
+                        entries.add(ModBlocks.SOFA_GRAY);
+                        entries.add(ModBlocks.SOFA_WHITE);
                         entries.add(ModBlocks.FLOOR_LAMP);
+                        entries.add(ModBlocks.FLOOR_LAMP_B);
                         entries.add(ModBlocks.LAPTOP);
                         entries.add(ModBlocks.TV_OLED);
-                        entries.add(ModBlocks.NEXTGEN_CRAFTING_TABLE);
                     }).build());
 
     public static void registerItemGroups() {
