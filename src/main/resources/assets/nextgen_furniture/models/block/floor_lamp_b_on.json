@@ -1,4 +1,6 @@
 {
+	"loader": "fusion:model",
+	"type": "base",
 	"format_version": "1.9.0",
 	"credit": "Made with Blockbench",
 	"textures": {
