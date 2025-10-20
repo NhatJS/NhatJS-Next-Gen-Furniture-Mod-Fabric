@@ -3,7 +3,7 @@
 	"credit": "Made with Blockbench",
 	"textures": {
 		"0": "nextgen_furniture:block/electronic4",
-		"1": "nextgen_furniture:block/tv_screen/tv_screen_e",
+		"1": "nextgen_furniture:block/tv_screen/tv_screen",
 		"2": "nextgen_furniture:block/furniture",
 		"particle": "nextgen_furniture:block/electronic4"
 	},

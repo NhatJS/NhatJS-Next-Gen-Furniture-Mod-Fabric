@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "111",
+    "111"
+  ],
+  "key": {
+    "1": "minecraft:gray_wool"
+  },
+  "result": {
+    "id": "nextgen_furniture:sofa_gray",
+    "count": 2
+  }
+}

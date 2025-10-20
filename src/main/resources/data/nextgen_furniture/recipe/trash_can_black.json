@@ -2,8 +2,8 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "pattern": [
-    "11",
-    "11"
+    "1",
+    "1"
   ],
   "key": {
     "1": "minecraft:black_concrete"

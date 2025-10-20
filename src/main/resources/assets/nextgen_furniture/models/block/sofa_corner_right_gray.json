@@ -1,0 +1,7 @@
+{
+	"parent": "nextgen_furniture:block/sofa_corner_right",
+	"textures": {
+		"0": "nextgen_furniture:block/seamless_linen_gray",
+		"particle": "nextgen_furniture:block/seamless_linen_gray"
+	}
+}
