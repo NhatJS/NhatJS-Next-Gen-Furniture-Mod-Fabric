@@ -50,9 +50,9 @@ public class ModBlocks {
     public static final Block SOFA_GRAY = register("sofa_gray",
             new SofaBlock(DyeColor.GRAY, AbstractBlock.Settings.create().strength(1.0f).nonOpaque()));
     public static final Block FLOOR_LAMP = register("floor_lamp",
-            new FloorLampBlock(Block.Settings.create().strength(1.0f).nonOpaque()));
+            new FloorLampBlock(AbstractBlock.Settings.create().strength(1.0f).nonOpaque()));
     public static final Block LAPTOP = register("laptop",
-            new LaptopBlock(Block.Settings.create().strength(1.0f).nonOpaque()));
+            new LaptopBlock(AbstractBlock.Settings.create().strength(1.0f).nonOpaque()));
     public static final Block TV_OLED = register("tv_oled",
             new TVBlock(Block.Settings.create().strength(1.0f).nonOpaque()));
 
@@ -67,7 +67,7 @@ public class ModBlocks {
     public static final Block TABLE_1X1_WHITE = register("table_1x1_white",
             new Table1x1Block(AbstractBlock.Settings.create().strength(1.0f).nonOpaque()));
     public static final Block FLOOR_LAMP_B = register("floor_lamp_b",
-            new FloorLampBlock(Block.Settings.create().strength(1.0f).nonOpaque()));
+            new FloorLampBlock(AbstractBlock.Settings.create().strength(1.0f).nonOpaque()));
     public static final Block SOFA_WHITE = register("sofa_white",
             new SofaBlock(DyeColor.WHITE, AbstractBlock.Settings.create().strength(1.0f).nonOpaque()));
     public static final Block BED_GRAY_WOOD_OAK = register("bed_gray_wood_oak",

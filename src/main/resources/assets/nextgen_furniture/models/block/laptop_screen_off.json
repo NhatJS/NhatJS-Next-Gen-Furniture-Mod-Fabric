@@ -1,0 +1,6 @@
+{
+	"parent": "nextgen_furniture:block/laptop_screen",
+	"textures": {
+		"screen": "nextgen_furniture:block/black_screen"
+	}
+}
