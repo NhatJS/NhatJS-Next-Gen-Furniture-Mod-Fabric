@@ -19,7 +19,7 @@ import net.minecraft.world.World;
 import net.minecraft.world.WorldView;
 
 public class TVBlock extends Block {
-    public static final DirectionProperty FACING = Properties.HORIZONTAL_FACING;
+    public static final EnumProperty<Direction> FACING = Properties.HORIZONTAL_FACING;
     public static final BooleanProperty TV_ON = BooleanProperty.of("tv_on");
     public static final EnumProperty<Mount> MOUNT = EnumProperty.of("mount", Mount.class);
 
