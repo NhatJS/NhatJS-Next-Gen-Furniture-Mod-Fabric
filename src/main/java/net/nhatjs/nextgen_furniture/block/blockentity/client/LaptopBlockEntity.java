@@ -1,5 +1,6 @@
 package net.nhatjs.nextgen_furniture.block.blockentity.client;
 
+import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.entity.BlockEntity;
 import net.minecraft.nbt.NbtCompound;
@@ -10,6 +11,7 @@ import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
+import net.nhatjs.nextgen_furniture.block.LaptopBlock;
 import net.nhatjs.nextgen_furniture.block.blockentity.ModBlockEntities;
 
 public class LaptopBlockEntity extends BlockEntity {
@@ -32,17 +34,25 @@ public class LaptopBlockEntity extends BlockEntity {
         targetOpen = v;
         if (!v) setPowered(false);
         markDirty(); sync();
-        //if (world instanceof ServerWorld sw) {
-        //    sw.getChunkManager().markForUpdate(pos);
-        //    world.updateListeners(pos, getCachedState(), getCachedState(), 3);
-        //}
     }
 
     public boolean isOpenEnough() {return open >= OPEN_MIN; }
 
     public boolean isPowered() {return powered; }
 
-    public void setPowered(boolean v) { powered = v; markDirty(); sync();}
+    public void setPowered(boolean v) {
+        if (powered == v) return;
+        powered = v;
+        markDirty();
+        sync();
+
+        if (world != null && !world.isClient()) {
+            BlockState s = world.getBlockState(pos);
+            if (s.contains(LaptopBlock.TURN_ON)) {
+                world.setBlockState(pos, s.with(LaptopBlock.TURN_ON, v), Block.NOTIFY_ALL);
+            }
+        }
+    }
 
     public static void tick(World w, BlockPos p, BlockState s, LaptopBlockEntity be) {
         be.prevOpen = be.open;

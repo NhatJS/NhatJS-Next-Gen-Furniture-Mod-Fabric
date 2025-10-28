@@ -7,14 +7,12 @@ import net.minecraft.block.entity.BlockEntityTicker;
 import net.minecraft.block.entity.BlockEntityType;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemPlacementContext;
-import net.minecraft.server.world.ServerWorld;
 import net.minecraft.state.StateManager;
 import net.minecraft.state.property.*;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.hit.BlockHitResult;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
-import net.minecraft.util.math.random.Random;
 import net.minecraft.util.shape.VoxelShape;
 import net.minecraft.world.BlockView;
 import net.minecraft.world.World;
@@ -24,13 +22,13 @@ import org.jetbrains.annotations.Nullable;
 
 public class LaptopBlock extends BlockWithEntity {
     public static final EnumProperty<Direction> FACING = Properties.HORIZONTAL_FACING;
-    public static final BooleanProperty SCREEN_ON = BooleanProperty.of("screen_on");
+    public static final BooleanProperty TURN_ON = BooleanProperty.of("turn_on");
 
     public LaptopBlock(Settings settings) {
         super(settings);
         setDefaultState(this.stateManager.getDefaultState()
                 .with(FACING, Direction.NORTH)
-                .with(SCREEN_ON, false));
+                .with(TURN_ON, false));
     }
 
     public static final MapCodec<LaptopBlock> CODEC = createCodec(LaptopBlock::new);
@@ -50,7 +48,7 @@ public class LaptopBlock extends BlockWithEntity {
 
     @Override
     protected void appendProperties(StateManager.Builder<Block, BlockState> builder) {
-        builder.add(FACING, SCREEN_ON);
+        builder.add(FACING, TURN_ON);
     }
 
     @Override

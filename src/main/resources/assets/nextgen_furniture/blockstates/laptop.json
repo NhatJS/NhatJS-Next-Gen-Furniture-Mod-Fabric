@@ -1,21 +1,34 @@
 {
   "variants": {
-    "facing=north": {
+    "facing=north,turn_on=false": {
       "model": "nextgen_furniture:block/laptop_base"
     },
-
-    "facing=south": {
+    "facing=south,turn_on=false": {
       "model": "nextgen_furniture:block/laptop_base",
       "y": 180
     },
-
-    "facing=west":  {
+    "facing=west,turn_on=false":  {
       "model": "nextgen_furniture:block/laptop_base",
       "y": 270
     },
-
-    "facing=east":  {
+    "facing=east,turn_on=false":  {
       "model": "nextgen_furniture:block/laptop_base",
+      "y": 90
+    },
+
+    "facing=north,turn_on=true": {
+      "model": "nextgen_furniture:block/laptop_base_on"
+    },
+    "facing=south,turn_on=true": {
+      "model": "nextgen_furniture:block/laptop_base_on",
+      "y": 180
+    },
+    "facing=west,turn_on=true":  {
+      "model": "nextgen_furniture:block/laptop_base_on",
+      "y": 270
+    },
+    "facing=east,turn_on=true":  {
+      "model": "nextgen_furniture:block/laptop_base_on",
       "y": 90
     }
   }
