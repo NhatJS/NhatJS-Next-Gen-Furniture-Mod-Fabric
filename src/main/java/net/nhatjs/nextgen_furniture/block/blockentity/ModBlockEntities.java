@@ -11,7 +11,7 @@ import net.nhatjs.nextgen_furniture.block.blockentity.client.LaptopBlockEntity;
 
 public final class ModBlockEntities {
     public static final BlockEntityType<LaptopBlockEntity> LAPTOP = Registry.register(Registries.BLOCK_ENTITY_TYPE,
-            Identifier.of(NhatJSNextGenFurnitureMod.MOD_ID, "laptop"),
+            Identifier.of(NhatJSNextGenFurnitureMod.MOD_ID, "laptop_screen"),
             FabricBlockEntityTypeBuilder.create(LaptopBlockEntity::new, ModBlocks.LAPTOP).build(null));
 
     public static void registerModBlockEntities() {
