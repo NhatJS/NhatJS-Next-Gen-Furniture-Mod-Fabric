@@ -56,6 +56,7 @@ public class ModBlocks {
     public static final Block TV_OLED = register("tv_oled",
             new TVBlock(Block.Settings.create().strength(1.0f).nonOpaque()));
 
+    //0.0.5 update
     public static final Block CHAIR_WOOD_BIRCH = register("chair_wood_birch",
             new ChairBlock(AbstractBlock.Settings.create().strength(1.0f).nonOpaque()));
     public static final Block TV_STAND_WOOD_BIRCH = register("tv_stand_wood_birch",
@@ -78,6 +79,12 @@ public class ModBlocks {
             new BedWoodBlock(AbstractBlock.Settings.create().strength(1.0f).nonOpaque()));
     public static final Block BED_WHITE_WOOD_BIRCH = register("bed_white_wood_birch",
             new BedWoodBlock(AbstractBlock.Settings.create().strength(1.0f).nonOpaque()));
+    //end
+
+    //0.0.6 update
+    public static final Block PERSONAL_COMPUTER = register("personal_computer",
+            new PersonalComputerBlock(AbstractBlock.Settings.create().strength(1.0f).nonOpaque()));
+    //end
 
     private static <T extends Block> T register(String name, T block) {
         Identifier id = Identifier.of(MOD_ID, name);

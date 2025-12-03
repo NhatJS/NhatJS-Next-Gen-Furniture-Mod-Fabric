@@ -16,8 +16,8 @@ import net.minecraft.util.math.Direction;
 import net.minecraft.util.shape.VoxelShape;
 import net.minecraft.world.BlockView;
 import net.minecraft.world.World;
-import net.nhatjs.nextgen_furniture.block.blockentity.ModBlockEntities;
-import net.nhatjs.nextgen_furniture.block.blockentity.client.LaptopBlockEntity;
+import net.nhatjs.nextgen_furniture.blockentity.ModBlockEntities;
+import net.nhatjs.nextgen_furniture.blockentity.client.LaptopBlockEntity;
 import org.jetbrains.annotations.Nullable;
 
 public class LaptopBlock extends BlockWithEntity {

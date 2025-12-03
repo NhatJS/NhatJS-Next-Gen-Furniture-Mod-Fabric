@@ -8,11 +8,10 @@ import net.minecraft.client.render.RenderLayer;
 import net.minecraft.client.render.block.entity.BlockEntityRendererFactories;
 import net.minecraft.util.Identifier;
 import net.nhatjs.nextgen_furniture.block.ModBlocks;
-import net.nhatjs.nextgen_furniture.block.blockentity.ModBlockEntities;
-import net.nhatjs.nextgen_furniture.block.blockentity.client.renderer.LaptopRenderer;
+import net.nhatjs.nextgen_furniture.blockentity.ModBlockEntities;
+import net.nhatjs.nextgen_furniture.blockentity.renderer.LaptopRenderer;
 import net.nhatjs.nextgen_furniture.entity.ModEntities;
 import net.nhatjs.nextgen_furniture.entity.client.renderer.ChairRenderer;
-
 
 public class NhatJSNextGenFurnitureModClient implements ClientModInitializer{
     public static final Identifier LAPTOP_SCREEN = Identifier.of(
@@ -46,6 +45,10 @@ public class NhatJSNextGenFurnitureModClient implements ClientModInitializer{
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.LAPTOP, RenderLayer.getCutoutMipped());
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.TV_OLED, RenderLayer.getCutoutMipped());
 
+        EntityRendererRegistry.register(ModEntities.CHAIR, ChairRenderer::new);
+        EntityRendererRegistry.register(ModEntities.SOFA, ChairRenderer::new);
+
+        //0.0.5 update
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.CHAIR_WOOD_BIRCH, RenderLayer.getCutoutMipped());
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.TV_STAND_WOOD_BIRCH, RenderLayer.getCutoutMipped());
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.TABLE_DINING_WOOD_BIRCH, RenderLayer.getCutoutMipped());
@@ -56,11 +59,13 @@ public class NhatJSNextGenFurnitureModClient implements ClientModInitializer{
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.BED_GRAY_WOOD_BIRCH, RenderLayer.getCutoutMipped());;
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.BED_WHITE_WOOD_OAK, RenderLayer.getCutoutMipped());
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.BED_WHITE_WOOD_BIRCH, RenderLayer.getCutoutMipped());
+        //end
 
-        EntityRendererRegistry.register(ModEntities.CHAIR, ChairRenderer::new);
-        EntityRendererRegistry.register(ModEntities.SOFA, ChairRenderer::new);
-
+        //0.0.6 update
         BlockEntityRendererFactories.register(ModBlockEntities.LAPTOP, LaptopRenderer::new);
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.PERSONAL_COMPUTER, RenderLayer.getCutoutMipped());
+
+        //end
 
         ModelLoadingPlugin.register(ctx -> ctx.addModels(LAPTOP_SCREEN, LAPTOP_SCREEN_ON));
     }

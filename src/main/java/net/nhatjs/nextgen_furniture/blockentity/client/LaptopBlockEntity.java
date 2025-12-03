@@ -1,4 +1,4 @@
-package net.nhatjs.nextgen_furniture.block.blockentity.client;
+package net.nhatjs.nextgen_furniture.blockentity.client;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
@@ -12,7 +12,7 @@ import net.minecraft.server.world.ServerWorld;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import net.nhatjs.nextgen_furniture.block.LaptopBlock;
-import net.nhatjs.nextgen_furniture.block.blockentity.ModBlockEntities;
+import net.nhatjs.nextgen_furniture.blockentity.ModBlockEntities;
 
 public class LaptopBlockEntity extends BlockEntity {
     private float open;
@@ -95,5 +95,5 @@ public class LaptopBlockEntity extends BlockEntity {
     }
 
     @Override public Packet<ClientPlayPacketListener> toUpdatePacket() { return BlockEntityUpdateS2CPacket.create(this);}
-    @Override public NbtCompound toInitialChunkDataNbt(RegistryWrapper.WrapperLookup reg) {return createNbt(world.getRegistryManager());}
+    @Override public NbtCompound toInitialChunkDataNbt(RegistryWrapper.WrapperLookup reg) {return createNbt(reg);}
 }

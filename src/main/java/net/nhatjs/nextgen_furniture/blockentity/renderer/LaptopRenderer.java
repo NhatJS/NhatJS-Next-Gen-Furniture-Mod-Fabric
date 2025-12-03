@@ -1,4 +1,4 @@
-package net.nhatjs.nextgen_furniture.block.blockentity.client.renderer;
+package net.nhatjs.nextgen_furniture.blockentity.renderer;
 
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
@@ -18,7 +18,7 @@ import net.minecraft.util.math.RotationAxis;
 import net.minecraft.world.World;
 import net.nhatjs.nextgen_furniture.NhatJSNextGenFurnitureModClient;
 import net.nhatjs.nextgen_furniture.block.LaptopBlock;
-import net.nhatjs.nextgen_furniture.block.blockentity.client.LaptopBlockEntity;
+import net.nhatjs.nextgen_furniture.blockentity.client.LaptopBlockEntity;
 
 @Environment(EnvType.CLIENT)
 public class LaptopRenderer implements BlockEntityRenderer<LaptopBlockEntity> {

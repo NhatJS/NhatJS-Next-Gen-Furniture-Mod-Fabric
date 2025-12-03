@@ -42,6 +42,7 @@ public class ModItemGroups {
                         entries.add(ModBlocks.SOFA_WHITE);
                         entries.add(ModBlocks.FLOOR_LAMP);
                         entries.add(ModBlocks.FLOOR_LAMP_B);
+                        entries.add(ModBlocks.PERSONAL_COMPUTER);
                         entries.add(ModBlocks.LAPTOP);
                         entries.add(ModBlocks.TV_OLED);
                     }).build());
