@@ -3,6 +3,7 @@ package net.nhatjs.nextgen_furniture;
 import net.fabricmc.api.ModInitializer;
 
 import net.nhatjs.nextgen_furniture.block.ModBlocks;
+import net.nhatjs.nextgen_furniture.blockentity.ModBlockEntities;
 import net.nhatjs.nextgen_furniture.entity.ModEntities;
 import net.nhatjs.nextgen_furniture.item.ModItemGroups;
 import net.nhatjs.nextgen_furniture.item.ModItems;
@@ -17,6 +18,7 @@ public class NhatJSNextGenFurnitureMod implements ModInitializer {
 	public void onInitialize() {
 		ModBlocks.registerModBlocks();
 		ModEntities.registerModEntities();
+		ModBlockEntities.registerModBlockEntities();
 		ModItems.registerModItems();
 		ModItemGroups.registerItemGroups();
 	}

@@ -42,8 +42,13 @@ public class ModItemGroups {
                         entries.add(ModBlocks.SOFA_WHITE);
                         entries.add(ModBlocks.FLOOR_LAMP);
                         entries.add(ModBlocks.FLOOR_LAMP_B);
+                        entries.add(ModBlocks.MONITOR);
+                        entries.add(ModBlocks.MONITOR_GAMING_MINIMALIST);
+                        entries.add(ModBlocks.KEYBOARD_MECHANICAL_BLACK);
+                        entries.add(ModBlocks.MOUSE_GAMING_BLACK);
                         entries.add(ModBlocks.LAPTOP);
                         entries.add(ModBlocks.TV_OLED);
+                        entries.add(ModBlocks.GAME_CONSOLE);
                     }).build());
 
     public static void registerItemGroups() {

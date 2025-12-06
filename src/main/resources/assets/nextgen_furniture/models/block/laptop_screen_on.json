@@ -1,0 +1,57 @@
+{
+	"format_version": "1.21.6",
+	"credit": "Made with Blockbench",
+	"textures": {
+		"black_screen": "nextgen_furniture:block/laptop_screen/display_screen",
+		"particle": "block/white_concrete"
+	},
+	"elements": [
+		{
+			"from": [2.59784, 0.63845, 3.74787],
+			"to": [13.40216, 0.63845, 10.57011],
+			"rotation": {"angle": -0.75, "axis": "x", "origin": [8, 0.69463, 11.84967]},
+			"faces": {
+				"down": {"uv": [0, 0, 16, 10], "rotation": 180, "texture": "#black_screen"}
+			}
+		}
+	],
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [75, 45, 0],
+			"translation": [0.75, 7.25, 6.75]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [75, 45, 0],
+			"translation": [0.75, 7.25, 6.75]
+		},
+		"firstperson_righthand": {
+			"rotation": [0, -180, 0],
+			"translation": [0, 8.25, 0],
+			"scale": [0.85, 0.85, 0.85]
+		},
+		"firstperson_lefthand": {
+			"rotation": [0, -180, 0],
+			"translation": [0, 8.25, 0],
+			"scale": [0.85, 0.85, 0.85]
+		},
+		"ground": {
+			"translation": [0, 5, 0]
+		},
+		"gui": {
+			"rotation": [90, 0, 0],
+			"scale": [0.85, 0.85, 0.85]
+		},
+		"fixed": {
+			"rotation": [90, -180, -180],
+			"translation": [0, 0, -7]
+		}
+	},
+	"groups": [
+		{
+			"name": "group",
+			"origin": [8, 8, 8],
+			"color": 0,
+			"children": [0]
+		}
+	]
+}

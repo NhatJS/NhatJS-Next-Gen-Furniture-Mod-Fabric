@@ -29,8 +29,13 @@
   "block.nextgen_furniture.sofa_white": "White Sofa",
   "block.nextgen_furniture.floor_lamp": "Oak Floor Lamp",
   "block.nextgen_furniture.floor_lamp_b": "Birch Floor Lamp",
+  "block.nextgen_furniture.monitor": "PC Peripheral Set",
+  "block.nextgen_furniture.monitor_gaming_minimalist": "Minimalist Gaming Monitor",
+  "block.nextgen_furniture.keyboard_mechanical_black": "Black Mechanical Keyboard",
+  "block.nextgen_furniture.mouse_gaming_black": "Black Gaming Mouse",
   "block.nextgen_furniture.laptop": "Laptop",
   "block.nextgen_furniture.tv_oled": "OLED TV",
+  "block.nextgen_furniture.game_console": "Game Console",
 
   "itemgroup.nextgen_furniture.nextgen_furniture_tab": "NhatJS's Next-Gen Furniture Mod"
 }

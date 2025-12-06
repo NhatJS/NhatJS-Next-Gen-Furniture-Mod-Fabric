@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_table_1x1_black": {
+      "conditions": {
+        "items": [
+          {
+            "items": "nextgen_furniture:table_1x1_black"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "nextgen_furniture:table_2x1_black"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_table_1x1_black"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "nextgen_furniture:table_2x1_black"
+    ]
+  }
+}

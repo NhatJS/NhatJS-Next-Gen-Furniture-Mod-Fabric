@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "1": "minecraft:oak_planks",
+    "2": "minecraft:gray_bed"
+  },
+  "pattern": [
+    "121"
+  ],
+  "result": {
+    "count": 1,
+    "id": "nextgen_furniture:bed_gray_wood_oak"
+  }
+}

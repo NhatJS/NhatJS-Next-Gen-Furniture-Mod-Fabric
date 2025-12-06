@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "1": "minecraft:birch_planks",
+    "2": "minecraft:redstone_lamp",
+    "3": "minecraft:stick"
+  },
+  "pattern": [
+    " 2 ",
+    " 1 ",
+    "3 3"
+  ],
+  "result": {
+    "count": 1,
+    "id": "nextgen_furniture:floor_lamp_b"
+  }
+}

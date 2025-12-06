@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "1": "minecraft:black_concrete",
+    "2": "minecraft:redstone",
+    "3": "minecraft:end_crystal",
+    "4": "minecraft:stone_button"
+  },
+  "pattern": [
+    "121",
+    "141",
+    "131"
+  ],
+  "result": {
+    "count": 1,
+    "id": "nextgen_furniture:game_console"
+  }
+}

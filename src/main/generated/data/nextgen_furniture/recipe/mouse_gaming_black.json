@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "1": "minecraft:black_concrete",
+    "2": "minecraft:end_crystal",
+    "3": "minecraft:stone_button",
+    "4": "minecraft:redstone"
+  },
+  "pattern": [
+    " 1 ",
+    "324",
+    " 1 "
+  ],
+  "result": {
+    "count": 1,
+    "id": "nextgen_furniture:mouse_gaming_black"
+  }
+}
