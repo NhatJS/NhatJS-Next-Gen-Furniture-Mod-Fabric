@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "nextgen_furniture:block/monitor_gaming_minimalist",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "nextgen_furniture:block/monitor_gaming_minimalist"
+    },
+    "facing=south": {
+      "model": "nextgen_furniture:block/monitor_gaming_minimalist",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "nextgen_furniture:block/monitor_gaming_minimalist",
+      "y": 270
+    }
+  }
+}

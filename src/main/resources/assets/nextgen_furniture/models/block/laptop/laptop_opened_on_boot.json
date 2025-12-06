@@ -1,8 +1,0 @@
-{
-  "loader": "fusion:model",
-  "type": "base",
-	"parent": "nextgen_furniture:block/laptop/laptop_opened",
-	"textures": {
-		"screen": "nextgen_furniture:block/black_screen"
-	}
-}

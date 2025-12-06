@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "1": "minecraft:white_concrete"
+  },
+  "pattern": [
+    "1",
+    "1"
+  ],
+  "result": {
+    "count": 2,
+    "id": "nextgen_furniture:trash_can_white"
+  }
+}

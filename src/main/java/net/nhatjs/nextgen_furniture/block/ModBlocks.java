@@ -83,6 +83,17 @@ public class ModBlocks {
     public static Block BED_WHITE_WOOD_BIRCH = registerBlock("bed_white_wood_birch",
             properties -> new BedWoodBlock(properties.strength(1.0f).nonOpaque()));
 
+    public static Block MONITOR = registerBlock("monitor",
+            properties -> new MonitorBlock(properties.strength(1.0F).nonOpaque()));
+    public static Block MONITOR_GAMING_MINIMALIST = registerBlock("monitor_gaming_minimalist",
+            properties -> new MonitorTypesBlock(properties.strength(1.0F).nonOpaque()));
+    public static Block MOUSE_GAMING_BLACK = registerBlock("mouse_gaming_black",
+            properties -> new ComputerMouseBlock(properties.strength(1.0F).nonOpaque()));
+    public static Block KEYBOARD_MECHANICAL_BLACK = registerBlock("keyboard_mechanical_black",
+            properties -> new KeyboardBlock(properties.strength(1.0F).nonOpaque()));
+    public static Block GAME_CONSOLE = registerBlock("game_console",
+            properties -> new ConsoleBlock(properties.strength(1.0F).nonOpaque()));
+
     private static Block registerBlock(String name, Function<AbstractBlock.Settings, Block> function) {
         Block toRegister = function.apply(AbstractBlock.Settings.create().registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(MOD_ID, name))));
         registerBlockItem(name, toRegister);
