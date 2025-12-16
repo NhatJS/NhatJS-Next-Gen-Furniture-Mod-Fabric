@@ -1,0 +1,6 @@
+{
+	"parent": "nextgen_furniture:block/keyboard_mechanical_black_wood",
+	"textures": {
+		"7": "nextgen_furniture:block/birch_wood"
+	}
+}

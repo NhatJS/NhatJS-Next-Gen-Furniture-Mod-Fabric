@@ -30,47 +30,47 @@ public class MonitorBlock extends Block {
     }
 
     private static final VoxelShape NORTH = VoxelShapes.union(
-            Block.createCuboidShape(5.4, 0, 9.525, 10.6, 0.225, 14.975),
-            Block.createCuboidShape(6.975, 0.225, 13.225, 9.025, 10.075, 14.675),
-            Block.createCuboidShape(7.275, 7.075, 12.05, 8.725, 8.325, 13.225),
-            Block.createCuboidShape(0.225, 3.2, 10.925, 15.775, 12.15, 12.05),
+            Block.createCuboidShape(5.275, 0, 9.6, 10.725, 0.225, 15.3),
+            Block.createCuboidShape(6.925, 0.225, 13.475, 9.075, 10.575, 15.025),
+            Block.createCuboidShape(7.25, 7.425, 12.25, 8.75, 8.725, 13.475),
+            Block.createCuboidShape(-0.15, 3.35, 11.075, 16.15, 12.75, 12.25),
 
-            Block.createCuboidShape(-0.4, 0, 1.25, 16.4, 0.025, 7.75),
-            Block.createCuboidShape(5.15, 0.025, 3.025, 14.45, 0.75, 6.5),
-            Block.createCuboidShape(1.5, 0.025, 3, 3.325, 0.775, 6.525)
+            Block.createCuboidShape(-0.5, 0, 1.25, 16.5, 0.025, 7.75),
+            Block.createCuboidShape(5.15, 0.025, 3.025, 14.45, 0.725, 6.5),
+            Block.createCuboidShape(1.5, 0.025, 3.475, 3.325, 0.74, 6.025)
     );
 
     private static final VoxelShape SOUTH = VoxelShapes.union(
-            Block.createCuboidShape(5.4, 0, 1.025, 10.6, 0.225, 6.475),
-            Block.createCuboidShape(6.975, 0.225, 1.325, 9.025, 10.075, 2.775),
-            Block.createCuboidShape(7.275, 7.075, 2.775, 8.725, 8.325, 3.95),
-            Block.createCuboidShape(0.225, 3.2, 3.95, 15.775, 12.15, 5.075),
+            Block.createCuboidShape(5.275, 0, 0.7, 10.725, 0.225, 6.4),
+            Block.createCuboidShape(6.925, 0.225, 0.975, 9.075, 10.575, 2.525),
+            Block.createCuboidShape(7.25, 7.425, 2.525, 8.75, 8.725, 3.75),
+            Block.createCuboidShape(-0.15, 3.35, 3.75, 16.15, 12.75, 4.925),
 
-            Block.createCuboidShape(-0.4, 0, 8.25, 16.4, 0.025, 14.75),
-            Block.createCuboidShape(1.55, 0.025, 9.5, 10.85, 0.75, 12.975),
-            Block.createCuboidShape(12.675, 0.025, 9.475, 14.5, 0.775, 13)
+            Block.createCuboidShape(-0.5, 0, 8.25, 16.5, 0.025, 14.75),
+            Block.createCuboidShape(1.55, 0.025, 9.5, 10.85, 0.725, 12.975),
+            Block.createCuboidShape(12.675, 0.025, 9.975, 14.5, 0.75, 12.525)
     );
 
     private static final VoxelShape EAST = VoxelShapes.union(
-            Block.createCuboidShape(1.025, 0, 5.4, 6.475, 0.225, 10.6),
-            Block.createCuboidShape(1.325, 0.225, 6.975, 2.775, 10.075, 9.025),
-            Block.createCuboidShape(2.775, 7.075, 7.275, 3.95, 8.325, 8.725),
-            Block.createCuboidShape(3.95, 3.2, 0.225, 5.075, 12.15, 15.775),
+            Block.createCuboidShape(0.7, 0, 5.275, 6.4, 0.225, 10.725),
+            Block.createCuboidShape(0.975, 0.225, 6.925, 2.525, 10.575, 9.075),
+            Block.createCuboidShape(2.525, 7.425, 7.25, 3.75, 8.725, 8.75),
+            Block.createCuboidShape(3.75, 3.35, -0.15, 4.925, 12.75, 16.15),
 
-            Block.createCuboidShape(8.25, 0, -0.4, 14.75, 0.025, 16.4),
-            Block.createCuboidShape(9.5, 0.025, 5.15, 12.975, 0.75, 14.45),
-            Block.createCuboidShape(9.475, 0.025, 1.5, 13, 0.775, 3.325)
+            Block.createCuboidShape(8.25, 0, -0.5, 14.75, 0.025, 16.5),
+            Block.createCuboidShape(9.5, 0.025, 5.15, 12.975, 0.725, 14.45),
+            Block.createCuboidShape(9.975, 0.025, 1.5, 12.525, 0.75, 3.325)
     );
 
     private static final VoxelShape WEST = VoxelShapes.union(
-            Block.createCuboidShape(9.525, 0, 5.4, 14.975, 0.225, 10.6),
-            Block.createCuboidShape(13.225, 0.225, 6.975, 14.675, 10.075, 9.025),
-            Block.createCuboidShape(12.05, 7.075, 7.275, 13.225, 8.325, 8.725),
-            Block.createCuboidShape(10.925, 3.2, 0.225, 12.05, 12.15, 15.775),
+            Block.createCuboidShape(9.6, 0, 5.275, 15.3, 0.225, 10.725),
+            Block.createCuboidShape(13.475, 0.225, 6.925, 15.025, 10.575, 9.075),
+            Block.createCuboidShape(12.25, 7.425, 7.25, 13.475, 8.725, 8.75),
+            Block.createCuboidShape(11.075, 3.35, -0.15, 12.25, 12.75, 16.15),
 
-            Block.createCuboidShape(1.25, 0, -0.4, 7.75, 0.025, 16.4),
-            Block.createCuboidShape(3.025, 0.025, 1.55, 6.5, 0.75, 10.85),
-            Block.createCuboidShape(3, 0.025, 12.675, 6.525, 0.775, 14.5)
+            Block.createCuboidShape(1.25, 0, -0.5, 7.75, 0.025, 16.5),
+            Block.createCuboidShape(3.025, 0.025, 1.55, 6.5, 0.725, 10.85),
+            Block.createCuboidShape(3.475, 0.025, 12.675, 6.025, 0.75, 14.5)
     );
 
     @Override

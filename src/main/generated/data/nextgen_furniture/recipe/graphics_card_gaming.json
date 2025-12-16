@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "1": "minecraft:black_concrete",
+    "2": "minecraft:end_crystal",
+    "3": "minecraft:iron_ingot",
+    "4": "minecraft:redstone"
+  },
+  "pattern": [
+    "121",
+    "333",
+    "411"
+  ],
+  "result": {
+    "count": 1,
+    "id": "nextgen_furniture:graphics_card_gaming"
+  }
+}

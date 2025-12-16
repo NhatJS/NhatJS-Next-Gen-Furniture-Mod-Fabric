@@ -69,6 +69,33 @@ public class NhatJSNextGenFurnitureModClient implements ClientModInitializer {
         BlockRenderLayerMap.putBlock(ModBlocks.KEYBOARD_MECHANICAL_BLACK, BlockRenderLayer.CUTOUT_MIPPED);
         BlockRenderLayerMap.putBlock(ModBlocks.GAME_CONSOLE, BlockRenderLayer.CUTOUT_MIPPED);
 
+        BlockRenderLayerMap.putBlock(ModBlocks.KEYBOARD_MECHANICAL_BLACK_WOOD_OAK, BlockRenderLayer.CUTOUT_MIPPED);
+        BlockRenderLayerMap.putBlock(ModBlocks.KEYBOARD_MECHANICAL_BLACK_WOOD_BIRCH, BlockRenderLayer.CUTOUT_MIPPED);
+        BlockRenderLayerMap.putBlock(ModBlocks.WARDROBE_MODERN_WOOD_OAK_LEFT, BlockRenderLayer.CUTOUT_MIPPED);
+        BlockRenderLayerMap.putBlock(ModBlocks.WARDROBE_MODERN_WOOD_BIRCH_LEFT, BlockRenderLayer.CUTOUT_MIPPED);
+        BlockRenderLayerMap.putBlock(ModBlocks.WARDROBE_MODERN_WOOD_OAK_RIGHT, BlockRenderLayer.CUTOUT_MIPPED);
+        BlockRenderLayerMap.putBlock(ModBlocks.WARDROBE_MODERN_WOOD_BIRCH_RIGHT, BlockRenderLayer.CUTOUT_MIPPED);
+        BlockRenderLayerMap.putBlock(ModBlocks.CHAIR_2_WHITE_GRAY, BlockRenderLayer.CUTOUT_MIPPED);
+        BlockRenderLayerMap.putBlock(ModBlocks.CHAIR_2_WHITE_WHITE, BlockRenderLayer.CUTOUT_MIPPED);
+        BlockRenderLayerMap.putBlock(ModBlocks.CHAIR_2_WOOD_OAK_GRAY, BlockRenderLayer.CUTOUT_MIPPED);
+        BlockRenderLayerMap.putBlock(ModBlocks.CHAIR_2_WOOD_OAK_WHITE, BlockRenderLayer.CUTOUT_MIPPED);
+        BlockRenderLayerMap.putBlock(ModBlocks.CHAIR_2_WOOD_BIRCH_GRAY, BlockRenderLayer.CUTOUT_MIPPED);
+        BlockRenderLayerMap.putBlock(ModBlocks.CHAIR_2_WOOD_BIRCH_WHITE, BlockRenderLayer.CUTOUT_MIPPED);
+        BlockRenderLayerMap.putBlock(ModBlocks.PC_GAMING, BlockRenderLayer.CUTOUT_MIPPED);
+        BlockRenderLayerMap.putBlock(ModBlocks.COMPUTER_CASE_GAMING, BlockRenderLayer.CUTOUT_MIPPED);
+        BlockRenderLayerMap.putBlock(ModBlocks.COMPUTER_POWER_SUPPLY, BlockRenderLayer.CUTOUT_MIPPED);
+        BlockRenderLayerMap.putBlock(ModBlocks.MAINBOARD_GAMING, BlockRenderLayer.CUTOUT_MIPPED);
+        BlockRenderLayerMap.putBlock(ModBlocks.GRAPHICS_CARD_GAMING, BlockRenderLayer.CUTOUT_MIPPED);
+        BlockRenderLayerMap.putBlock(ModBlocks.AIO_COOLER_3_FANS, BlockRenderLayer.CUTOUT_MIPPED);
+        BlockRenderLayerMap.putBlock(ModBlocks.PC_GAMING_ADDED_1, BlockRenderLayer.CUTOUT_MIPPED);
+        BlockRenderLayerMap.putBlock(ModBlocks.PC_GAMING_ADDED_2, BlockRenderLayer.CUTOUT_MIPPED);
+        BlockRenderLayerMap.putBlock(ModBlocks.PC_GAMING_ADDED_3, BlockRenderLayer.CUTOUT_MIPPED);
+        BlockRenderLayerMap.putBlock(ModBlocks.PC_GAMING_ADDED_4, BlockRenderLayer.CUTOUT_MIPPED);
+        BlockRenderLayerMap.putBlock(ModBlocks.PC_GAMING_ADDED_5, BlockRenderLayer.CUTOUT_MIPPED);
+        BlockRenderLayerMap.putBlock(ModBlocks.PC_GAMING_ADDED_6, BlockRenderLayer.CUTOUT_MIPPED);
+        BlockRenderLayerMap.putBlock(ModBlocks.PC_GAMING_ADDED_7, BlockRenderLayer.CUTOUT_MIPPED);
+        BlockRenderLayerMap.putBlock(ModBlocks.PC_GAMING_ADDED_8, BlockRenderLayer.CUTOUT_MIPPED);
+
         ModelLoadingPlugin.register(ctx -> {
             ctx.addModel(LAPTOP_SCREEN_ID, SimpleUnbakedExtraModel.blockStateModel(LAPTOP_SCREEN));
             ctx.addModel(LAPTOP_SCREEN_ON_ID, SimpleUnbakedExtraModel.blockStateModel(LAPTOP_SCREEN_ON));

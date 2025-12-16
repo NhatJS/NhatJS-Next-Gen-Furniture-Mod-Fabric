@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "nextgen_furniture:block/computer_power_supply",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "nextgen_furniture:block/computer_power_supply"
+    },
+    "facing=south": {
+      "model": "nextgen_furniture:block/computer_power_supply",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "nextgen_furniture:block/computer_power_supply",
+      "y": 270
+    }
+  }
+}

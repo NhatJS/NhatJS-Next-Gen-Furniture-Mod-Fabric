@@ -1,0 +1,35 @@
+{
+  "variants": {
+    "facing=east,move=false": {
+      "model": "nextgen_furniture:block/chair_2_wood_birch_gray",
+      "y": 90
+    },
+    "facing=north,move=false": {
+      "model": "nextgen_furniture:block/chair_2_wood_birch_gray"
+    },
+    "facing=south,move=false": {
+      "model": "nextgen_furniture:block/chair_2_wood_birch_gray",
+      "y": 180
+    },
+    "facing=west,move=false": {
+      "model": "nextgen_furniture:block/chair_2_wood_birch_gray",
+      "y": 270
+    },
+
+    "facing=east,move=true": {
+      "model": "nextgen_furniture:block/chair_2_wood_birch_gray_moved",
+      "y": 90
+    },
+    "facing=north,move=true": {
+      "model": "nextgen_furniture:block/chair_2_wood_birch_gray_moved"
+    },
+    "facing=south,move=true": {
+      "model": "nextgen_furniture:block/chair_2_wood_birch_gray_moved",
+      "y": 180
+    },
+    "facing=west,move=true": {
+      "model": "nextgen_furniture:block/chair_2_wood_birch_gray_moved",
+      "y": 270
+    }
+  }
+}

@@ -11,6 +11,7 @@ import net.minecraft.item.Items;
 import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.registry.RegistryWrapper;
 import net.nhatjs.nextgen_furniture.block.ModBlocks;
+import net.nhatjs.nextgen_furniture.item.ModItems;
 
 import java.util.concurrent.CompletableFuture;
 
@@ -45,10 +46,12 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 Block terracottaCyan = Blocks.CYAN_TERRACOTTA;
 
                 //dye
+                Item dyeBlack = Items.BLACK_DYE;
                 Item dyeWhite = Items.WHITE_DYE;
 
                 //misc
                 Item stick = Items.STICK;
+                Item ingotIron = Items.IRON_INGOT;
 
                 //glass pane
                 Block glassPaneStainedBlack = Blocks.BLACK_STAINED_GLASS_PANE;
@@ -56,6 +59,8 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 //electronic
                 Item redstone = Items.REDSTONE;
                 Block redstoneLamp = Blocks.REDSTONE_LAMP;
+                Block redstoneComparator = Blocks.COMPARATOR;
+                Block hopper = Blocks.HOPPER;
 
                 //nextgen furniture mod
                 Block table1x1Black = ModBlocks.TABLE_1X1_BLACK;
@@ -63,6 +68,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 Block monitorGamingMinimalist = ModBlocks.MONITOR_GAMING_MINIMALIST;
                 Block keyboardMechanicalBlack = ModBlocks.KEYBOARD_MECHANICAL_BLACK;
                 Block mouseGamingBlack = ModBlocks.MOUSE_GAMING_BLACK;
+                Item computerFanBladeWhite = ModItems.COMPUTER_FAN_BLADE_WHITE;
 
                 //others
                 Block bedGray = Blocks.GRAY_BED;
@@ -71,6 +77,19 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 Item endCrystal = Items.END_CRYSTAL;
                 Block chest = Blocks.CHEST;
                 Item painting = Items.PAINTING;
+                Item string = Items.STRING;
+
+                createShaped(RecipeCategory.DECORATIONS, ModBlocks.AIO_COOLER_3_FANS)
+                        .pattern("111")
+                        .pattern("222")
+                        .pattern("31 ")
+                        .input('1', concreteBlack)
+                        .input('2', computerFanBladeWhite)
+                        .input('3', string)
+                        .criterion(hasItem(planksBirch), conditionsFromItem(planksBirch))
+                        .criterion(hasItem(computerFanBladeWhite), conditionsFromItem(computerFanBladeWhite))
+                        .criterion(hasItem(string), conditionsFromItem(string))
+                        .offerTo(recipeExporter);
 
                 createShaped(RecipeCategory.DECORATIONS, ModBlocks.BED_GRAY_WOOD_BIRCH)
                         .pattern("121")
@@ -102,6 +121,66 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .input('2', bedWhite)
                         .criterion(hasItem(planksOak), conditionsFromItem(planksOak))
                         .criterion(hasItem(bedWhite), conditionsFromItem(bedWhite))
+                        .offerTo(recipeExporter);
+
+                createShaped(RecipeCategory.DECORATIONS, ModBlocks.CHAIR_2_WHITE_GRAY, 2)
+                        .pattern("1  ")
+                        .pattern("111")
+                        .pattern("2 2")
+                        .input('1', woolGray)
+                        .input('2', concreteWhite)
+                        .criterion(hasItem(woolGray), conditionsFromItem(woolGray))
+                        .criterion(hasItem(concreteWhite), conditionsFromItem(concreteWhite))
+                        .offerTo(recipeExporter);
+
+                createShaped(RecipeCategory.DECORATIONS, ModBlocks.CHAIR_2_WHITE_WHITE, 2)
+                        .pattern("1  ")
+                        .pattern("111")
+                        .pattern("2 2")
+                        .input('1', woolWhite)
+                        .input('2', concreteWhite)
+                        .criterion(hasItem(woolWhite), conditionsFromItem(woolWhite))
+                        .criterion(hasItem(concreteWhite), conditionsFromItem(concreteWhite))
+                        .offerTo(recipeExporter);
+
+                createShaped(RecipeCategory.DECORATIONS, ModBlocks.CHAIR_2_WOOD_BIRCH_GRAY, 2)
+                        .pattern("1  ")
+                        .pattern("111")
+                        .pattern("2 2")
+                        .input('1', woolGray)
+                        .input('2', planksBirch)
+                        .criterion(hasItem(woolGray), conditionsFromItem(woolGray))
+                        .criterion(hasItem(planksBirch), conditionsFromItem(planksBirch))
+                        .offerTo(recipeExporter);
+
+                createShaped(RecipeCategory.DECORATIONS, ModBlocks.CHAIR_2_WOOD_BIRCH_WHITE, 2)
+                        .pattern("1  ")
+                        .pattern("111")
+                        .pattern("2 2")
+                        .input('1', woolWhite)
+                        .input('2', planksBirch)
+                        .criterion(hasItem(woolWhite), conditionsFromItem(woolWhite))
+                        .criterion(hasItem(planksBirch), conditionsFromItem(planksBirch))
+                        .offerTo(recipeExporter);
+
+                createShaped(RecipeCategory.DECORATIONS, ModBlocks.CHAIR_2_WOOD_OAK_GRAY, 2)
+                        .pattern("1  ")
+                        .pattern("111")
+                        .pattern("2 2")
+                        .input('1', woolGray)
+                        .input('2', planksOak)
+                        .criterion(hasItem(woolGray), conditionsFromItem(woolGray))
+                        .criterion(hasItem(planksOak), conditionsFromItem(planksOak))
+                        .offerTo(recipeExporter);
+
+                createShaped(RecipeCategory.DECORATIONS, ModBlocks.CHAIR_2_WOOD_OAK_WHITE, 2)
+                        .pattern("1  ")
+                        .pattern("111")
+                        .pattern("2 2")
+                        .input('1', woolWhite)
+                        .input('2', planksOak)
+                        .criterion(hasItem(woolWhite), conditionsFromItem(woolWhite))
+                        .criterion(hasItem(planksOak), conditionsFromItem(planksOak))
                         .offerTo(recipeExporter);
 
                 createShaped(RecipeCategory.DECORATIONS, ModBlocks.CHAIR_WHITE, 2)
@@ -138,6 +217,64 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .pattern("111")
                         .input('1', concreteWhite)
                         .criterion(hasItem(concreteWhite), conditionsFromItem(concreteWhite))
+                        .offerTo(recipeExporter);
+
+                createShaped(RecipeCategory.DECORATIONS, ModBlocks.COMPUTER_CASE_GAMING)
+                        .pattern("143")
+                        .pattern("123")
+                        .pattern("113")
+                        .input('1', concreteBlack)
+                        .input('2', redstone)
+                        .input('3', computerFanBladeWhite)
+                        .input('4', buttonStone)
+                        .criterion(hasItem(concreteBlack), conditionsFromItem(concreteBlack))
+                        .criterion(hasItem(redstone), conditionsFromItem(redstone))
+                        .criterion(hasItem(computerFanBladeWhite), conditionsFromItem(computerFanBladeWhite))
+                        .criterion(hasItem(buttonStone), conditionsFromItem(buttonStone))
+                        .offerTo(recipeExporter);
+
+                createShaped(RecipeCategory.DECORATIONS, ModItems.COMPUTER_CPU)
+                        .pattern(" 2 ")
+                        .pattern("212")
+                        .pattern(" 2 ")
+                        .input('1', endCrystal)
+                        .input('2', ingotIron)
+                        .criterion(hasItem(endCrystal), conditionsFromItem(endCrystal))
+                        .criterion(hasItem(ingotIron), conditionsFromItem(ingotIron))
+                        .offerTo(recipeExporter);
+
+                createShaped(RecipeCategory.DECORATIONS, ModItems.COMPUTER_FAN_BLADE_WHITE, 3)
+                        .pattern("121")
+                        .pattern("212")
+                        .pattern("121")
+                        .input('1', concreteBlack)
+                        .input('2', ingotIron)
+                        .criterion(hasItem(concreteBlack), conditionsFromItem(concreteBlack))
+                        .criterion(hasItem(ingotIron), conditionsFromItem(ingotIron))
+                        .offerTo(recipeExporter);
+
+                createShaped(RecipeCategory.DECORATIONS, ModBlocks.COMPUTER_POWER_SUPPLY)
+                        .pattern("111")
+                        .pattern("432")
+                        .pattern("151")
+                        .input('1', concreteBlack)
+                        .input('2', redstone)
+                        .input('3', endCrystal)
+                        .input('4', buttonStone)
+                        .input('5', redstoneComparator)
+                        .criterion(hasItem(concreteBlack), conditionsFromItem(concreteBlack))
+                        .criterion(hasItem(redstone), conditionsFromItem(redstone))
+                        .criterion(hasItem(computerFanBladeWhite), conditionsFromItem(computerFanBladeWhite))
+                        .criterion(hasItem(buttonStone), conditionsFromItem(buttonStone))
+                        .offerTo(recipeExporter);
+
+                createShaped(RecipeCategory.DECORATIONS, ModItems.COMPUTER_RAM_GAMING, 2)
+                        .pattern("111")
+                        .pattern("222")
+                        .input('1', dyeBlack)
+                        .input('2', ingotIron)
+                        .criterion(hasItem(dyeBlack), conditionsFromItem(dyeBlack))
+                        .criterion(hasItem(ingotIron), conditionsFromItem(ingotIron))
                         .offerTo(recipeExporter);
 
                 createShaped(RecipeCategory.DECORATIONS, ModBlocks.FLOOR_LAMP)
@@ -178,6 +315,20 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .criterion(hasItem(buttonStone), conditionsFromItem(buttonStone))
                         .offerTo(recipeExporter);
 
+                createShaped(RecipeCategory.DECORATIONS, ModBlocks.GRAPHICS_CARD_GAMING)
+                        .pattern("121")
+                        .pattern("333")
+                        .pattern("411")
+                        .input('1', concreteBlack)
+                        .input('2', endCrystal)
+                        .input('3', ingotIron)
+                        .input('4', redstone)
+                        .criterion(hasItem(concreteBlack), conditionsFromItem(concreteBlack))
+                        .criterion(hasItem(endCrystal), conditionsFromItem(endCrystal))
+                        .criterion(hasItem(ingotIron), conditionsFromItem(ingotIron))
+                        .criterion(hasItem(redstone), conditionsFromItem(redstone))
+                        .offerTo(recipeExporter);
+
                 createShaped(RecipeCategory.DECORATIONS, ModBlocks.KEYBOARD_MECHANICAL_BLACK)
                         .pattern("222")
                         .pattern("313")
@@ -187,6 +338,28 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .criterion(hasItem(concreteBlack), conditionsFromItem(concreteBlack))
                         .criterion(hasItem(buttonStone), conditionsFromItem(buttonStone))
                         .criterion(hasItem(dyeWhite), conditionsFromItem(dyeWhite))
+                        .offerTo(recipeExporter);
+
+                createShaped(RecipeCategory.DECORATIONS, ModBlocks.KEYBOARD_MECHANICAL_BLACK_WOOD_OAK)
+                        .pattern("222")
+                        .pattern("313")
+                        .input('1', concreteBlack)
+                        .input('2', buttonStone)
+                        .input('3', planksOak)
+                        .criterion(hasItem(concreteBlack), conditionsFromItem(concreteBlack))
+                        .criterion(hasItem(buttonStone), conditionsFromItem(buttonStone))
+                        .criterion(hasItem(planksOak), conditionsFromItem(planksOak))
+                        .offerTo(recipeExporter);
+
+                createShaped(RecipeCategory.DECORATIONS, ModBlocks.KEYBOARD_MECHANICAL_BLACK_WOOD_BIRCH)
+                        .pattern("222")
+                        .pattern("313")
+                        .input('1', concreteBlack)
+                        .input('2', buttonStone)
+                        .input('3', planksBirch)
+                        .criterion(hasItem(concreteBlack), conditionsFromItem(concreteBlack))
+                        .criterion(hasItem(buttonStone), conditionsFromItem(buttonStone))
+                        .criterion(hasItem(planksOak), conditionsFromItem(planksOak))
                         .offerTo(recipeExporter);
 
                 createShaped(RecipeCategory.DECORATIONS, ModBlocks.LAPTOP)
@@ -207,6 +380,20 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .criterion(hasItem(noteBlock), conditionsFromItem(noteBlock))
                         .criterion(hasItem(endCrystal), conditionsFromItem(endCrystal))
                         .criterion(hasItem(buttonStone), conditionsFromItem(buttonStone))
+                        .offerTo(recipeExporter);
+
+                createShaped(RecipeCategory.DECORATIONS, ModBlocks.MAINBOARD_GAMING)
+                        .pattern("311")
+                        .pattern("321")
+                        .pattern("141")
+                        .input('1', concreteBlack)
+                        .input('2', endCrystal)
+                        .input('3', redstone)
+                        .input('4', hopper)
+                        .criterion(hasItem(concreteBlack), conditionsFromItem(concreteBlack))
+                        .criterion(hasItem(endCrystal), conditionsFromItem(endCrystal))
+                        .criterion(hasItem(redstone), conditionsFromItem(redstone))
+                        .criterion(hasItem(hopper), conditionsFromItem(hopper))
                         .offerTo(recipeExporter);
 
                 createShaped(RecipeCategory.DECORATIONS, ModBlocks.MONITOR)
@@ -367,6 +554,54 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 createShaped(RecipeCategory.DECORATIONS, ModBlocks.TV_STAND_WOOD_OAK)
                         .pattern("121")
                         .pattern("3 3")
+                        .input('1', planksOak)
+                        .input('2', chest)
+                        .input('3', concreteBlack)
+                        .criterion(hasItem(planksOak), conditionsFromItem(planksOak))
+                        .criterion(hasItem(chest), conditionsFromItem(chest))
+                        .criterion(hasItem(concreteBlack), conditionsFromItem(concreteBlack))
+                        .offerTo(recipeExporter);
+
+                createShaped(RecipeCategory.DECORATIONS, ModBlocks.WARDROBE_MODERN_WOOD_BIRCH_LEFT)
+                        .pattern("111")
+                        .pattern("123")
+                        .pattern("113")
+                        .input('1', planksBirch)
+                        .input('2', chest)
+                        .input('3', concreteBlack)
+                        .criterion(hasItem(planksBirch), conditionsFromItem(planksBirch))
+                        .criterion(hasItem(chest), conditionsFromItem(chest))
+                        .criterion(hasItem(concreteBlack), conditionsFromItem(concreteBlack))
+                        .offerTo(recipeExporter);
+
+                createShaped(RecipeCategory.DECORATIONS, ModBlocks.WARDROBE_MODERN_WOOD_OAK_LEFT)
+                        .pattern("111")
+                        .pattern("123")
+                        .pattern("113")
+                        .input('1', planksOak)
+                        .input('2', chest)
+                        .input('3', concreteBlack)
+                        .criterion(hasItem(planksOak), conditionsFromItem(planksOak))
+                        .criterion(hasItem(chest), conditionsFromItem(chest))
+                        .criterion(hasItem(concreteBlack), conditionsFromItem(concreteBlack))
+                        .offerTo(recipeExporter);
+
+                createShaped(RecipeCategory.DECORATIONS, ModBlocks.WARDROBE_MODERN_WOOD_BIRCH_RIGHT)
+                        .pattern("111")
+                        .pattern("321")
+                        .pattern("311")
+                        .input('1', planksBirch)
+                        .input('2', chest)
+                        .input('3', concreteBlack)
+                        .criterion(hasItem(planksBirch), conditionsFromItem(planksBirch))
+                        .criterion(hasItem(chest), conditionsFromItem(chest))
+                        .criterion(hasItem(concreteBlack), conditionsFromItem(concreteBlack))
+                        .offerTo(recipeExporter);
+
+                createShaped(RecipeCategory.DECORATIONS, ModBlocks.WARDROBE_MODERN_WOOD_OAK_RIGHT)
+                        .pattern("111")
+                        .pattern("321")
+                        .pattern("311")
                         .input('1', planksOak)
                         .input('2', chest)
                         .input('3', concreteBlack)
