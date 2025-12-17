@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "1": "minecraft:black_concrete",
+    "2": "minecraft:stone_button",
+    "3": "minecraft:oak_planks"
+  },
+  "pattern": [
+    "222",
+    "313"
+  ],
+  "result": {
+    "count": 1,
+    "id": "nextgen_furniture:keyboard_mechanical_black_wood_oak"
+  }
+}

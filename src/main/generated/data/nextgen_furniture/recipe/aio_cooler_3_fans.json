@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "1": "minecraft:black_concrete",
+    "2": "nextgen_furniture:computer_fan_blade_white",
+    "3": "minecraft:string"
+  },
+  "pattern": [
+    "111",
+    "222",
+    "31 "
+  ],
+  "result": {
+    "count": 1,
+    "id": "nextgen_furniture:aio_cooler_3_fans"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "1": "minecraft:white_wool",
+    "2": "minecraft:birch_planks"
+  },
+  "pattern": [
+    "1  ",
+    "111",
+    "2 2"
+  ],
+  "result": {
+    "count": 2,
+    "id": "nextgen_furniture:chair_2_wood_birch_white"
+  }
+}

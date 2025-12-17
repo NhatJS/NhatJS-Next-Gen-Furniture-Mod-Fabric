@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "1": "minecraft:black_concrete",
+    "2": "minecraft:redstone",
+    "3": "nextgen_furniture:computer_fan_blade_white",
+    "4": "minecraft:stone_button"
+  },
+  "pattern": [
+    "143",
+    "123",
+    "113"
+  ],
+  "result": {
+    "count": 1,
+    "id": "nextgen_furniture:computer_case_gaming"
+  }
+}

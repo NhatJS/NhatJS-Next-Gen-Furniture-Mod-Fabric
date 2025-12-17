@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "1": "minecraft:black_dye",
+    "2": "minecraft:iron_ingot"
+  },
+  "pattern": [
+    "111",
+    "222"
+  ],
+  "result": {
+    "count": 2,
+    "id": "nextgen_furniture:computer_ram_gaming"
+  }
+}

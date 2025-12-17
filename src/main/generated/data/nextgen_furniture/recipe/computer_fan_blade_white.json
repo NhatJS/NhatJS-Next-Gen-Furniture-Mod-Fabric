@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "1": "minecraft:black_concrete",
+    "2": "minecraft:iron_ingot"
+  },
+  "pattern": [
+    "121",
+    "212",
+    "121"
+  ],
+  "result": {
+    "count": 3,
+    "id": "nextgen_furniture:computer_fan_blade_white"
+  }
+}

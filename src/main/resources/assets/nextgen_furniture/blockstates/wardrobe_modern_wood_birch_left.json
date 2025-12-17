@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "nextgen_furniture:block/wardrobe_modern_wood_birch_left",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "nextgen_furniture:block/wardrobe_modern_wood_birch_left"
+    },
+    "facing=south": {
+      "model": "nextgen_furniture:block/wardrobe_modern_wood_birch_left",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "nextgen_furniture:block/wardrobe_modern_wood_birch_left",
+      "y": 270
+    }
+  }
+}

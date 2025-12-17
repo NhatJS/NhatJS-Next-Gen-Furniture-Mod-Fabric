@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "1": "minecraft:black_concrete",
+    "2": "minecraft:redstone",
+    "3": "minecraft:end_crystal",
+    "4": "minecraft:stone_button",
+    "5": "minecraft:comparator"
+  },
+  "pattern": [
+    "111",
+    "432",
+    "151"
+  ],
+  "result": {
+    "count": 1,
+    "id": "nextgen_furniture:computer_power_supply"
+  }
+}

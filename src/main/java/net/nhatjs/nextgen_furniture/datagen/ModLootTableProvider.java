@@ -47,11 +47,30 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.BED_GRAY_WOOD_BIRCH);;
         addDrop(ModBlocks.BED_WHITE_WOOD_OAK);
         addDrop(ModBlocks.BED_WHITE_WOOD_BIRCH);
-
+        
         addDrop(ModBlocks.MONITOR);
         addDrop(ModBlocks.MONITOR_GAMING_MINIMALIST);
         addDrop(ModBlocks.MOUSE_GAMING_BLACK);
         addDrop(ModBlocks.KEYBOARD_MECHANICAL_BLACK);
         addDrop(ModBlocks.GAME_CONSOLE);
+
+        addDrop(ModBlocks.KEYBOARD_MECHANICAL_BLACK_WOOD_OAK);
+        addDrop(ModBlocks.KEYBOARD_MECHANICAL_BLACK_WOOD_BIRCH);
+        addDrop(ModBlocks.WARDROBE_MODERN_WOOD_OAK_LEFT);
+        addDrop(ModBlocks.WARDROBE_MODERN_WOOD_BIRCH_LEFT);
+        addDrop(ModBlocks.WARDROBE_MODERN_WOOD_OAK_RIGHT);
+        addDrop(ModBlocks.WARDROBE_MODERN_WOOD_BIRCH_RIGHT);
+        addDrop(ModBlocks.CHAIR_2_WHITE_GRAY);
+        addDrop(ModBlocks.CHAIR_2_WHITE_WHITE);
+        addDrop(ModBlocks.CHAIR_2_WOOD_OAK_GRAY);
+        addDrop(ModBlocks.CHAIR_2_WOOD_OAK_WHITE);
+        addDrop(ModBlocks.CHAIR_2_WOOD_BIRCH_GRAY);
+        addDrop(ModBlocks.CHAIR_2_WOOD_BIRCH_WHITE);
+        addDrop(ModBlocks.PC_GAMING);
+        addDrop(ModBlocks.COMPUTER_CASE_GAMING);
+        addDrop(ModBlocks.COMPUTER_POWER_SUPPLY);
+        addDrop(ModBlocks.MAINBOARD_GAMING);
+        addDrop(ModBlocks.GRAPHICS_CARD_GAMING);
+        addDrop(ModBlocks.AIO_COOLER_3_FANS);
     }
 }

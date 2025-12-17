@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "1": "minecraft:birch_planks",
+    "2": "minecraft:chest",
+    "3": "minecraft:black_concrete"
+  },
+  "pattern": [
+    "111",
+    "321",
+    "311"
+  ],
+  "result": {
+    "count": 1,
+    "id": "nextgen_furniture:wardrobe_modern_wood_birch_right"
+  }
+}

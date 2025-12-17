@@ -8,12 +8,17 @@ import net.minecraft.registry.RegistryKeys;
 import net.minecraft.util.Identifier;
 import net.nhatjs.nextgen_furniture.NhatJSNextGenFurnitureMod;
 
-public class ModItems {
-    public static final Item NEXTGEN_FURNITURE_LOGO = registerItem("nextgen_furniture_logo", new Item(new Item.Settings()
-            .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(NhatJSNextGenFurnitureMod.MOD_ID, "nextgen_furniture_logo")))));
+import java.util.function.Function;
 
-    private static Item registerItem(String name, Item item) {
-        return Registry.register(Registries.ITEM, Identifier.of(NhatJSNextGenFurnitureMod.MOD_ID, name), item);
+public class ModItems {
+    public static final Item NEXTGEN_FURNITURE_LOGO = registerItem("nextgen_furniture_logo", Item::new);
+    public static final Item COMPUTER_FAN_BLADE_WHITE = registerItem("computer_fan_blade_white", Item::new);
+    public static final Item COMPUTER_RAM_GAMING = registerItem("computer_ram_gaming", Item::new);
+    public static final Item COMPUTER_CPU = registerItem("computer_cpu", Item::new);
+
+    private static Item registerItem(String name, Function<Item.Settings, Item> function) {
+        return Registry.register(Registries.ITEM, Identifier.of(NhatJSNextGenFurnitureMod.MOD_ID, name),
+                function.apply(new Item.Settings().registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(NhatJSNextGenFurnitureMod.MOD_ID, name)))));
     }
 
     public static void registerModItems() {
