@@ -96,6 +96,10 @@ public class NhatJSNextGenFurnitureModClient implements ClientModInitializer {
         BlockRenderLayerMap.putBlock(ModBlocks.PC_GAMING_ADDED_7, BlockRenderLayer.CUTOUT_MIPPED);
         BlockRenderLayerMap.putBlock(ModBlocks.PC_GAMING_ADDED_8, BlockRenderLayer.CUTOUT_MIPPED);
 
+        BlockRenderLayerMap.putBlock(ModBlocks.MONITOR_DUAL, BlockRenderLayer.CUTOUT_MIPPED);
+        BlockRenderLayerMap.putBlock(ModBlocks.MONITOR_DUAL_ALT, BlockRenderLayer.CUTOUT_MIPPED);
+        BlockRenderLayerMap.putBlock(ModBlocks.MONITOR_DUAL_ALT_2, BlockRenderLayer.CUTOUT_MIPPED);
+
         ModelLoadingPlugin.register(ctx -> {
             ctx.addModel(LAPTOP_SCREEN_ID, SimpleUnbakedExtraModel.blockStateModel(LAPTOP_SCREEN));
             ctx.addModel(LAPTOP_SCREEN_ON_ID, SimpleUnbakedExtraModel.blockStateModel(LAPTOP_SCREEN_ON));

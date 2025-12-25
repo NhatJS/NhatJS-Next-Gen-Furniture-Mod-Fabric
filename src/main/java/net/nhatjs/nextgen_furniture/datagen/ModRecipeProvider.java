@@ -407,6 +407,17 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .criterion(hasItem(mouseGamingBlack), conditionsFromItem(mouseGamingBlack))
                         .offerTo(recipeExporter);
 
+                createShaped(RecipeCategory.DECORATIONS, ModBlocks.MONITOR_DUAL)
+                        .pattern("11")
+                        .pattern("23")
+                        .input('1', monitorGamingMinimalist)
+                        .input('2', keyboardMechanicalBlack)
+                        .input('3', mouseGamingBlack)
+                        .criterion(hasItem(monitorGamingMinimalist), conditionsFromItem(monitorGamingMinimalist))
+                        .criterion(hasItem(keyboardMechanicalBlack), conditionsFromItem(keyboardMechanicalBlack))
+                        .criterion(hasItem(mouseGamingBlack), conditionsFromItem(mouseGamingBlack))
+                        .offerTo(exporter);
+
                 createShaped(RecipeCategory.DECORATIONS, ModBlocks.MONITOR_GAMING_MINIMALIST)
                         .pattern("141")
                         .pattern("121")

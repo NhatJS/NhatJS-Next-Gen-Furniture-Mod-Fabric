@@ -53,6 +53,7 @@ public class ModItemGroups {
                         entries.add(ModBlocks.FLOOR_LAMP);
                         entries.add(ModBlocks.FLOOR_LAMP_B);
                         entries.add(ModBlocks.MONITOR);
+                        entries.add(ModBlocks.MONITOR_DUAL);
                         entries.add(ModBlocks.MONITOR_GAMING_MINIMALIST);
                         entries.add(ModBlocks.KEYBOARD_MECHANICAL_BLACK);
                         entries.add(ModBlocks.KEYBOARD_MECHANICAL_BLACK_WOOD_OAK);

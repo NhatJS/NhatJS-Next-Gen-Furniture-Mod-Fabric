@@ -7,6 +7,10 @@ import net.minecraft.block.ShapeContext;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemPlacementContext;
 import net.minecraft.item.ItemStack;
+import net.minecraft.particle.ParticleTypes;
+import net.minecraft.server.world.ServerWorld;
+import net.minecraft.sound.SoundCategory;
+import net.minecraft.sound.SoundEvents;
 import net.minecraft.state.StateManager;
 import net.minecraft.state.property.EnumProperty;
 import net.minecraft.state.property.Properties;
@@ -56,8 +60,16 @@ public class GamingPCAdded8Block extends Block {
             Direction facing =  state.get(HorizontalFacingBlock.FACING);
             world.setBlockState(pos, ModBlocks.PC_GAMING.getDefaultState()
                     .with(HorizontalFacingBlock.FACING, facing), Block.NOTIFY_ALL);
+            playBuildSuccessEffects(world, pos);
             return ActionResult.SUCCESS;
         }
         return ActionResult.SUCCESS;
+    }
+
+    private void playBuildSuccessEffects(World world, BlockPos pos) {
+        if (!(world instanceof ServerWorld serverWorld)) return;
+
+        serverWorld.playSound(null, pos, SoundEvents.BLOCK_NOTE_BLOCK_PLING.value(), SoundCategory.BLOCKS, 0.8f, 1.0f);
+        serverWorld.spawnParticles(ParticleTypes.ELECTRIC_SPARK, pos.getX() + 0.5, pos.getY() + 1.0, pos.getZ() + 0.5, 5, 0.25, 0.15, 0.25, 0.01);
     }
 }

@@ -67,5 +67,8 @@
   "block.nextgen_furniture.pc_gaming_added_5": "Gaming PC (Added 5)",
   "block.nextgen_furniture.pc_gaming_added_6": "Gaming PC (Added 6)",
   "block.nextgen_furniture.pc_gaming_added_7": "Gaming PC (Added 7)",
-  "block.nextgen_furniture.pc_gaming_added_8": "Gaming PC (Added 8)"
+  "block.nextgen_furniture.pc_gaming_added_8": "Gaming PC (Added 8)",
+  "block.nextgen_furniture.monitor_dual": "Dual Monitor",
+  "block.nextgen_furniture.monitor_dual_alt": "Dual Monitor (Alternative)",
+  "block.nextgen_furniture.monitor_dual_alt_2": "Dual Monitor (Alternative 2)"
 }

@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "nextgen_furniture:block/pc_gaming_added_5",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "nextgen_furniture:block/pc_gaming_added_5"
+    },
+    "facing=south": {
+      "model": "nextgen_furniture:block/pc_gaming_added_5",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "nextgen_furniture:block/pc_gaming_added_5",
+      "y": 270
+    }
+  }
+}
