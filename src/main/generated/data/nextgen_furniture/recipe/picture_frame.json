@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "1": {
+      "item": "minecraft:oak_planks"
+    },
+    "2": {
+      "item": "minecraft:painting"
+    }
+  },
+  "pattern": [
+    "121"
+  ],
+  "result": {
+    "count": 1,
+    "id": "nextgen_furniture:picture_frame"
+  }
+}

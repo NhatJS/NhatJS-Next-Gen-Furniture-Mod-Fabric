@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "nextgen_furniture:block/graphics_card_gaming",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "nextgen_furniture:block/graphics_card_gaming"
+    },
+    "facing=south": {
+      "model": "nextgen_furniture:block/graphics_card_gaming",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "nextgen_furniture:block/graphics_card_gaming",
+      "y": 270
+    }
+  }
+}

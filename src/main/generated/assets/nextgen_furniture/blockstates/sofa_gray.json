@@ -1,0 +1,100 @@
+{
+  "variants": {
+    "facing=east,part=corner_left": {
+      "model": "nextgen_furniture:block/sofa_corner_left_gray",
+      "y": 90
+    },
+    "facing=east,part=corner_right": {
+      "model": "nextgen_furniture:block/sofa_corner_right_gray",
+      "y": 90
+    },
+    "facing=east,part=left": {
+      "model": "nextgen_furniture:block/sofa_left_gray",
+      "y": 90
+    },
+    "facing=east,part=middle": {
+      "model": "nextgen_furniture:block/sofa_middle_gray",
+      "y": 90
+    },
+    "facing=east,part=right": {
+      "model": "nextgen_furniture:block/sofa_right_gray",
+      "y": 90
+    },
+    "facing=east,part=single": {
+      "model": "nextgen_furniture:block/sofa_single_gray",
+      "y": 90
+    },
+    "facing=north,part=corner_left": {
+      "model": "nextgen_furniture:block/sofa_corner_left_gray",
+      "y": 0
+    },
+    "facing=north,part=corner_right": {
+      "model": "nextgen_furniture:block/sofa_corner_right_gray",
+      "y": 0
+    },
+    "facing=north,part=left": {
+      "model": "nextgen_furniture:block/sofa_left_gray",
+      "y": 0
+    },
+    "facing=north,part=middle": {
+      "model": "nextgen_furniture:block/sofa_middle_gray",
+      "y": 0
+    },
+    "facing=north,part=right": {
+      "model": "nextgen_furniture:block/sofa_right_gray",
+      "y": 0
+    },
+    "facing=north,part=single": {
+      "model": "nextgen_furniture:block/sofa_single_gray",
+      "y": 0
+    },
+    "facing=south,part=corner_left": {
+      "model": "nextgen_furniture:block/sofa_corner_left_gray",
+      "y": 180
+    },
+    "facing=south,part=corner_right": {
+      "model": "nextgen_furniture:block/sofa_corner_right_gray",
+      "y": 180
+    },
+    "facing=south,part=left": {
+      "model": "nextgen_furniture:block/sofa_left_gray",
+      "y": 180
+    },
+    "facing=south,part=middle": {
+      "model": "nextgen_furniture:block/sofa_middle_gray",
+      "y": 180
+    },
+    "facing=south,part=right": {
+      "model": "nextgen_furniture:block/sofa_right_gray",
+      "y": 180
+    },
+    "facing=south,part=single": {
+      "model": "nextgen_furniture:block/sofa_single_gray",
+      "y": 180
+    },
+    "facing=west,part=corner_left": {
+      "model": "nextgen_furniture:block/sofa_corner_left_gray",
+      "y": 270
+    },
+    "facing=west,part=corner_right": {
+      "model": "nextgen_furniture:block/sofa_corner_right_gray",
+      "y": 270
+    },
+    "facing=west,part=left": {
+      "model": "nextgen_furniture:block/sofa_left_gray",
+      "y": 270
+    },
+    "facing=west,part=middle": {
+      "model": "nextgen_furniture:block/sofa_middle_gray",
+      "y": 270
+    },
+    "facing=west,part=right": {
+      "model": "nextgen_furniture:block/sofa_right_gray",
+      "y": 270
+    },
+    "facing=west,part=single": {
+      "model": "nextgen_furniture:block/sofa_single_gray",
+      "y": 270
+    }
+  }
+}

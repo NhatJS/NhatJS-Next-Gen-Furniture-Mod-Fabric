@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "1": {
+      "item": "minecraft:black_concrete"
+    },
+    "2": {
+      "item": "minecraft:stone_button"
+    },
+    "3": {
+      "item": "minecraft:white_dye"
+    }
+  },
+  "pattern": [
+    "222",
+    "313"
+  ],
+  "result": {
+    "count": 1,
+    "id": "nextgen_furniture:keyboard_mechanical_black"
+  }
+}

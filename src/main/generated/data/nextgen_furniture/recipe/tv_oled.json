@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "1": {
+      "item": "minecraft:black_concrete"
+    },
+    "2": {
+      "item": "minecraft:end_crystal"
+    },
+    "3": {
+      "item": "minecraft:redstone"
+    }
+  },
+  "pattern": [
+    "111",
+    "121",
+    "131"
+  ],
+  "result": {
+    "count": 1,
+    "id": "nextgen_furniture:tv_oled"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "1": {
+      "item": "minecraft:white_wool"
+    }
+  },
+  "pattern": [
+    "111",
+    "111"
+  ],
+  "result": {
+    "count": 2,
+    "id": "nextgen_furniture:sofa_white"
+  }
+}

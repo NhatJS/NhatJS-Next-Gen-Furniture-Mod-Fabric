@@ -9,6 +9,7 @@ import net.minecraft.registry.Registry;
 import net.minecraft.util.DyeColor;
 import net.minecraft.util.Identifier;
 import net.nhatjs.nextgen_furniture.NhatJSNextGenFurnitureMod;
+import net.nhatjs.nextgen_furniture.block.gamingpc.*;
 
 import static net.nhatjs.nextgen_furniture.NhatJSNextGenFurnitureMod.MOD_ID;
 
@@ -56,7 +57,6 @@ public class ModBlocks {
     public static final Block TV_OLED = register("tv_oled",
             new TVBlock(Block.Settings.create().strength(1.0f).nonOpaque()));
 
-    //0.0.5 update
     public static final Block CHAIR_WOOD_BIRCH = register("chair_wood_birch",
             new ChairBlock(AbstractBlock.Settings.create().strength(1.0f).nonOpaque()));
     public static final Block TV_STAND_WOOD_BIRCH = register("tv_stand_wood_birch",
@@ -79,12 +79,77 @@ public class ModBlocks {
             new BedWoodBlock(AbstractBlock.Settings.create().strength(1.0f).nonOpaque()));
     public static final Block BED_WHITE_WOOD_BIRCH = register("bed_white_wood_birch",
             new BedWoodBlock(AbstractBlock.Settings.create().strength(1.0f).nonOpaque()));
-    //end
+    
+    public static Block MONITOR = register("monitor",
+            new MonitorBlock(AbstractBlock.Settings.create().strength(1.0F).nonOpaque()));
+    public static Block MONITOR_GAMING_MINIMALIST = register("monitor_gaming_minimalist",
+            new MonitorTypesBlock(AbstractBlock.Settings.create().strength(1.0F).nonOpaque()));
+    public static Block MOUSE_GAMING_BLACK = register("mouse_gaming_black",
+            new ComputerMouseBlock(AbstractBlock.Settings.create().strength(1.0F).nonOpaque()));
+    public static Block KEYBOARD_MECHANICAL_BLACK = register("keyboard_mechanical_black",
+            new KeyboardBlock(AbstractBlock.Settings.create().strength(1.0F).nonOpaque()));
+    public static Block GAME_CONSOLE = register("game_console",
+            new ConsoleBlock(AbstractBlock.Settings.create().strength(1.0F).nonOpaque()));
 
-    //0.0.6 update
-    public static final Block PERSONAL_COMPUTER = register("personal_computer",
-            new PersonalComputerBlock(AbstractBlock.Settings.create().strength(1.0f).nonOpaque()));
-    //end
+    public static Block KEYBOARD_MECHANICAL_BLACK_WOOD_OAK = register("keyboard_mechanical_black_wood_oak",
+            new KeyboardBlock(AbstractBlock.Settings.create().strength(1.0F).nonOpaque()));
+    public static Block KEYBOARD_MECHANICAL_BLACK_WOOD_BIRCH = register("keyboard_mechanical_black_wood_birch",
+            new KeyboardBlock(AbstractBlock.Settings.create().strength(1.0F).nonOpaque()));
+    public static Block WARDROBE_MODERN_WOOD_OAK_LEFT = register("wardrobe_modern_wood_oak_left",
+            new WardrobeBlock(AbstractBlock.Settings.create().strength(1.0F).nonOpaque()));
+    public static Block WARDROBE_MODERN_WOOD_BIRCH_LEFT = register("wardrobe_modern_wood_birch_left",
+            new WardrobeBlock(AbstractBlock.Settings.create().strength(1.0F).nonOpaque()));
+    public static Block WARDROBE_MODERN_WOOD_OAK_RIGHT = register("wardrobe_modern_wood_oak_right",
+            new WardrobeBlock(AbstractBlock.Settings.create().strength(1.0F).nonOpaque()));
+    public static Block WARDROBE_MODERN_WOOD_BIRCH_RIGHT = register("wardrobe_modern_wood_birch_right",
+            new WardrobeBlock(AbstractBlock.Settings.create().strength(1.0F).nonOpaque()));
+    public static Block CHAIR_2_WHITE_WHITE = register("chair_2_white_white",
+            new ChairBlock(AbstractBlock.Settings.create().strength(1.0f).nonOpaque()));
+    public static Block CHAIR_2_WHITE_GRAY = register("chair_2_white_gray",
+            new ChairBlock(AbstractBlock.Settings.create().strength(1.0f).nonOpaque()));
+    public static Block CHAIR_2_WOOD_OAK_WHITE = register("chair_2_wood_oak_white",
+            new ChairBlock(AbstractBlock.Settings.create().strength(1.0f).nonOpaque()));
+    public static Block CHAIR_2_WOOD_OAK_GRAY = register("chair_2_wood_oak_gray",
+            new ChairBlock(AbstractBlock.Settings.create().strength(1.0f).nonOpaque()));
+    public static Block CHAIR_2_WOOD_BIRCH_WHITE = register("chair_2_wood_birch_white",
+            new ChairBlock(AbstractBlock.Settings.create().strength(1.0f).nonOpaque()));
+    public static Block CHAIR_2_WOOD_BIRCH_GRAY = register("chair_2_wood_birch_gray",
+            new ChairBlock(AbstractBlock.Settings.create().strength(1.0f).nonOpaque()));
+    public static Block PC_GAMING = register("pc_gaming",
+            new DesktopBlock(AbstractBlock.Settings.create().strength(2.0F).nonOpaque()));
+    public static Block COMPUTER_CASE_GAMING = register("computer_case_gaming",
+            new ComputerCaseBlock(AbstractBlock.Settings.create().strength(0.6F).nonOpaque()));
+    public static Block COMPUTER_POWER_SUPPLY = register("computer_power_supply",
+            new PowerSupplyBlock(AbstractBlock.Settings.create().strength(0.5F).nonOpaque()));
+    public static Block MAINBOARD_GAMING = register("mainboard_gaming",
+            new MainboardBlock(AbstractBlock.Settings.create().strength(0.75F).nonOpaque()));
+    public static Block GRAPHICS_CARD_GAMING = register("graphics_card_gaming",
+            new GraphicsCardBlock(AbstractBlock.Settings.create().strength(0.75F).nonOpaque()));
+    public static Block AIO_COOLER_3_FANS = register("aio_cooler_3_fans",
+            new AIOCoolerBlock(AbstractBlock.Settings.create().strength(0.75F).nonOpaque()));
+    public static Block PC_GAMING_ADDED_1 = register("pc_gaming_added_1",
+            new GamingPCAdded1Block(AbstractBlock.Settings.create().strength(0.75F).nonOpaque()));
+    public static Block PC_GAMING_ADDED_2 = register("pc_gaming_added_2",
+            new GamingPCAdded2Block(AbstractBlock.Settings.create().strength(0.75F).nonOpaque()));
+    public static Block PC_GAMING_ADDED_3 = register("pc_gaming_added_3",
+            new GamingPCAdded3Block(AbstractBlock.Settings.create().strength(0.75F).nonOpaque()));
+    public static Block PC_GAMING_ADDED_4 = register("pc_gaming_added_4",
+            new GamingPCAdded4Block(AbstractBlock.Settings.create().strength(0.75F).nonOpaque()));
+    public static Block PC_GAMING_ADDED_5 = register("pc_gaming_added_5",
+            new GamingPCAdded5Block(AbstractBlock.Settings.create().strength(0.75F).nonOpaque()));
+    public static Block PC_GAMING_ADDED_6 = register("pc_gaming_added_6",
+            new GamingPCAdded6Block(AbstractBlock.Settings.create().strength(0.75F).nonOpaque()));
+    public static Block PC_GAMING_ADDED_7 = register("pc_gaming_added_7",
+            new GamingPCAdded7Block(AbstractBlock.Settings.create().strength(0.75F).nonOpaque()));
+    public static Block PC_GAMING_ADDED_8 = register("pc_gaming_added_8",
+            new GamingPCAdded8Block(AbstractBlock.Settings.create().strength(0.75F).nonOpaque()));
+
+    public static Block MONITOR_DUAL = register("monitor_dual",
+            new DualMonitorBlock(AbstractBlock.Settings.create().strength(1F).nonOpaque()));
+    public static Block MONITOR_DUAL_ALT = register("monitor_dual_alt",
+            new DualMonitorAlternateBlock(AbstractBlock.Settings.create().strength(1F).nonOpaque()));
+    public static Block MONITOR_DUAL_ALT_2 = register("monitor_dual_alt_2",
+            new DualMonitorAlternate2Block(AbstractBlock.Settings.create().strength(1F).nonOpaque()));
 
     private static <T extends Block> T register(String name, T block) {
         Identifier id = Identifier.of(MOD_ID, name);
@@ -93,7 +158,7 @@ public class ModBlocks {
         return block;
     }
 
-    private static void registerBlockItem(String name, Block block) {
+    private static void registerItem(String name, Block block) {
         Registry.register(Registries.ITEM, Identifier.of(MOD_ID, name),
                 new BlockItem(block, new Item.Settings()));
     }

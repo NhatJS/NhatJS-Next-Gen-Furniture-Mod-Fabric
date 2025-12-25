@@ -1,0 +1,65 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_black_concrete": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:black_concrete"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_end_crystal": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:end_crystal"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_hopper": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:hopper"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_redstone": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:redstone"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "nextgen_furniture:mainboard_gaming"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_black_concrete",
+      "has_end_crystal",
+      "has_redstone",
+      "has_hopper"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "nextgen_furniture:mainboard_gaming"
+    ]
+  }
+}

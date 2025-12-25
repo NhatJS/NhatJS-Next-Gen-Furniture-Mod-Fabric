@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "1": {
+      "item": "minecraft:black_concrete"
+    },
+    "2": {
+      "item": "minecraft:end_crystal"
+    },
+    "3": {
+      "item": "minecraft:cyan_terracotta"
+    },
+    "4": {
+      "item": "minecraft:redstone"
+    }
+  },
+  "pattern": [
+    "141",
+    "121",
+    " 3 "
+  ],
+  "result": {
+    "count": 1,
+    "id": "nextgen_furniture:monitor_gaming_minimalist"
+  }
+}

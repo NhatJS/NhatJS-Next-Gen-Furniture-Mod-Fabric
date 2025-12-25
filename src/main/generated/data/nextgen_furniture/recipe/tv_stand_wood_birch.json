@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "1": {
+      "item": "minecraft:birch_planks"
+    },
+    "2": {
+      "item": "minecraft:chest"
+    },
+    "3": {
+      "item": "minecraft:black_concrete"
+    }
+  },
+  "pattern": [
+    "121",
+    "3 3"
+  ],
+  "result": {
+    "count": 1,
+    "id": "nextgen_furniture:tv_stand_wood_birch"
+  }
+}

@@ -1,83 +1,68 @@
 {
-	"format_version": "1.9.0",
+	"format_version": "1.21.11",
 	"credit": "Made with Blockbench",
 	"textures": {
-		"0": "nextgen_furniture:block/furniture2",
-		"particle": "nextgen_furniture:block/furniture2"
+		"furniture2": "nextgen_furniture:block/furniture2",
+		"particle": "block/black_concrete"
 	},
 	"elements": [
 		{
-			"name": "hexadecagon",
-			"from": [3.5, 0, 3.5],
-			"to": [4, 13.25, 12.5],
-			"rotation": {"angle": 0, "axis": "y", "origin": [8, 8, 8]},
+			"from": [3, 12, 12.9],
+			"to": [13, 12, 13],
 			"faces": {
-				"east": {"uv": [4.625, 0.21875, 9.03125, 9.40625], "texture": "#0"},
-				"west": {"uv": [4.625, 0.21875, 9.03125, 9.40625], "texture": "#0"},
-				"up": {"uv": [4.625, 0.21875, 9.03125, 0.53125], "rotation": 90, "texture": "#0"}
+				"up": {"uv": [0.84375, 13.3125, 1, 14.96875], "rotation": 90, "texture": "#furniture2"}
 			}
 		},
 		{
-			"name": "hexadecagon",
-			"from": [3.5, 0, 12],
-			"to": [12.5, 13.25, 12.5],
-			"rotation": {"angle": 0, "axis": "y", "origin": [8, 8, 8]},
+			"from": [3, 12, 3],
+			"to": [13, 12, 3.1],
 			"faces": {
-				"north": {"uv": [4.625, 0.21875, 9.03125, 9.40625], "texture": "#0"},
-				"south": {"uv": [4.625, 0.21875, 9.03125, 9.40625], "texture": "#0"},
-				"up": {"uv": [4.625, 0.21875, 9.03125, 0.53125], "texture": "#0"}
+				"up": {"uv": [0.84375, 13.3125, 1, 14.96875], "rotation": 90, "texture": "#furniture2"}
 			}
 		},
 		{
-			"name": "hexadecagon",
-			"from": [12, 0, 3.5],
-			"to": [12.5, 13.25, 12.5],
-			"rotation": {"angle": 0, "axis": "y", "origin": [8, 8, 8]},
+			"from": [12.9, 12, 3.1],
+			"to": [13, 12, 12.9],
 			"faces": {
-				"east": {"uv": [4.625, 0.21875, 9.03125, 9.40625], "texture": "#0"},
-				"west": {"uv": [4.625, 0.21875, 9.03125, 9.40625], "texture": "#0"},
-				"up": {"uv": [4.625, 0.21875, 9.03125, 0.53125], "rotation": 90, "texture": "#0"}
+				"up": {"uv": [0.8125, 13.34375, 2.75, 13.5], "rotation": 90, "texture": "#furniture2"}
 			}
 		},
 		{
-			"name": "hexadecagon",
-			"from": [3.5, 0, 3.5],
-			"to": [12.5, 13.25, 4],
-			"rotation": {"angle": 0, "axis": "y", "origin": [8, 8, 8]},
+			"from": [3, 12, 3.1],
+			"to": [3.1, 12, 12.9],
 			"faces": {
-				"north": {"uv": [4.625, 0.21875, 9.03125, 9.40625], "texture": "#0"},
-				"south": {"uv": [4.625, 0.21875, 9.03125, 9.40625], "texture": "#0"},
-				"up": {"uv": [4.625, 0.21875, 9.03125, 0.53125], "texture": "#0"}
+				"up": {"uv": [0.8125, 13.34375, 2.75, 13.5], "rotation": 90, "texture": "#furniture2"}
 			}
 		},
 		{
-			"name": "hexadecagon",
-			"from": [3.5, 0, 3.5],
-			"to": [12.5, 0.2, 12.5],
-			"rotation": {"angle": 0, "axis": "x", "origin": [8, 8, 8]},
+			"from": [5.11081, 0.03472, 5.10883],
+			"to": [10.89116, 0.03476, 10.88918],
+			"rotation": {"angle": 0, "axis": "y", "origin": [0, -11.96628, 0]},
 			"faces": {
-				"up": {"uv": [0.09375, 12.78125, 3.21875, 15.90625], "rotation": 270, "texture": "#0"},
-				"down": {"uv": [0.09375, 12.78125, 3.21875, 15.90625], "rotation": 270, "texture": "#0"}
+				"up": {"uv": [0.09375, 12.78125, 3.21875, 15.90625], "texture": "#furniture2"},
+				"down": {"uv": [0.09375, 12.78125, 3.21875, 15.90625], "texture": "#furniture2"}
 			}
 		}
 	],
 	"display": {
 		"thirdperson_righthand": {
-			"rotation": [58, 45, 0],
-			"translation": [0, 1.75, 0],
+			"rotation": [75, 45, 0],
+			"translation": [0, 2, 0],
 			"scale": [0.375, 0.375, 0.375]
 		},
 		"thirdperson_lefthand": {
-			"rotation": [58, 45, 0],
-			"translation": [0, 1.75, 0],
+			"rotation": [75, 45, 0],
+			"translation": [0, 2, 0],
 			"scale": [0.375, 0.375, 0.375]
 		},
 		"firstperson_righthand": {
 			"rotation": [0, 45, 0],
+			"translation": [0, 2.75, 0],
 			"scale": [0.4, 0.4, 0.4]
 		},
 		"firstperson_lefthand": {
-			"rotation": [0, -135, 0],
+			"rotation": [0, 45, 0],
+			"translation": [0, 2.75, 0],
 			"scale": [0.4, 0.4, 0.4]
 		},
 		"ground": {
@@ -85,13 +70,12 @@
 			"scale": [0.25, 0.25, 0.25]
 		},
 		"gui": {
-			"rotation": [11, -154, 0],
+			"rotation": [13, -161, 0],
 			"translation": [0, 1.25, 0],
-			"scale": [0.85, 0.85, 0.85]
+			"scale": [0.9, 0.9, 0.9]
 		},
 		"fixed": {
-			"translation": [0, 0, -1.5],
-			"scale": [0.5, 0.5, 0.5]
+			"translation": [0, 1.5, -4.25]
 		}
 	}
 }

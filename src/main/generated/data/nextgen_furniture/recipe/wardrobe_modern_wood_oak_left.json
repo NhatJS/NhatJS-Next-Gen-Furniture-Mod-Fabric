@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "1": {
+      "item": "minecraft:oak_planks"
+    },
+    "2": {
+      "item": "minecraft:chest"
+    },
+    "3": {
+      "item": "minecraft:black_concrete"
+    }
+  },
+  "pattern": [
+    "111",
+    "123",
+    "113"
+  ],
+  "result": {
+    "count": 1,
+    "id": "nextgen_furniture:wardrobe_modern_wood_oak_left"
+  }
+}

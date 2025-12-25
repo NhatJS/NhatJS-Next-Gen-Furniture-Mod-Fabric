@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "1": {
+      "item": "nextgen_furniture:monitor_gaming_minimalist"
+    },
+    "2": {
+      "item": "nextgen_furniture:keyboard_mechanical_black"
+    },
+    "3": {
+      "item": "nextgen_furniture:mouse_gaming_black"
+    }
+  },
+  "pattern": [
+    "1 ",
+    "23"
+  ],
+  "result": {
+    "count": 1,
+    "id": "nextgen_furniture:monitor"
+  }
+}

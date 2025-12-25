@@ -8,6 +8,9 @@ import net.nhatjs.nextgen_furniture.NhatJSNextGenFurnitureMod;
 
 public class ModItems {
     public static final Item NEXTGEN_FURNITURE_LOGO = registerItem("nextgen_furniture_logo", new Item(new Item.Settings()));
+    public static final Item COMPUTER_FAN_BLADE_WHITE = registerItem("computer_fan_blade_white", new Item(new Item.Settings()));
+    public static final Item COMPUTER_RAM_GAMING = registerItem("computer_ram_gaming", new Item(new Item.Settings()));
+    public static final Item COMPUTER_CPU = registerItem("computer_cpu", new Item(new Item.Settings()));
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(NhatJSNextGenFurnitureMod.MOD_ID, name), item);

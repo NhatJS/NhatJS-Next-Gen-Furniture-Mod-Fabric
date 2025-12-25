@@ -1,0 +1,7 @@
+{
+	"parent": "nextgen_furniture:block/wardrobe_modern_wood_left",
+	"textures": {
+		"0": "nextgen_furniture:block/oak_wood",
+		"particle": "nextgen_furniture:block/oak_wood"
+	}
+}

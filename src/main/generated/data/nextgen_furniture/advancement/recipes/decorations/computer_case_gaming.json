@@ -1,0 +1,65 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_black_concrete": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:black_concrete"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_computer_fan_blade_white": {
+      "conditions": {
+        "items": [
+          {
+            "items": "nextgen_furniture:computer_fan_blade_white"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_redstone": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:redstone"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_stone_button": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:stone_button"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "nextgen_furniture:computer_case_gaming"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_black_concrete",
+      "has_redstone",
+      "has_computer_fan_blade_white",
+      "has_stone_button"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "nextgen_furniture:computer_case_gaming"
+    ]
+  }
+}

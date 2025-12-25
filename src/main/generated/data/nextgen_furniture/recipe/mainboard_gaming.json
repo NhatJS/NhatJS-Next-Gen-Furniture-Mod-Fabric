@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "1": {
+      "item": "minecraft:black_concrete"
+    },
+    "2": {
+      "item": "minecraft:end_crystal"
+    },
+    "3": {
+      "item": "minecraft:redstone"
+    },
+    "4": {
+      "item": "minecraft:hopper"
+    }
+  },
+  "pattern": [
+    "311",
+    "321",
+    "141"
+  ],
+  "result": {
+    "count": 1,
+    "id": "nextgen_furniture:mainboard_gaming"
+  }
+}
