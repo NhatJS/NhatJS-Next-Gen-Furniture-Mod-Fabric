@@ -1,0 +1,64 @@
+{
+  "variants": {
+    "facing=east,pc_booting=false,turn_on=false": {
+      "model": "nextgen_furniture:block/pc_gaming",
+      "y": 90
+    },
+    "facing=east,pc_booting=false,turn_on=true": {
+      "model": "nextgen_furniture:block/pc_gaming_on",
+      "y": 90
+    },
+    "facing=east,pc_booting=true,turn_on=false": {
+      "model": "nextgen_furniture:block/pc_gaming_boot",
+      "y": 90
+    },
+    "facing=east,pc_booting=true,turn_on=true": {
+      "model": "nextgen_furniture:block/pc_gaming_boot",
+      "y": 90
+    },
+    "facing=north,pc_booting=false,turn_on=false": {
+      "model": "nextgen_furniture:block/pc_gaming"
+    },
+    "facing=north,pc_booting=false,turn_on=true": {
+      "model": "nextgen_furniture:block/pc_gaming_on"
+    },
+    "facing=north,pc_booting=true,turn_on=false": {
+      "model": "nextgen_furniture:block/pc_gaming_boot"
+    },
+    "facing=north,pc_booting=true,turn_on=true": {
+      "model": "nextgen_furniture:block/pc_gaming_boot"
+    },
+    "facing=south,pc_booting=false,turn_on=false": {
+      "model": "nextgen_furniture:block/pc_gaming",
+      "y": 180
+    },
+    "facing=south,pc_booting=false,turn_on=true": {
+      "model": "nextgen_furniture:block/pc_gaming_on",
+      "y": 180
+    },
+    "facing=south,pc_booting=true,turn_on=false": {
+      "model": "nextgen_furniture:block/pc_gaming_boot",
+      "y": 180
+    },
+    "facing=south,pc_booting=true,turn_on=true": {
+      "model": "nextgen_furniture:block/pc_gaming_boot",
+      "y": 180
+    },
+    "facing=west,pc_booting=false,turn_on=false": {
+      "model": "nextgen_furniture:block/pc_gaming",
+      "y": 270
+    },
+    "facing=west,pc_booting=false,turn_on=true": {
+      "model": "nextgen_furniture:block/pc_gaming_on",
+      "y": 270
+    },
+    "facing=west,pc_booting=true,turn_on=false": {
+      "model": "nextgen_furniture:block/pc_gaming_boot",
+      "y": 270
+    },
+    "facing=west,pc_booting=true,turn_on=true": {
+      "model": "nextgen_furniture:block/pc_gaming_boot",
+      "y": 270
+    }
+  }
+}

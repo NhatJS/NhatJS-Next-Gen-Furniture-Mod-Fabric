@@ -148,6 +148,13 @@ public class ModBlocks {
     public static Block PC_GAMING_ADDED_8 = registerBlock("pc_gaming_added_8",
             properties -> new GamingPCAdded8Block(properties.strength(0.75F).nonOpaque()));
 
+    public static Block MONITOR_DUAL = registerBlock("monitor_dual",
+            properties -> new DualMonitorBlock(properties.strength(1F).nonOpaque()));
+    public static Block MONITOR_DUAL_ALT = registerBlock("monitor_dual_alt",
+            properties -> new DualMonitorAlternateBlock(properties.strength(1F).nonOpaque()));
+    public static final Block MONITOR_DUAL_ALT_2 = registerBlock("monitor_dual_alt_2",
+            properties -> new DualMonitorAlternate2Block(properties.strength(1F).nonOpaque()));
+
     private static Block registerBlock(String name, Function<AbstractBlock.Settings, Block> function) {
         Block toRegister = function.apply(AbstractBlock.Settings.create().registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(MOD_ID, name))));
         registerBlockItem(name, toRegister);

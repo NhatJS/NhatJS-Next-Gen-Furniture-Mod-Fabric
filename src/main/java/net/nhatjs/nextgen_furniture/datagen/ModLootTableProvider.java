@@ -72,5 +72,17 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.MAINBOARD_GAMING);
         addDrop(ModBlocks.GRAPHICS_CARD_GAMING);
         addDrop(ModBlocks.AIO_COOLER_3_FANS);
+        addDrop(ModBlocks.PC_GAMING_ADDED_1);
+        addDrop(ModBlocks.PC_GAMING_ADDED_2);
+        addDrop(ModBlocks.PC_GAMING_ADDED_3);
+        addDrop(ModBlocks.PC_GAMING_ADDED_4);
+        addDrop(ModBlocks.PC_GAMING_ADDED_5);
+        addDrop(ModBlocks.PC_GAMING_ADDED_6);
+        addDrop(ModBlocks.PC_GAMING_ADDED_7);
+        addDrop(ModBlocks.PC_GAMING_ADDED_8);
+
+        addDrop(ModBlocks.MONITOR_DUAL);
+        addDrop(ModBlocks.MONITOR_DUAL_ALT);
+        addDrop(ModBlocks.MONITOR_DUAL_ALT_2);
     }
 }
