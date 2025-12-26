@@ -74,13 +74,13 @@ public class LaptopRenderer implements BlockEntityRenderer<LaptopBlockEntity, La
         matrices.multiply(RotationAxis.POSITIVE_X.rotationDegrees(state.openDeg));
         matrices.translate(-0.1, -0.04, -0.735);
 
-        queue.submitBlockStateModel(matrices, RenderLayer.getCutout(),
+        queue.submitBlockStateModel(matrices, RenderLayers.cutout(),
                 MinecraftClient.getInstance().getBakedModelManager().getModel(
                         NhatJSNextGenFurnitureModClient.LAPTOP_SCREEN_ID),
                 1f, 1f, 1f, state.light, state.overlay, 0);
 
         if (state.powered) {
-            queue.submitBlockStateModel(matrices, RenderLayer.getCutout(),
+            queue.submitBlockStateModel(matrices, RenderLayers.cutout(),
                     MinecraftClient.getInstance().getBakedModelManager().getModel(
                             NhatJSNextGenFurnitureModClient.LAPTOP_SCREEN_ON_ID),
                     1f, 1f, 1f, LightmapTextureManager.MAX_LIGHT_COORDINATE, state.overlay, 0);

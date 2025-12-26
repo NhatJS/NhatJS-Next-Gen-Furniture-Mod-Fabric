@@ -33,7 +33,7 @@
 		"minecraft": "~1.21",
 		"java": ">=21",
 		"fabric-api": "*",
-        "fusion": ">=1.0.0"
+        "fusion": ">=1.2.11"
 	},
 	"suggests": {
 		"another-mod": "*"
