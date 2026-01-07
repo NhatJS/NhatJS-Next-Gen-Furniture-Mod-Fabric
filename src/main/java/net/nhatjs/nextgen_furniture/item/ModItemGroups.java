@@ -27,10 +27,16 @@ public class ModItemGroups {
                         entries.add(ModBlocks.CHAIR_2_WOOD_BIRCH_WHITE);
                         entries.add(ModBlocks.TABLE_1X1_BLACK);
                         entries.add(ModBlocks.TABLE_1X1_WHITE);
+                        entries.add(ModBlocks.TABLE_1X1_WOOD_OAK);
+                        entries.add(ModBlocks.TABLE_1X1_WOOD_BIRCH);
                         entries.add(ModBlocks.TABLE_2X1_BLACK);
                         entries.add(ModBlocks.TABLE_2X1_WHITE);
+                        entries.add(ModBlocks.TABLE_2X1_WOOD_OAK);
+                        entries.add(ModBlocks.TABLE_2X1_WOOD_BIRCH);
                         entries.add(ModBlocks.TABLE_3X1_BLACK);
                         entries.add(ModBlocks.TABLE_3X1_WHITE);
+                        entries.add(ModBlocks.TABLE_3X1_WOOD_OAK);
+                        entries.add(ModBlocks.TABLE_3X1_WOOD_BIRCH);
                         entries.add(ModBlocks.COFFEE_TABLE_WHITE);
                         entries.add(ModBlocks.TABLE_DINING_WHITE);
                         entries.add(ModBlocks.TABLE_DINING_WOOD_OAK);
@@ -45,13 +51,20 @@ public class ModItemGroups {
                         entries.add(ModBlocks.WARDROBE_MODERN_WOOD_OAK_RIGHT);
                         entries.add(ModBlocks.WARDROBE_MODERN_WOOD_BIRCH_LEFT);
                         entries.add(ModBlocks.WARDROBE_MODERN_WOOD_BIRCH_RIGHT);
+                        entries.add(ModBlocks.DRAWER_2_K_M_WOOD_OAK);
+                        entries.add(ModBlocks.DRAWER_2_K_M_WOOD_BIRCH);
+                        entries.add(ModBlocks.DRAWER_3_K_M_WOOD_OAK);
+                        entries.add(ModBlocks.DRAWER_3_K_M_WOOD_BIRCH);
+                        entries.add(ModItems.DRAWER_WHITE);
                         entries.add(ModBlocks.PICTURE_FRAME);
                         entries.add(ModBlocks.TRASH_CAN_BLACK);
                         entries.add(ModBlocks.TRASH_CAN_WHITE);
                         entries.add(ModBlocks.SOFA_GRAY);
                         entries.add(ModBlocks.SOFA_WHITE);
+                        entries.add(ModBlocks.LIGHT_MODERN);
                         entries.add(ModBlocks.FLOOR_LAMP);
                         entries.add(ModBlocks.FLOOR_LAMP_B);
+                        entries.add(ModBlocks.WASHING_MACHINE);
                         entries.add(ModBlocks.MONITOR);
                         entries.add(ModBlocks.MONITOR_DUAL);
                         entries.add(ModBlocks.MONITOR_GAMING_MINIMALIST);
@@ -71,6 +84,7 @@ public class ModItemGroups {
                         entries.add(ModBlocks.GRAPHICS_CARD_GAMING);
                         entries.add(ModBlocks.AIO_COOLER_3_FANS);
                         entries.add(ModItems.COMPUTER_CPU);
+                        entries.add(ModItems.SCREWDRIVER);
                     }).build());
 
     public static void registerItemGroups() {

@@ -4,6 +4,7 @@ import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
 import net.minecraft.block.BlockState;
 import net.minecraft.client.MinecraftClient;
+import net.minecraft.client.render.LightmapTextureManager;
 import net.minecraft.client.render.RenderLayer;
 import net.minecraft.client.render.VertexConsumer;
 import net.minecraft.client.render.VertexConsumerProvider;
@@ -49,8 +50,8 @@ public class LaptopRenderer implements BlockEntityRenderer<LaptopBlockEntity> {
 
         boolean powered = be.isPowered();
 
-        BakedModel screen = mc.getBakedModelManager().getModel(powered ? NhatJSNextGenFurnitureModClient.LAPTOP_SCREEN_ON
-                : NhatJSNextGenFurnitureModClient.LAPTOP_SCREEN);
+        BakedModel screen = mc.getBakedModelManager().getModel(NhatJSNextGenFurnitureModClient.LAPTOP_SCREEN);
+        BakedModel screen_on = mc.getBakedModelManager().getModel(NhatJSNextGenFurnitureModClient.LAPTOP_SCREEN_ON);
 
         BlockModelRenderer bmr = mc.getBlockRenderManager().getModelRenderer();
 
@@ -66,9 +67,11 @@ public class LaptopRenderer implements BlockEntityRenderer<LaptopBlockEntity> {
         matrices.multiply(RotationAxis.POSITIVE_X.rotationDegrees(openDeg));
         matrices.translate(-0.1, -0.04, -0.735);
 
-        bmr.render(world, screen, state, be.getPos(), matrices, vc, false, world.random, 0L, overlay);
+        bmr.render(matrices.peek(), vc, state, screen, 1, 1, 1, light, overlay);
+        if (powered) {
+            bmr.render(matrices.peek(), vc, state, screen_on, 1, 1, 1, LightmapTextureManager.MAX_LIGHT_COORDINATE, overlay);
+        }
         matrices.pop();
-
         matrices.pop();
     }
 }

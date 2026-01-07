@@ -84,5 +84,26 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.MONITOR_DUAL);
         addDrop(ModBlocks.MONITOR_DUAL_ALT);
         addDrop(ModBlocks.MONITOR_DUAL_ALT_2);
+
+        addDrop(ModBlocks.DRAWER_3_K_M_WOOD_OAK);
+        addDrop(ModBlocks.DRAWER_3_K_M_WOOD_BIRCH);
+        addDrop(ModBlocks.DRAWER_3_K_M_WOOD_OAK_BASE);
+        addDrop(ModBlocks.DRAWER_3_K_M_WOOD_BIRCH_BASE);
+        addDrop(ModBlocks.DRAWER_2_K_M_WOOD_OAK);
+        addDrop(ModBlocks.DRAWER_2_K_M_WOOD_BIRCH);
+        addDrop(ModBlocks.DRAWER_2_K_M_WOOD_OAK_BASE);
+        addDrop(ModBlocks.DRAWER_2_K_M_WOOD_BIRCH_BASE);
+        addDrop(ModBlocks.LIGHT_MODERN);
+        addDrop(ModBlocks.TABLE_1X1_WOOD_OAK);
+        addDrop(ModBlocks.TABLE_1X1_WOOD_BIRCH);
+        addDrop(ModBlocks.TABLE_2X1_WOOD_OAK);
+        addDrop(ModBlocks.TABLE_2X1_WOOD_OAK_ALT);
+        addDrop(ModBlocks.TABLE_2X1_WOOD_OAK_ALT_2);
+        addDrop(ModBlocks.TABLE_2X1_WOOD_BIRCH);
+        addDrop(ModBlocks.TABLE_2X1_WOOD_BIRCH_ALT);
+        addDrop(ModBlocks.TABLE_2X1_WOOD_BIRCH_ALT_2);
+        addDrop(ModBlocks.TABLE_3X1_WOOD_OAK);
+        addDrop(ModBlocks.TABLE_3X1_WOOD_BIRCH);
+        addDrop(ModBlocks.WASHING_MACHINE);
     }
 }

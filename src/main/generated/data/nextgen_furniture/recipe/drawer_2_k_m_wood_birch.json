@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "1": {
+      "item": "nextgen_furniture:drawer_white"
+    },
+    "2": {
+      "item": "nextgen_furniture:drawer_2_k_m_wood_birch_base"
+    }
+  },
+  "pattern": [
+    "1 ",
+    "12"
+  ],
+  "result": {
+    "count": 1,
+    "id": "nextgen_furniture:drawer_2_k_m_wood_birch"
+  }
+}

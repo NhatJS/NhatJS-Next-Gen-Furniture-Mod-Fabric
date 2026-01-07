@@ -2,6 +2,7 @@ package net.nhatjs.nextgen_furniture.block;
 
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
+import net.minecraft.block.LightBlock;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
@@ -150,6 +151,47 @@ public class ModBlocks {
             new DualMonitorAlternateBlock(AbstractBlock.Settings.create().strength(1F).nonOpaque()));
     public static Block MONITOR_DUAL_ALT_2 = register("monitor_dual_alt_2",
             new DualMonitorAlternate2Block(AbstractBlock.Settings.create().strength(1F).nonOpaque()));
+
+    public static Block DRAWER_3_K_M_WOOD_OAK = register("drawer_3_k_m_wood_oak",
+            new DrawerBlock(AbstractBlock.Settings.create().strength(1F).nonOpaque()));
+    public static Block DRAWER_3_K_M_WOOD_BIRCH = register("drawer_3_k_m_wood_birch",
+            new DrawerBlock(AbstractBlock.Settings.create().strength(1F).nonOpaque()));
+    public static Block DRAWER_3_K_M_WOOD_OAK_BASE = register("drawer_3_k_m_wood_oak_base",
+            new DrawerBlock(AbstractBlock.Settings.create().strength(1F).nonOpaque()));
+    public static Block DRAWER_3_K_M_WOOD_BIRCH_BASE = register("drawer_3_k_m_wood_birch_base",
+            new DrawerBlock(AbstractBlock.Settings.create().strength(1F).nonOpaque()));
+    public static Block DRAWER_2_K_M_WOOD_OAK = register("drawer_2_k_m_wood_oak",
+            new DrawerBlock(AbstractBlock.Settings.create().strength(1F).nonOpaque()));
+    public static Block DRAWER_2_K_M_WOOD_BIRCH = register("drawer_2_k_m_wood_birch",
+            new DrawerBlock(AbstractBlock.Settings.create().strength(1F).nonOpaque()));
+    public static Block DRAWER_2_K_M_WOOD_OAK_BASE = register("drawer_2_k_m_wood_oak_base",
+            new DrawerBlock(AbstractBlock.Settings.create().strength(1F).nonOpaque()));
+    public static Block DRAWER_2_K_M_WOOD_BIRCH_BASE = register("drawer_2_k_m_wood_birch_base",
+            new DrawerBlock(AbstractBlock.Settings.create().strength(1F).nonOpaque()));
+    public static Block LIGHT_MODERN = register("light_modern",
+            new ModernLightBlock(AbstractBlock.Settings.create().strength(1F).nonOpaque()));
+    public static Block TABLE_1X1_WOOD_OAK = register("table_1x1_wood_oak",
+            new Table1x1Block(AbstractBlock.Settings.create().strength(1F).nonOpaque()));
+    public static Block TABLE_1X1_WOOD_BIRCH = register("table_1x1_wood_birch",
+            new Table1x1Block(AbstractBlock.Settings.create().strength(1F).nonOpaque()));
+    public static Block TABLE_2X1_WOOD_OAK = register("table_2x1_wood_oak",
+            new Table2x1CenterBlock(AbstractBlock.Settings.create().strength(1F).nonOpaque()));
+    public static Block TABLE_2X1_WOOD_BIRCH = register("table_2x1_wood_birch",
+            new Table2x1CenterBlock(AbstractBlock.Settings.create().strength(1F).nonOpaque()));
+    public static Block TABLE_2X1_WOOD_OAK_ALT = register("table_2x1_wood_oak_alt",
+            new Table2x1LeftBlock(AbstractBlock.Settings.create().strength(1F).nonOpaque()));
+    public static Block TABLE_2X1_WOOD_BIRCH_ALT = register("table_2x1_wood_birch_alt",
+            new Table2x1LeftBlock(AbstractBlock.Settings.create().strength(1F).nonOpaque()));
+    public static Block TABLE_2X1_WOOD_OAK_ALT_2 = register("table_2x1_wood_oak_alt_2",
+            new Table2x1RightBlock(AbstractBlock.Settings.create().strength(1F).nonOpaque()));
+    public static Block TABLE_2X1_WOOD_BIRCH_ALT_2 = register("table_2x1_wood_birch_alt_2",
+            new Table2x1RightBlock(AbstractBlock.Settings.create().strength(1F).nonOpaque()));
+    public static Block TABLE_3X1_WOOD_OAK = register("table_3x1_wood_oak",
+            new Table3x1Block(AbstractBlock.Settings.create().strength(1F).nonOpaque()));
+    public static Block TABLE_3X1_WOOD_BIRCH = register("table_3x1_wood_birch",
+            new Table3x1Block(AbstractBlock.Settings.create().strength(1F).nonOpaque()));
+    public static Block WASHING_MACHINE = register("washing_machine",
+            new WashingMachineBlock(AbstractBlock.Settings.create().strength(1F).nonOpaque()));
 
     private static <T extends Block> T register(String name, T block) {
         Identifier id = Identifier.of(MOD_ID, name);

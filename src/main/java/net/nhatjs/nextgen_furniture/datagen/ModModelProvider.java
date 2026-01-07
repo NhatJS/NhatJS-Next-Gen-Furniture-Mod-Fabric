@@ -4,9 +4,7 @@ import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
 import net.minecraft.block.Block;
 import net.minecraft.data.client.*;
-import net.minecraft.state.property.DirectionProperty;
-import net.minecraft.state.property.EnumProperty;
-import net.minecraft.state.property.Properties;
+import net.minecraft.state.property.*;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.Direction;
 import net.nhatjs.nextgen_furniture.NhatJSNextGenFurnitureMod;
@@ -124,6 +122,14 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerNorthDefaultHorizontalRotation(ModBlocks.COFFEE_TABLE_WHITE);
         blockStateModelGenerator.registerNorthDefaultHorizontalRotation(ModBlocks.COMPUTER_CASE_GAMING);
         blockStateModelGenerator.registerNorthDefaultHorizontalRotation(ModBlocks.COMPUTER_POWER_SUPPLY);
+        blockStateModelGenerator.registerNorthDefaultHorizontalRotation(ModBlocks.DRAWER_2_K_M_WOOD_BIRCH);
+        blockStateModelGenerator.registerNorthDefaultHorizontalRotation(ModBlocks.DRAWER_2_K_M_WOOD_OAK);
+        blockStateModelGenerator.registerNorthDefaultHorizontalRotation(ModBlocks.DRAWER_2_K_M_WOOD_BIRCH_BASE);
+        blockStateModelGenerator.registerNorthDefaultHorizontalRotation(ModBlocks.DRAWER_2_K_M_WOOD_OAK_BASE);
+        blockStateModelGenerator.registerNorthDefaultHorizontalRotation(ModBlocks.DRAWER_3_K_M_WOOD_BIRCH);
+        blockStateModelGenerator.registerNorthDefaultHorizontalRotation(ModBlocks.DRAWER_3_K_M_WOOD_OAK);
+        blockStateModelGenerator.registerNorthDefaultHorizontalRotation(ModBlocks.DRAWER_3_K_M_WOOD_BIRCH_BASE);
+        blockStateModelGenerator.registerNorthDefaultHorizontalRotation(ModBlocks.DRAWER_3_K_M_WOOD_OAK_BASE);
 
         blockStateModelGenerator.blockStateCollector.accept(VariantsBlockStateSupplier.create(ModBlocks.FLOOR_LAMP)
                 .coordinate(BlockStateModelGenerator.createBooleanModelMap(FloorLampBlock.LIT,
@@ -145,6 +151,9 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.blockStateCollector.accept(VariantsBlockStateSupplier.create(ModBlocks.LAPTOP)
                 .coordinate(BlockStateModelGenerator.createBooleanModelMap(LaptopBlock.TURN_ON,
                         laptopOn, laptop)).coordinate(horizontalBlock));
+
+        registerSixFacingWithBoolean(blockStateModelGenerator, ModBlocks.LIGHT_MODERN, Properties.FACING, ModernLightBlock.LIT,
+                id("light_modern"), id("light_modern"));
 
         blockStateModelGenerator.registerNorthDefaultHorizontalRotation(ModBlocks.MAINBOARD_GAMING);
 
@@ -179,14 +188,24 @@ public class ModModelProvider extends FabricModelProvider {
 
         blockStateModelGenerator.registerNorthDefaultHorizontalRotation(ModBlocks.TABLE_1X1_BLACK);
         blockStateModelGenerator.registerNorthDefaultHorizontalRotation(ModBlocks.TABLE_1X1_WHITE);
+        blockStateModelGenerator.registerNorthDefaultHorizontalRotation(ModBlocks.TABLE_1X1_WOOD_BIRCH);
+        blockStateModelGenerator.registerNorthDefaultHorizontalRotation(ModBlocks.TABLE_1X1_WOOD_OAK);
         blockStateModelGenerator.registerNorthDefaultHorizontalRotation(ModBlocks.TABLE_2X1_BLACK);
         blockStateModelGenerator.registerNorthDefaultHorizontalRotation(ModBlocks.TABLE_2X1_BLACK_ALT);
         blockStateModelGenerator.registerNorthDefaultHorizontalRotation(ModBlocks.TABLE_2X1_BLACK_ALT_2);
         blockStateModelGenerator.registerNorthDefaultHorizontalRotation(ModBlocks.TABLE_2X1_WHITE);
         blockStateModelGenerator.registerNorthDefaultHorizontalRotation(ModBlocks.TABLE_2X1_WHITE_ALT);
         blockStateModelGenerator.registerNorthDefaultHorizontalRotation(ModBlocks.TABLE_2X1_WHITE_ALT_2);
+        blockStateModelGenerator.registerNorthDefaultHorizontalRotation(ModBlocks.TABLE_2X1_WOOD_OAK);
+        blockStateModelGenerator.registerNorthDefaultHorizontalRotation(ModBlocks.TABLE_2X1_WOOD_OAK_ALT);
+        blockStateModelGenerator.registerNorthDefaultHorizontalRotation(ModBlocks.TABLE_2X1_WOOD_OAK_ALT_2);
+        blockStateModelGenerator.registerNorthDefaultHorizontalRotation(ModBlocks.TABLE_2X1_WOOD_BIRCH);
+        blockStateModelGenerator.registerNorthDefaultHorizontalRotation(ModBlocks.TABLE_2X1_WOOD_BIRCH_ALT);
+        blockStateModelGenerator.registerNorthDefaultHorizontalRotation(ModBlocks.TABLE_2X1_WOOD_BIRCH_ALT_2);
         blockStateModelGenerator.registerNorthDefaultHorizontalRotation(ModBlocks.TABLE_3X1_BLACK);
         blockStateModelGenerator.registerNorthDefaultHorizontalRotation(ModBlocks.TABLE_3X1_WHITE);
+        blockStateModelGenerator.registerNorthDefaultHorizontalRotation(ModBlocks.TABLE_3X1_WOOD_OAK);
+        blockStateModelGenerator.registerNorthDefaultHorizontalRotation(ModBlocks.TABLE_3X1_WOOD_BIRCH);
         blockStateModelGenerator.registerNorthDefaultHorizontalRotation(ModBlocks.TABLE_DINING_WHITE);
         blockStateModelGenerator.registerNorthDefaultHorizontalRotation(ModBlocks.TABLE_DINING_WOOD_BIRCH);
         blockStateModelGenerator.registerNorthDefaultHorizontalRotation(ModBlocks.TABLE_DINING_WOOD_OAK);
@@ -206,6 +225,7 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerNorthDefaultHorizontalRotation(ModBlocks.WARDROBE_MODERN_WOOD_BIRCH_RIGHT);
         blockStateModelGenerator.registerNorthDefaultHorizontalRotation(ModBlocks.WARDROBE_MODERN_WOOD_OAK_LEFT);
         blockStateModelGenerator.registerNorthDefaultHorizontalRotation(ModBlocks.WARDROBE_MODERN_WOOD_OAK_RIGHT);
+        blockStateModelGenerator.registerNorthDefaultHorizontalRotation(ModBlocks.WASHING_MACHINE);
     }
 
     @Override
@@ -213,7 +233,9 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.COMPUTER_CPU, Models.GENERATED);
         itemModelGenerator.register(ModItems.COMPUTER_FAN_BLADE_WHITE, Models.GENERATED);
         itemModelGenerator.register(ModItems.COMPUTER_RAM_GAMING, Models.GENERATED);
+        itemModelGenerator.register(ModItems.DRAWER_WHITE, Models.GENERATED);
         itemModelGenerator.register(ModBlocks.GAME_CONSOLE.asItem(), Models.GENERATED);
+        itemModelGenerator.register(ModBlocks.LIGHT_MODERN.asItem(), Models.GENERATED);
         itemModelGenerator.register(ModBlocks.MONITOR.asItem(),
                 new Model(Optional.of(monitor), Optional.empty()));
         itemModelGenerator.register(ModBlocks.MONITOR_DUAL.asItem(),
@@ -223,6 +245,7 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModBlocks.MONITOR_DUAL_ALT_2.asItem(),
                 new Model(Optional.of(monitorDualAlternate2), Optional.empty()));
         itemModelGenerator.register(ModItems.NEXTGEN_FURNITURE_LOGO, Models.GENERATED);
+        itemModelGenerator.register(ModItems.SCREWDRIVER, Models.GENERATED);
         itemModelGenerator.register(ModBlocks.SOFA_GRAY.asItem(),
                 new Model(Optional.of(sofaGray), Optional.empty()));
         itemModelGenerator.register(ModBlocks.SOFA_WHITE.asItem(),
@@ -304,6 +327,27 @@ public class ModModelProvider extends FabricModelProvider {
         map.register(Direction.WEST, BlockStateVariant.create().put(VariantSettings.MODEL, model).put(VariantSettings.Y, VariantSettings.Rotation.R270));
         map.register(Direction.UP, BlockStateVariant.create().put(VariantSettings.MODEL, model).put(VariantSettings.X, VariantSettings.Rotation.R270));
         map.register(Direction.DOWN, BlockStateVariant.create().put(VariantSettings.MODEL, model).put(VariantSettings.X, VariantSettings.Rotation.R90));
+
+        blockStateModelGenerator.blockStateCollector.accept(VariantsBlockStateSupplier.create(block).coordinate(map)
+        );
+    }
+
+    public static void registerSixFacingWithBoolean(BlockStateModelGenerator blockStateModelGenerator, Block block, DirectionProperty facing,
+                                                    BooleanProperty facingBoolean, Identifier model, Identifier modelOn) {
+        BlockStateVariantMap.DoubleProperty<Direction, Boolean> map = BlockStateVariantMap.create(facing, facingBoolean);
+
+        map.register(Direction.NORTH, false, BlockStateVariant.create().put(VariantSettings.MODEL, model));
+        map.register(Direction.NORTH, true, BlockStateVariant.create().put(VariantSettings.MODEL, modelOn));
+        map.register(Direction.EAST, false, BlockStateVariant.create().put(VariantSettings.MODEL, model).put(VariantSettings.Y, VariantSettings.Rotation.R90));
+        map.register(Direction.EAST, true, BlockStateVariant.create().put(VariantSettings.MODEL, modelOn).put(VariantSettings.Y, VariantSettings.Rotation.R90));
+        map.register(Direction.SOUTH, false, BlockStateVariant.create().put(VariantSettings.MODEL, model).put(VariantSettings.Y, VariantSettings.Rotation.R180));
+        map.register(Direction.SOUTH, true, BlockStateVariant.create().put(VariantSettings.MODEL, modelOn).put(VariantSettings.Y, VariantSettings.Rotation.R180));
+        map.register(Direction.WEST, false, BlockStateVariant.create().put(VariantSettings.MODEL, model).put(VariantSettings.Y, VariantSettings.Rotation.R270));
+        map.register(Direction.WEST, true, BlockStateVariant.create().put(VariantSettings.MODEL, modelOn).put(VariantSettings.Y, VariantSettings.Rotation.R270));
+        map.register(Direction.UP, false, BlockStateVariant.create().put(VariantSettings.MODEL, model).put(VariantSettings.X, VariantSettings.Rotation.R270));
+        map.register(Direction.UP, true, BlockStateVariant.create().put(VariantSettings.MODEL, modelOn).put(VariantSettings.X, VariantSettings.Rotation.R270));
+        map.register(Direction.DOWN, false, BlockStateVariant.create().put(VariantSettings.MODEL, model).put(VariantSettings.X, VariantSettings.Rotation.R90));
+        map.register(Direction.DOWN, true, BlockStateVariant.create().put(VariantSettings.MODEL, modelOn).put(VariantSettings.X, VariantSettings.Rotation.R90));
 
         blockStateModelGenerator.blockStateCollector.accept(VariantsBlockStateSupplier.create(block).coordinate(map)
         );

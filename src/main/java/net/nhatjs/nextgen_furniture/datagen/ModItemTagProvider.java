@@ -24,5 +24,15 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ModBlocks.TABLE_2X1_WHITE.asItem())
                 .add(ModBlocks.TABLE_2X1_WHITE_ALT.asItem())
                 .add(ModBlocks.TABLE_2X1_WHITE_ALT_2.asItem());
+
+        getOrCreateTagBuilder(ModTags.Items.TABLE_2X1_WOOD_OAK)
+                .add(ModBlocks.TABLE_2X1_WOOD_OAK.asItem())
+                .add(ModBlocks.TABLE_2X1_WOOD_OAK_ALT.asItem())
+                .add(ModBlocks.TABLE_2X1_WOOD_OAK_ALT_2.asItem());
+
+        getOrCreateTagBuilder(ModTags.Items.TABLE_2X1_WOOD_BIRCH)
+                .add(ModBlocks.TABLE_2X1_WOOD_BIRCH.asItem())
+                .add(ModBlocks.TABLE_2X1_WOOD_BIRCH_ALT.asItem())
+                .add(ModBlocks.TABLE_2X1_WOOD_BIRCH_ALT_2.asItem());
     }
 }

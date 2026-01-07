@@ -11,22 +11,26 @@ import net.nhatjs.nextgen_furniture.block.ModBlocks;
 import net.nhatjs.nextgen_furniture.blockentity.ModBlockEntities;
 import net.nhatjs.nextgen_furniture.blockentity.renderer.ConsoleRenderer;
 import net.nhatjs.nextgen_furniture.blockentity.renderer.LaptopRenderer;
+import net.nhatjs.nextgen_furniture.blockentity.renderer.LightRenderer;
 import net.nhatjs.nextgen_furniture.blockentity.renderer.TrashCanRenderer;
 import net.nhatjs.nextgen_furniture.entity.ModEntities;
 import net.nhatjs.nextgen_furniture.entity.renderer.ChairRenderer;
 
 public class NhatJSNextGenFurnitureModClient implements ClientModInitializer{
     public static final Identifier LAPTOP_SCREEN = Identifier.of(
-            NhatJSNextGenFurnitureMod.MOD_ID, "block/laptop_screen_off");
+            NhatJSNextGenFurnitureMod.MOD_ID, "extra/laptop_screen");
     public static final Identifier LAPTOP_SCREEN_ON = Identifier.of(
-            NhatJSNextGenFurnitureMod.MOD_ID, "block/laptop_screen_on");
+            NhatJSNextGenFurnitureMod.MOD_ID, "extra/laptop_screen_on");
 
     public static final Identifier GAME_CONSOLE_EXTRA = Identifier.of(
-            NhatJSNextGenFurnitureMod.MOD_ID, "block/model_renderer/game_console_extra");
+            NhatJSNextGenFurnitureMod.MOD_ID, "extra/game_console_extra");
     public static final Identifier TRASH_CAN_BLACK_EXTRA = Identifier.of(
-            NhatJSNextGenFurnitureMod.MOD_ID, "block/model_renderer/trash_can_black_extra");
+            NhatJSNextGenFurnitureMod.MOD_ID, "extra/trash_can_black_extra");
     public static final Identifier TRASH_CAN_WHITE_EXTRA = Identifier.of(
-            NhatJSNextGenFurnitureMod.MOD_ID, "block/model_renderer/trash_can_white_extra");
+            NhatJSNextGenFurnitureMod.MOD_ID, "extra/trash_can_white_extra");
+
+    public static final Identifier LIGHT_MODERN_EXTRA = Identifier.of(
+            NhatJSNextGenFurnitureMod.MOD_ID, "extra/light_modern_extra");
 
     @Override
     public void onInitializeClient() {
@@ -107,7 +111,29 @@ public class NhatJSNextGenFurnitureModClient implements ClientModInitializer{
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.MONITOR_DUAL_ALT, RenderLayer.getCutoutMipped());
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.MONITOR_DUAL_ALT_2, RenderLayer.getCutoutMipped());
 
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.DRAWER_3_K_M_WOOD_OAK, RenderLayer.getCutoutMipped());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.DRAWER_3_K_M_WOOD_BIRCH, RenderLayer.getCutoutMipped());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.DRAWER_3_K_M_WOOD_OAK_BASE, RenderLayer.getCutoutMipped());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.DRAWER_3_K_M_WOOD_BIRCH_BASE, RenderLayer.getCutoutMipped());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.DRAWER_2_K_M_WOOD_OAK, RenderLayer.getCutoutMipped());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.DRAWER_2_K_M_WOOD_BIRCH, RenderLayer.getCutoutMipped());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.DRAWER_2_K_M_WOOD_OAK_BASE, RenderLayer.getCutoutMipped());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.DRAWER_2_K_M_WOOD_BIRCH_BASE, RenderLayer.getCutoutMipped());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.LIGHT_MODERN, RenderLayer.getCutoutMipped());
+        BlockEntityRendererFactories.register(ModBlockEntities.LIGHT_EXTRA, LightRenderer::new);
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.TABLE_1X1_WOOD_OAK, RenderLayer.getCutoutMipped());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.TABLE_1X1_WOOD_BIRCH, RenderLayer.getCutoutMipped());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.TABLE_2X1_WOOD_OAK, RenderLayer.getCutoutMipped());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.TABLE_2X1_WOOD_OAK_ALT, RenderLayer.getCutoutMipped());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.TABLE_2X1_WOOD_OAK_ALT_2, RenderLayer.getCutoutMipped());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.TABLE_2X1_WOOD_BIRCH, RenderLayer.getCutoutMipped());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.TABLE_2X1_WOOD_BIRCH_ALT, RenderLayer.getCutoutMipped());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.TABLE_2X1_WOOD_BIRCH_ALT_2, RenderLayer.getCutoutMipped());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.TABLE_3X1_WOOD_OAK, RenderLayer.getCutoutMipped());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.TABLE_3X1_WOOD_BIRCH, RenderLayer.getCutoutMipped());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.WASHING_MACHINE, RenderLayer.getCutoutMipped());
+
         ModelLoadingPlugin.register(ctx -> ctx.addModels(LAPTOP_SCREEN, LAPTOP_SCREEN_ON, GAME_CONSOLE_EXTRA,
-                TRASH_CAN_BLACK_EXTRA, TRASH_CAN_WHITE_EXTRA));
+                TRASH_CAN_BLACK_EXTRA, TRASH_CAN_WHITE_EXTRA, LIGHT_MODERN_EXTRA));
     }
 }
