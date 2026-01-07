@@ -1,0 +1,6 @@
+{
+	"parent": "nextgen_furniture:block/drawer_2_k_m_wood_base",
+	"textures": {
+		"1": "nextgen_furniture:block/oak_wood"
+	}
+}

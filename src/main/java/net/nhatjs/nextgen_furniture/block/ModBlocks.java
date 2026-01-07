@@ -155,6 +155,47 @@ public class ModBlocks {
     public static Block MONITOR_DUAL_ALT_2 = registerBlock("monitor_dual_alt_2",
             properties -> new DualMonitorAlternate2Block(properties.strength(1F).nonOpaque()));
 
+    public static Block DRAWER_3_K_M_WOOD_OAK = registerBlock("drawer_3_k_m_wood_oak",
+            properties -> new DrawerBlock(properties.strength(1F).nonOpaque()));
+    public static Block DRAWER_3_K_M_WOOD_BIRCH = registerBlock("drawer_3_k_m_wood_birch",
+            properties -> new DrawerBlock(properties.strength(1F).nonOpaque()));
+    public static Block DRAWER_3_K_M_WOOD_OAK_BASE = registerBlock("drawer_3_k_m_wood_oak_base",
+            properties -> new DrawerBlock(properties.strength(1F).nonOpaque()));
+    public static Block DRAWER_3_K_M_WOOD_BIRCH_BASE = registerBlock("drawer_3_k_m_wood_birch_base",
+            properties -> new DrawerBlock(properties.strength(1F).nonOpaque()));
+    public static Block DRAWER_2_K_M_WOOD_OAK = registerBlock("drawer_2_k_m_wood_oak",
+            properties -> new DrawerBlock(properties.strength(1F).nonOpaque()));
+    public static Block DRAWER_2_K_M_WOOD_BIRCH = registerBlock("drawer_2_k_m_wood_birch",
+            properties -> new DrawerBlock(properties.strength(1F).nonOpaque()));
+    public static Block DRAWER_2_K_M_WOOD_OAK_BASE = registerBlock("drawer_2_k_m_wood_oak_base",
+            properties -> new DrawerBlock(properties.strength(1F).nonOpaque()));
+    public static Block DRAWER_2_K_M_WOOD_BIRCH_BASE = registerBlock("drawer_2_k_m_wood_birch_base",
+            properties -> new DrawerBlock(properties.strength(1F).nonOpaque()));
+    public static Block LIGHT_MODERN = registerBlock("light_modern",
+            properties -> new ModernLightBlock(properties.strength(1F).nonOpaque()));
+    public static Block TABLE_1X1_WOOD_OAK = registerBlock("table_1x1_wood_oak",
+            properties -> new Table1x1Block(properties.strength(1F).nonOpaque()));
+    public static Block TABLE_1X1_WOOD_BIRCH = registerBlock("table_1x1_wood_birch",
+            properties -> new Table1x1Block(properties.strength(1F).nonOpaque()));
+    public static Block TABLE_2X1_WOOD_OAK = registerBlock("table_2x1_wood_oak",
+            properties -> new Table2x1CenterBlock(properties.strength(1F).nonOpaque()));
+    public static Block TABLE_2X1_WOOD_BIRCH = registerBlock("table_2x1_wood_birch",
+            properties -> new Table2x1CenterBlock(properties.strength(1F).nonOpaque()));
+    public static Block TABLE_2X1_WOOD_OAK_ALT = registerBlock("table_2x1_wood_oak_alt",
+            properties -> new Table2x1LeftBlock(properties.strength(1F).nonOpaque()));
+    public static Block TABLE_2X1_WOOD_BIRCH_ALT = registerBlock("table_2x1_wood_birch_alt",
+            properties -> new Table2x1LeftBlock(properties.strength(1F).nonOpaque()));
+    public static Block TABLE_2X1_WOOD_OAK_ALT_2 = registerBlock("table_2x1_wood_oak_alt_2",
+            properties -> new Table2x1RightBlock(properties.strength(1F).nonOpaque()));
+    public static Block TABLE_2X1_WOOD_BIRCH_ALT_2 = registerBlock("table_2x1_wood_birch_alt_2",
+            properties -> new Table2x1RightBlock(properties.strength(1F).nonOpaque()));
+    public static Block TABLE_3X1_WOOD_OAK = registerBlock("table_3x1_wood_oak",
+            properties -> new Table3x1Block(properties.strength(1F).nonOpaque()));
+    public static Block TABLE_3X1_WOOD_BIRCH = registerBlock("table_3x1_wood_birch",
+            properties -> new Table3x1Block(properties.strength(1F).nonOpaque()));
+    public static Block WASHING_MACHINE = registerBlock("washing_machine",
+            properties -> new WashingMachineBlock(properties.strength(1F).nonOpaque()));
+
     private static Block registerBlock(String name, Function<AbstractBlock.Settings, Block> function) {
         Block toRegister = function.apply(AbstractBlock.Settings.create().registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(MOD_ID, name))));
         registerBlockItem(name, toRegister);

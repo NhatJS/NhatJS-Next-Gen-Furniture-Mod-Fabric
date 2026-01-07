@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "1": "minecraft:black_concrete",
+    "2": "minecraft:stone_button",
+    "3": "minecraft:iron_block",
+    "4": "minecraft:redstone"
+  },
+  "pattern": [
+    "121",
+    "434",
+    "141"
+  ],
+  "result": {
+    "count": 1,
+    "id": "nextgen_furniture:washing_machine"
+  }
+}

@@ -15,6 +15,8 @@ public class ModItems {
     public static final Item COMPUTER_FAN_BLADE_WHITE = registerItem("computer_fan_blade_white", Item::new);
     public static final Item COMPUTER_RAM_GAMING = registerItem("computer_ram_gaming", Item::new);
     public static final Item COMPUTER_CPU = registerItem("computer_cpu", Item::new);
+    public static final Item SCREWDRIVER = registerItem("screwdriver", Item::new);
+    public static final Item DRAWER_WHITE = registerItem("drawer_white", Item::new);
 
     private static Item registerItem(String name, Function<Item.Settings, Item> function) {
         return Registry.register(Registries.ITEM, Identifier.of(NhatJSNextGenFurnitureMod.MOD_ID, name),

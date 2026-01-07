@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "1": "minecraft:iron_ingot",
+    "2": "minecraft:black_dye"
+  },
+  "pattern": [
+    "1  ",
+    " 12",
+    " 21"
+  ],
+  "result": {
+    "count": 1,
+    "id": "nextgen_furniture:screwdriver"
+  }
+}

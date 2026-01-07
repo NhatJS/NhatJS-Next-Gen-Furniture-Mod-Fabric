@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "21"
+  ],
+  "key": {
+    "1": {
+      "item": "nextgen_furniture:table_1x1_wood_birch"
+    },
+    "2": {
+      "tag": "nextgen_furniture:table_2x1_wood_birch"
+    }
+  },
+  "result": {
+    "id": "nextgen_furniture:table_3x1_wood_birch",
+    "count": 1
+  }
+}
