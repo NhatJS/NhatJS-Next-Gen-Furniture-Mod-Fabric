@@ -11,11 +11,21 @@
       },
       "trigger": "minecraft:inventory_changed"
     },
-    "has_computer_fan_blade_white": {
+    "has_comparator": {
       "conditions": {
         "items": [
           {
-            "items": "nextgen_furniture:computer_fan_blade_white"
+            "items": "minecraft:comparator"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_end_crystal": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:end_crystal"
           }
         ]
       },
@@ -53,8 +63,9 @@
       "has_the_recipe",
       "has_black_concrete",
       "has_redstone",
-      "has_computer_fan_blade_white",
-      "has_stone_button"
+      "has_end_crystal",
+      "has_stone_button",
+      "has_comparator"
     ]
   ],
   "rewards": {

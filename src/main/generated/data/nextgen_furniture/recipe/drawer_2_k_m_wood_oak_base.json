@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "1": "minecraft:oak_planks",
+    "2": "minecraft:white_concrete"
+  },
+  "pattern": [
+    "111",
+    "2 2",
+    "222"
+  ],
+  "result": {
+    "count": 2,
+    "id": "nextgen_furniture:drawer_2_k_m_wood_oak_base"
+  }
+}

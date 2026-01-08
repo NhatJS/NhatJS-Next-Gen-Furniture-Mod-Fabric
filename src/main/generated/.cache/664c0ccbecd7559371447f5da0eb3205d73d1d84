@@ -1,3 +1,5 @@
 // 1.21.10	-999999999-01-01T00:00:00	NhatJS's Next-Gen Furniture Mod/Tags for minecraft:item
 515bcae4214c1613df629106908a23798a337066 data/nextgen_furniture/tags/item/table_2x1_black.json
 03672c69a319b2ad439ccbe69cdd84be81d68e91 data/nextgen_furniture/tags/item/table_2x1_white.json
+74cc80d4172bb16c7cc06967e15866a6591e4691 data/nextgen_furniture/tags/item/table_2x1_wood_birch.json
+96279addd5dca3f3a0835909aa2dd405bbc30b4b data/nextgen_furniture/tags/item/table_2x1_wood_oak.json

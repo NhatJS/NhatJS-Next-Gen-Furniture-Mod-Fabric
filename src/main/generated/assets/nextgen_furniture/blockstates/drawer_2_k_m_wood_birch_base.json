@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "nextgen_furniture:block/drawer_2_k_m_wood_birch_base",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "nextgen_furniture:block/drawer_2_k_m_wood_birch_base"
+    },
+    "facing=south": {
+      "model": "nextgen_furniture:block/drawer_2_k_m_wood_birch_base",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "nextgen_furniture:block/drawer_2_k_m_wood_birch_base",
+      "y": 270
+    }
+  }
+}

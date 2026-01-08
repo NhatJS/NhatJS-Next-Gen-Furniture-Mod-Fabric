@@ -2,6 +2,7 @@
 	"format_version": "1.21.6",
 	"credit": "Made with Blockbench",
 	"textures": {
+		"4": "nextgen_furniture:block/emissive",
 		"electronic": "nextgen_furniture:block/electronic",
 		"electronic2": "nextgen_furniture:block/electronic2",
 		"electronic3": "nextgen_furniture:block/electronic3",
@@ -57,19 +58,19 @@
 			}
 		},
 		{
-			"from": [2.52464, 0.53991, 6.95786],
-			"to": [13.47536, 0.53991, 10.59953],
-			"rotation": {"angle": -0.75, "axis": "x", "origin": [8, 0.37673, 7.95615]},
+			"from": [2.62464, 0.577, 7.00786],
+			"to": [3.47536, 0.577, 10.52786],
+			"rotation": {"angle": -0.75, "axis": "x", "origin": [-1.9, 0.42673, 7.95615]},
 			"faces": {
-				"up": {"uv": [8.4375, 14.40625, 8.71875, 14.8125], "rotation": 270, "texture": "#electronic2"}
+				"up": {"uv": [14.3125, 0.0625, 15.90625, 6.53125], "texture": "#4"}
 			}
 		},
 		{
-			"from": [3.57872, 0.59847, 7.1921],
-			"to": [12.42128, 0.59847, 10.51169],
-			"rotation": {"angle": -0.75, "axis": "x", "origin": [8, 0.37673, 7.95615]},
+			"from": [12.52464, 0.577, 7.00786],
+			"to": [13.37536, 0.577, 10.52786],
+			"rotation": {"angle": -0.75, "axis": "x", "origin": [8, 0.42673, 7.95615]},
 			"faces": {
-				"up": {"uv": [16, 13.6875, 0, 7.71875], "texture": "#electronic"}
+				"up": {"uv": [14.3125, 0.0625, 15.90625, 6.53125], "texture": "#4"}
 			}
 		},
 		{
@@ -639,14 +640,13 @@
 							"name": "group",
 							"origin": [0, -0.025, 0],
 							"color": 0,
-							"children": [2, 3, 4, 5]
+							"children": [2, 3, 4, 5, 6]
 						},
 						{
 							"name": "keyboard",
 							"origin": [-16.9, 0.025, 0],
 							"color": 0,
 							"children": [
-								6,
 								{
 									"name": "group",
 									"origin": [-16.9, 0, 0],
