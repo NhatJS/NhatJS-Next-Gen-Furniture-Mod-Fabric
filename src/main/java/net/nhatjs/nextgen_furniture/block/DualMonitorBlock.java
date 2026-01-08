@@ -21,6 +21,7 @@ import net.minecraft.util.shape.VoxelShape;
 import net.minecraft.util.shape.VoxelShapes;
 import net.minecraft.world.BlockView;
 import net.minecraft.world.World;
+import net.nhatjs.nextgen_furniture.item.ModItems;
 
 public class DualMonitorBlock extends Block {
     public static final EnumProperty<Direction> FACING = Properties.HORIZONTAL_FACING;
@@ -91,7 +92,7 @@ public class DualMonitorBlock extends Block {
                     .with(DualMonitorAlternateBlock.TURN_ON, false), Block.NOTIFY_ALL);
             return ActionResult.SUCCESS;
         }
-        else if (player.getMainHandStack().isOf(Items.STICK) && !current) {
+        else if (player.getMainHandStack().isOf(ModItems.SCREWDRIVER) && !current) {
             Direction facing =  state.get(HorizontalFacingBlock.FACING);
             world.setBlockState(pos, ModBlocks.MONITOR.getDefaultState()
                     .with(HorizontalFacingBlock.FACING, facing)

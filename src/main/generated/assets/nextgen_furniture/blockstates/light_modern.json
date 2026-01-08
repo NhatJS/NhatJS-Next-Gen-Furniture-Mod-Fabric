@@ -1,0 +1,50 @@
+{
+  "variants": {
+    "facing=down,lamp=false": {
+      "model": "nextgen_furniture:block/light_modern",
+      "x": 90
+    },
+    "facing=down,lamp=true": {
+      "model": "nextgen_furniture:block/light_modern",
+      "x": 90
+    },
+    "facing=east,lamp=false": {
+      "model": "nextgen_furniture:block/light_modern",
+      "y": 90
+    },
+    "facing=east,lamp=true": {
+      "model": "nextgen_furniture:block/light_modern",
+      "y": 90
+    },
+    "facing=north,lamp=false": {
+      "model": "nextgen_furniture:block/light_modern"
+    },
+    "facing=north,lamp=true": {
+      "model": "nextgen_furniture:block/light_modern"
+    },
+    "facing=south,lamp=false": {
+      "model": "nextgen_furniture:block/light_modern",
+      "y": 180
+    },
+    "facing=south,lamp=true": {
+      "model": "nextgen_furniture:block/light_modern",
+      "y": 180
+    },
+    "facing=up,lamp=false": {
+      "model": "nextgen_furniture:block/light_modern",
+      "x": 270
+    },
+    "facing=up,lamp=true": {
+      "model": "nextgen_furniture:block/light_modern",
+      "x": 270
+    },
+    "facing=west,lamp=false": {
+      "model": "nextgen_furniture:block/light_modern",
+      "y": 270
+    },
+    "facing=west,lamp=true": {
+      "model": "nextgen_furniture:block/light_modern",
+      "y": 270
+    }
+  }
+}
